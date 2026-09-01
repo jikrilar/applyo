@@ -1,0 +1,2 @@
+-- Deliberately empty. User-owned rows are created from auth.users by the
+-- onboarding trigger, so local and production seeds make no user assumptions.

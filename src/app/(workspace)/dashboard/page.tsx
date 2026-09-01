@@ -1,0 +1,16 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight, CalendarClock, Clock3, Plus, Sparkles } from "lucide-react";
+import { getDashboardSummary } from "@/backend/services/queries";
+import { getPreferences } from "@/backend/services/preferences";
+
+export const metadata: Metadata = { title: "Dasbor | Applyo" };
+export default async function DashboardPage() {
+  const [summary, preferences] = await Promise.all([getDashboardSummary(), getPreferences()]);
+  const formatDate = (value: string) => new Intl.DateTimeFormat("id-ID", { dateStyle: "medium", timeStyle: "short", timeZone: preferences.timezone }).format(new Date(value));
+  const summaries = [["Total lamaran", summary.total, "summary-blue"], ["Lamaran aktif", summary.active, "summary-yellow"], ["Wawancara", summary.interviews, "summary-pink"], ["Asesmen", summary.assessments, "summary-orange"], ["Tawaran", summary.offers, "summary-green"]] as const;
+  return <div className="dashboard-page"><header className="workspace-page-header"><div><span>Ruang kerja hari ini</span><h1>Selamat datang.</h1><p>Ini yang sedang berjalan dalam pencarian kerjamu.</p></div><Link className="button" href="/aplikasi"><Plus /> Tambah lamaran</Link></header>
+    <section className="summary-grid">{summaries.map(([label, value, className]) => <article className={`summary-card ${className}`} key={label}><strong>{value}</strong><span>{label}</span></article>)}</section>
+    {summary.total === 0 ? <section className="calendar-empty"><Sparkles /><strong>Belum ada lamaran.</strong><p>Tambahkan lamaran pertamamu untuk memulai.</p><Link className="button" href="/aplikasi">Tambah lamaran</Link></section> : <div className="dashboard-layout"><section className="dashboard-main-section"><header className="section-title-row"><div><h2>Berikutnya</h2><p>Agenda yang paling dekat.</p></div><CalendarClock /></header>{summary.upcoming.length ? summary.upcoming.slice(0, 3).map((event) => <Link className="next-event" href={`/aplikasi/${event.applicationId}`} key={`${event.id}-${event.occurrenceKind}`}><div className="event-date"><strong>{new Intl.DateTimeFormat("en-US", { day: "numeric", timeZone: preferences.timezone }).format(new Date(event.occursAt))}</strong><span>{new Intl.DateTimeFormat("id-ID", { month: "short", timeZone: preferences.timezone }).format(new Date(event.occursAt)).toUpperCase()}</span></div><div className="event-copy"><span>{event.occurrenceKind === "deadline" ? "Tenggat" : "Agenda"}</span><h3>{event.title}</h3><p>{event.company} · {formatDate(event.occursAt)}</p></div><ArrowRight /></Link>) : <p className="empty-column">Belum ada agenda tujuh hari ke depan.</p>}</section><aside className="attention-section"><header><Sparkles /><h2>Perlu perhatian</h2></header>{summary.needsAttention.length ? summary.needsAttention.map((item) => <Link className="attention-item" href={`/aplikasi/${item.applicationId}`} key={`${item.kind}-${item.applicationId}`}><Clock3 /><div><strong>{item.title}</strong><p>{item.daysWaiting != null ? `Menunggu ${item.daysWaiting} hari.` : item.dueAt ? formatDate(item.dueAt) : "Periksa kembali lamaran ini."}</p></div></Link>) : <p className="empty-column">Tidak ada yang mendesak saat ini.</p>}<Link className="text-link" href="/aplikasi">Lihat semua lamaran <ArrowRight /></Link></aside></div>}
+  </div>;
+}

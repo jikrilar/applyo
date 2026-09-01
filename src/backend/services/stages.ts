@@ -1,0 +1,9 @@
+import "server-only";
+import { z } from "zod";
+import { requireAuth } from "@/backend/auth";
+import { BackendError, databaseError, validationError } from "@/backend/errors";
+import { toStageDTO } from "@/backend/dto";
+
+const visibilitySchema = z.object({ stageId: z.uuid(), visible: z.boolean() });
+export async function getStages() { const { client, user } = await requireAuth(); const { data, error } = await client.from("pipeline_stages").select("*").eq("user_id", user.id).order("position"); if (error) throw databaseError("get_stages", error); return (data ?? []).map(toStageDTO); }
+export async function updateStageVisibility(raw: unknown) { const parsed = visibilitySchema.safeParse(raw); if (!parsed.success) throw validationError(parsed.error); const { client, user } = await requireAuth(); if (!parsed.data.visible) { const [applicationResult, stageResult] = await Promise.all([client.from("applications").select("id", { count: "exact", head: true }).eq("user_id", user.id).eq("stage_id", parsed.data.stageId).is("archived_at", null), client.from("pipeline_stages").select("id", { count: "exact", head: true }).eq("user_id", user.id).eq("is_closed", false).eq("is_visible", true)]); if (applicationResult.error || stageResult.error) throw databaseError("validate_stage_visibility", applicationResult.error ?? stageResult.error!); if ((applicationResult.count ?? 0) > 0) throw new BackendError("CONFLICT", "Pindahkan lamaran dari tahap ini sebelum menyembunyikannya."); if ((stageResult.count ?? 0) <= 1) throw new BackendError("CONFLICT", "Setidaknya satu tahap aktif harus tetap ditampilkan."); } const { data, error } = await client.from("pipeline_stages").update({ is_visible: parsed.data.visible }).eq("id", parsed.data.stageId).eq("user_id", user.id).select("*").single(); if (error) throw databaseError("update_stage_visibility", error); return toStageDTO(data); }

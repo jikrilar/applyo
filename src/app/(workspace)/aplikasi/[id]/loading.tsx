@@ -1,0 +1,1 @@
+export default function DetailLoading() { return <div className="workspace-loading" aria-label="Memuat detail lamaran"><div className="loading-line" /><div className="loading-workspace-block" /></div>; }
