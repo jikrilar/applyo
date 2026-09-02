@@ -2493,21 +2493,17 @@ footer > a:last-child {
   transform: rotate(180deg);
 }
 .themed-date-picker-popover {
-  position: absolute;
-  inset: calc(100% + 8px) 0 auto;
-  z-index: 8;
+  z-index: 90;
   padding: 15px;
   border: 3px solid var(--ink);
   border-radius: 13px;
   background: var(--surface);
   box-shadow: 7px 7px 0 var(--ink);
 }
-.date-picker-popover-fixed,
-.date-only-popover-fixed {
-  position: fixed;
-  inset: auto;
-  z-index: 60;
-  max-height: min(420px, calc(100dvh - 24px));
+.date-picker-popover-portal {
+  width: clamp(280px, var(--radix-popover-trigger-width), 360px);
+  max-width: calc(100vw - 24px);
+  max-height: min(420px, var(--radix-popover-content-available-height));
   overflow-y: auto;
 }
 .date-picker-header {
@@ -2786,7 +2782,7 @@ button.date-picker-day:disabled {
     transform 120ms ease-out,
     box-shadow 120ms ease-out;
 }
-.date-only-picker .date-picker-clear {
+.date-only-picker-popover .date-picker-clear {
   width: 100%;
   margin-top: 12px;
 }

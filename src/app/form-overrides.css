@@ -34,8 +34,7 @@
 .application-full-form .form-dropdown-menu button { min-height: 42px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 10px; padding: 8px 10px; border: 2px solid transparent; border-radius: 8px; background: transparent; color: var(--ink); font: inherit; font-size: .82rem; font-weight: 750; text-align: left; cursor: pointer; }
 .application-full-form .form-dropdown-menu button:hover, .application-full-form .form-dropdown-menu button:focus-visible { border-color: var(--ink); background: var(--muted); outline: 0; }
 .application-full-form .form-dropdown-menu button.selected { border-color: var(--ink); background: var(--yellow); color: #151515; box-shadow: 2px 2px 0 var(--ink); }
-.application-full-form .date-only-picker .date-only-popover-fixed { z-index: 60; }
-.application-full-form .date-only-picker .date-picker-weekdays, .application-full-form .date-only-picker .date-picker-days { grid-template-columns: repeat(7, minmax(0, 1fr)); }
-.application-full-form .date-only-picker .date-picker-weekdays span, .application-full-form .date-only-picker .date-picker-day { min-width: 0; width: 100%; }
-.application-full-form .date-only-picker .date-picker-day { min-height: 36px; }
+.application-full-form-date-popover .date-picker-weekdays, .application-full-form-date-popover .date-picker-days { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.application-full-form-date-popover .date-picker-weekdays span, .application-full-form-date-popover .date-picker-day { min-width: 0; width: 100%; }
+.application-full-form-date-popover .date-picker-day { min-height: 36px; }
 @media (max-width: 767px) { .application-form-grid { grid-template-columns: 1fr; } .application-form-grid .form-wide { grid-column: auto; } .application-full-form fieldset { padding: 14px; } .application-full-form details > .application-form-grid, .application-full-form details > .field-group { padding: 13px; } }

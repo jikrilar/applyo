@@ -81,13 +81,14 @@ export const PopoverClose = PopoverPrimitive.Close;
 export function PopoverContent({
   className,
   sideOffset = 8,
+  unstyled = false,
   ...props
-}: React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content>) {
+}: React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content> & { unstyled?: boolean }) {
   return (
     <PopoverPrimitive.Portal>
       <PopoverPrimitive.Content
         sideOffset={sideOffset}
-        className={cn("ui-popover", className)}
+        className={cn(!unstyled && "ui-popover", className)}
         {...props}
       />
     </PopoverPrimitive.Portal>

@@ -86,7 +86,7 @@ export function ApplicationForm({ stages, application, onSaved, onCancel }: Prop
     <details><summary>Informasi lowongan <ChevronDown /></summary><div className="application-form-grid">
       <label className="field-group form-wide"><span>Tautan lowongan</span><span className="field-control"><input name="jobUrl" type="url" defaultValue={application?.job_url ?? ""} placeholder="https://" /></span></label>
       <label className="field-group"><span>Sumber</span><span className="field-control"><input name="source" defaultValue={application?.source ?? ""} maxLength={100} /></span></label>
-       <div className="field-group"><span>Tanggal melamar</span><ThemedDateOnlyPicker name="appliedAt" value={appliedAt} onChange={(value) => { setAppliedAt(value); setDirty(true); }} /></div>
+       <div className="field-group"><span>Tanggal melamar</span><ThemedDateOnlyPicker name="appliedAt" value={appliedAt} popoverClassName="application-full-form-date-popover" onChange={(value) => { setAppliedAt(value); setDirty(true); }} /></div>
       <label className="field-group form-wide"><span>Deskripsi pekerjaan</span><span className="field-control"><textarea name="jobDescription" defaultValue={application?.job_description ?? ""} maxLength={50000} rows={7} /></span></label>
     </div></details>
     <details><summary>Kompensasi <ChevronDown /></summary><div className="application-form-grid application-salary-grid">

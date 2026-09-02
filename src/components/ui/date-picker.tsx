@@ -1,14 +1,8 @@
 "use client";
 
-import {
-  type CSSProperties,
-  type KeyboardEvent,
-  type RefObject,
-  useId,
-  useRef,
-  useState,
-} from "react";
+import { type KeyboardEvent, useState } from "react";
 import { CalendarDays, Check, ChevronDown, ChevronLeft, ChevronRight, Clock3 } from "lucide-react";
+import { Popover, PopoverContent, PopoverTrigger } from "./menu";
 
 type DatePickerProps = {
   name: string;
@@ -19,6 +13,7 @@ type DatePickerProps = {
   disabled?: boolean;
   min?: string;
   max?: string;
+  popoverClassName?: string;
 };
 
 const isoToday = () => new Date().toISOString().slice(0, 10);
@@ -147,36 +142,6 @@ function DateGrid({
   );
 }
 
-function useFixedPopover(
-  triggerRef: RefObject<HTMLButtonElement | null>,
-  open: boolean,
-  setOpen: (open: boolean) => void,
-  popupHeight: number,
-) {
-  const [popupStyle, setPopupStyle] = useState<CSSProperties>({});
-  const toggleOpen = () => {
-    if (open) {
-      setOpen(false);
-      return;
-    }
-    const rect = triggerRef.current?.getBoundingClientRect();
-    if (rect) {
-      const popupWidth = Math.min(360, Math.max(280, rect.width));
-      const top =
-        rect.bottom + 8 + popupHeight <= window.innerHeight
-          ? rect.bottom + 8
-          : Math.max(12, rect.top - popupHeight - 8);
-      setPopupStyle({
-        top,
-        left: Math.max(12, Math.min(rect.left, window.innerWidth - popupWidth - 12)),
-        width: popupWidth,
-      });
-    }
-    setOpen(true);
-  };
-  return { popupStyle, toggleOpen };
-}
-
 export function ThemedDateOnlyPicker({
   name,
   value: controlledValue,
@@ -186,6 +151,7 @@ export function ThemedDateOnlyPicker({
   disabled = false,
   min,
   max,
+  popoverClassName,
 }: DatePickerProps) {
   const [value, setValue] = usePickerValue({
     value: controlledValue,
@@ -193,62 +159,55 @@ export function ThemedDateOnlyPicker({
     onChange,
   });
   const [open, setOpen] = useState(false);
-  const triggerRef = useRef<HTMLButtonElement>(null);
-  const popoverId = useId();
   const [month, setMonth] = useState((value || isoToday()).slice(0, 7));
   const { monthLabel } = monthData(month);
-  const { popupStyle, toggleOpen } = useFixedPopover(triggerRef, open, setOpen, 420);
 
-  const close = () => {
-    setOpen(false);
-    triggerRef.current?.focus();
-  };
+  const close = () => setOpen(false);
   const chooseDate = (day: number) => {
     setValue(`${month}-${String(day).padStart(2, "0")}`);
     close();
   };
 
   return (
-    <div
-      className="themed-date-picker-wrap date-only-picker"
-      onBlur={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
-      }}
-      onKeyDown={(event) => {
-        if (event.key === "Escape" && open) {
-          event.preventDefault();
-          close();
-        }
-      }}
-    >
-      <input type="hidden" name={name} value={value} />
-      <button
-        ref={triggerRef}
-        className={open ? "date-picker-trigger open" : "date-picker-trigger"}
-        type="button"
-        aria-haspopup="dialog"
-        aria-expanded={open}
-        aria-controls={open ? popoverId : undefined}
-        disabled={disabled}
-        onClick={toggleOpen}
-      >
-        <CalendarDays aria-hidden="true" />
-        <span>
-          {value
-            ? new Intl.DateTimeFormat("id-ID", { dateStyle: "medium", timeZone: "UTC" }).format(
-                new Date(`${value}T00:00:00Z`),
-              )
-            : placeholder}
-        </span>
-        <ChevronDown aria-hidden="true" />
-      </button>
-      {open && (
-        <div
-          id={popoverId}
-          className="themed-date-picker-popover date-only-popover-fixed"
-          style={popupStyle}
-          role="dialog"
+    <Popover open={open} onOpenChange={setOpen}>
+      <div className="themed-date-picker-wrap date-only-picker">
+        <input type="hidden" name={name} value={value} />
+        <PopoverTrigger asChild>
+          <button
+            className={open ? "date-picker-trigger open" : "date-picker-trigger"}
+            type="button"
+            disabled={disabled}
+          >
+            <CalendarDays aria-hidden="true" />
+            <span>
+              {value
+                ? new Intl.DateTimeFormat("id-ID", {
+                    dateStyle: "medium",
+                    timeZone: "UTC",
+                  }).format(new Date(`${value}T00:00:00Z`))
+                : placeholder}
+            </span>
+            <ChevronDown aria-hidden="true" />
+          </button>
+        </PopoverTrigger>
+        <PopoverContent
+          unstyled
+          className={[
+            "themed-date-picker-popover",
+            "date-picker-popover-portal",
+            "date-only-picker-popover",
+            popoverClassName,
+          ]
+            .filter(Boolean)
+            .join(" ")}
+          side="bottom"
+          align="start"
+          sideOffset={8}
+          collisionPadding={12}
+          avoidCollisions
+          sticky="always"
           aria-label={placeholder}
+          onOpenAutoFocus={(event) => event.preventDefault()}
         >
           <div className="date-picker-header">
             <button
@@ -280,9 +239,9 @@ export function ThemedDateOnlyPicker({
               Hapus tanggal
             </button>
           )}
-        </div>
-      )}
-    </div>
+        </PopoverContent>
+      </div>
+    </Popover>
   );
 }
 
@@ -302,63 +261,48 @@ export function ThemedDatePicker({
     onChange,
   });
   const [open, setOpen] = useState(false);
-  const triggerRef = useRef<HTMLButtonElement>(null);
-  const popoverId = useId();
   const [month, setMonth] = useState((value || isoToday()).slice(0, 7));
   const { monthLabel } = monthData(month);
   const selectedDate = value.slice(0, 10);
   const selectedTime = value.slice(11, 16) || "09:00";
-  const { popupStyle, toggleOpen } = useFixedPopover(triggerRef, open, setOpen, 560);
 
-  const close = () => {
-    setOpen(false);
-    triggerRef.current?.focus();
-  };
+  const close = () => setOpen(false);
   const chooseDate = (day: number) =>
     setValue(`${month}-${String(day).padStart(2, "0")}T${selectedTime}`);
 
   return (
-    <div
-      className="themed-date-picker-wrap"
-      onBlur={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
-      }}
-      onKeyDown={(event) => {
-        if (event.key === "Escape" && open) {
-          event.preventDefault();
-          close();
-        }
-      }}
-    >
-      <input type="hidden" name={name} value={value} />
-      <button
-        ref={triggerRef}
-        className={open ? "date-picker-trigger open" : "date-picker-trigger"}
-        type="button"
-        aria-haspopup="dialog"
-        aria-expanded={open}
-        aria-controls={open ? popoverId : undefined}
-        disabled={disabled}
-        onClick={toggleOpen}
-      >
-        <CalendarDays aria-hidden="true" />
-        <span>
-          {value
-            ? new Intl.DateTimeFormat("id-ID", {
-                dateStyle: "medium",
-                timeStyle: "short",
-              }).format(new Date(`${value}:00`))
-            : placeholder}
-        </span>
-        <ChevronDown aria-hidden="true" />
-      </button>
-      {open && (
-        <div
-          id={popoverId}
-          className="themed-date-picker-popover date-picker-popover-fixed"
-          style={popupStyle}
-          role="dialog"
+    <Popover open={open} onOpenChange={setOpen}>
+      <div className="themed-date-picker-wrap">
+        <input type="hidden" name={name} value={value} />
+        <PopoverTrigger asChild>
+          <button
+            className={open ? "date-picker-trigger open" : "date-picker-trigger"}
+            type="button"
+            disabled={disabled}
+          >
+            <CalendarDays aria-hidden="true" />
+            <span>
+              {value
+                ? new Intl.DateTimeFormat("id-ID", {
+                    dateStyle: "medium",
+                    timeStyle: "short",
+                  }).format(new Date(`${value}:00`))
+                : placeholder}
+            </span>
+            <ChevronDown aria-hidden="true" />
+          </button>
+        </PopoverTrigger>
+        <PopoverContent
+          unstyled
+          className="themed-date-picker-popover date-picker-popover-portal"
+          side="bottom"
+          align="start"
+          sideOffset={8}
+          collisionPadding={12}
+          avoidCollisions
+          sticky="always"
           aria-label={placeholder}
+          onOpenAutoFocus={(event) => event.preventDefault()}
         >
           <div className="date-picker-header">
             <button
@@ -403,9 +347,9 @@ export function ThemedDatePicker({
               Gunakan tanggal
             </button>
           </div>
-        </div>
-      )}
-    </div>
+        </PopoverContent>
+      </div>
+    </Popover>
   );
 }
 

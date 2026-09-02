@@ -10,9 +10,12 @@ describe("ThemedDateOnlyPicker", () => {
   it("keeps the selected date in FormData and restores focus after selection", async () => {
     const user = userEvent.setup();
     const { container } = render(
-      <form>
-        <ThemedDateOnlyPicker name="appliedAt" defaultValue="2026-09-12" />
-      </form>,
+      <div style={{ overflow: "hidden", position: "relative", transform: "translateZ(0)" }}>
+        <form>
+          <ThemedDateOnlyPicker name="appliedAt" defaultValue="2026-09-12" />
+        </form>
+        <button type="button">Di luar</button>
+      </div>,
     );
     const form = container.querySelector("form");
     const trigger = container.querySelector<HTMLButtonElement>(".date-picker-trigger");
@@ -24,6 +27,7 @@ describe("ThemedDateOnlyPicker", () => {
     await user.click(trigger!);
     expect(trigger).toHaveAttribute("aria-expanded", "true");
     expect(trigger).toHaveClass("open");
+    expect(container).not.toContainElement(screen.getByRole("dialog"));
     expect(screen.getByRole("gridcell", { name: "12" })).toHaveClass("selected");
 
     await user.click(screen.getByRole("gridcell", { name: "13" }));
@@ -35,6 +39,10 @@ describe("ThemedDateOnlyPicker", () => {
     expect(screen.getByRole("gridcell", { name: "13" })).toHaveClass("selected");
     await user.keyboard("{Escape}");
     expect(trigger).toHaveFocus();
+
+    await user.click(trigger!);
+    await user.click(screen.getByRole("button", { name: "Di luar" }));
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
   });
 
   it("supports keyboard day navigation and disabled date limits", async () => {
