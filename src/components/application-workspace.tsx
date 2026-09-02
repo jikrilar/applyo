@@ -25,7 +25,6 @@ import {
   CalendarDays,
   Check,
   ChevronDown,
-  Clock3,
   EllipsisVertical,
   GripVertical,
   MapPin,
@@ -46,6 +45,7 @@ import { zonedLocalToUtc } from "@/lib/dates";
 import { ApplicationForm } from "@/components/application-detail/application-form";
 import { ApplicationToolbar } from "@/components/application-toolbar";
 import { cn } from "@/components/shared/cn";
+import { ThemedDateOnlyPicker, ThemedDatePicker } from "@/components/ui/date-picker";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 
 const stageColor: Record<string, string> = {
@@ -57,200 +57,6 @@ const stageColor: Record<string, string> = {
   offer: "var(--green)",
 };
 const color = (stage: StageDTO) => stageColor[stage.systemKey ?? ""] ?? "var(--yellow)";
-
-function ThemedDatePicker({
-  value,
-  onChange,
-  name = "scheduledAt",
-  placeholder = "Pilih tanggal dan waktu",
-}: {
-  value: string;
-  onChange: (value: string) => void;
-  name?: string;
-  placeholder?: string;
-}) {
-  const [open, setOpen] = useState(false);
-  const [month, setMonth] = useState(
-    value ? value.slice(0, 7) : new Date().toISOString().slice(0, 7),
-  );
-  const [year, monthNumber] = month.split("-").map(Number);
-  const selectedDate = value.slice(0, 10);
-  const selectedTime = value.slice(11, 16) || "09:00";
-  const firstDay = (new Date(Date.UTC(year, monthNumber - 1, 1)).getUTCDay() + 6) % 7;
-  const daysInMonth = new Date(Date.UTC(year, monthNumber, 0)).getUTCDate();
-  const monthLabel = new Intl.DateTimeFormat("id-ID", {
-    month: "long",
-    year: "numeric",
-    timeZone: "UTC",
-  }).format(new Date(Date.UTC(year, monthNumber - 1, 1)));
-  const cells = Array.from({ length: 42 }, (_, index) => index - firstDay + 1);
-  const moveMonth = (offset: number) => {
-    const next = new Date(Date.UTC(year, monthNumber - 1 + offset, 1));
-    setMonth(`${next.getUTCFullYear()}-${String(next.getUTCMonth() + 1).padStart(2, "0")}`);
-  };
-  const chooseDate = (day: number) =>
-    onChange(`${month}-${String(day).padStart(2, "0")}T${selectedTime}`);
-  return (
-    <div
-      className="themed-date-picker-wrap"
-      onBlur={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
-      }}
-    >
-      <input type="hidden" name={name} value={value} />
-      <button
-        className={`date-picker-trigger${open ? "open" : ""}`}
-        type="button"
-        aria-haspopup="dialog"
-        aria-expanded={open}
-        onClick={() => setOpen((current) => !current)}
-      >
-        <CalendarDays />
-        <span>
-          {value
-            ? new Intl.DateTimeFormat("id-ID", { dateStyle: "medium", timeStyle: "short" }).format(
-                new Date(`${value}:00`),
-              )
-            : placeholder}
-        </span>
-        <ChevronDown />
-      </button>
-      {open && (
-        <div className="themed-date-picker-popover" role="dialog" aria-label={placeholder}>
-          <div className="date-picker-header">
-            <button type="button" onClick={() => moveMonth(-1)} aria-label="Bulan sebelumnya">
-              ‹
-            </button>
-            <strong>{monthLabel}</strong>
-            <button type="button" onClick={() => moveMonth(1)} aria-label="Bulan berikutnya">
-              ›
-            </button>
-          </div>
-          <div className="date-picker-weekdays">
-            {["Sen", "Sel", "Rab", "Kam", "Jum", "Sab", "Min"].map((day) => (
-              <span key={day}>{day}</span>
-            ))}
-          </div>
-          <div className="date-picker-days">
-            {cells.map((day, index) =>
-              day < 1 || day > daysInMonth ? (
-                <span className="date-picker-day empty" key={index} />
-              ) : (
-                <button
-                  className={`date-picker-day${selectedDate === `${month}-${String(day).padStart(2, "0")}` ? "selected" : ""}`}
-                  type="button"
-                  onClick={() => chooseDate(day)}
-                  key={index}
-                >
-                  {day}
-                </button>
-              ),
-            )}
-          </div>
-          <TimeDropdown
-            value={selectedTime}
-            onChange={(time) => onChange(`${selectedDate || `${month}-01`}T${time}`)}
-          />
-          <button
-            className="button date-picker-done"
-            type="button"
-            disabled={!selectedDate}
-            onClick={() => setOpen(false)}
-          >
-            Gunakan tanggal
-          </button>
-        </div>
-      )}
-    </div>
-  );
-}
-
-function TimeDropdown({ value, onChange }: { value: string; onChange: (value: string) => void }) {
-  const [hour, minute] = value.split(":");
-  return (
-    <div className="date-picker-time">
-      <span>Waktu</span>
-      <div className="time-part-grid">
-        <TimePartDropdown
-          label="Jam"
-          value={hour}
-          values={Array.from({ length: 24 }, (_, index) => String(index).padStart(2, "0"))}
-          onChange={(nextHour) => onChange(`${nextHour}:${minute}`)}
-        />
-        <span className="time-separator" aria-hidden="true">
-          :
-        </span>
-        <TimePartDropdown
-          label="Menit"
-          value={minute}
-          values={Array.from({ length: 60 }, (_, index) => String(index).padStart(2, "0"))}
-          onChange={(nextMinute) => onChange(`${hour}:${nextMinute}`)}
-        />
-      </div>
-    </div>
-  );
-}
-
-function TimePartDropdown({
-  label,
-  value,
-  values,
-  onChange,
-}: {
-  label: string;
-  value: string;
-  values: string[];
-  onChange: (value: string) => void;
-}) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="time-part">
-      <span className="time-part-label">{label}</span>
-      <div
-        className="time-dropdown"
-        onBlur={(event) => {
-          if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
-        }}
-      >
-        <button
-          className="time-dropdown-trigger"
-          type="button"
-          aria-haspopup="listbox"
-          aria-expanded={open}
-          onClick={() => setOpen((current) => !current)}
-        >
-          <Clock3 />
-          <strong>{value}</strong>
-          <ChevronDown />
-        </button>
-        {open && (
-          <div
-            className="time-dropdown-menu time-part-menu"
-            role="listbox"
-            aria-label={`Pilih ${label.toLowerCase()}`}
-          >
-            {values.map((option) => (
-              <button
-                className={option === value ? "selected" : ""}
-                type="button"
-                role="option"
-                aria-selected={option === value}
-                onClick={() => {
-                  onChange(option);
-                  setOpen(false);
-                }}
-                key={option}
-              >
-                {option}
-                {option === value && <Check />}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
 
 function cardNote(card: ApplicationCardDTO) {
   if (card.upcomingEventAt)
@@ -977,16 +783,13 @@ export function ApplicationWorkspace({
                   );
                 }}
               >
-                <label className="field-group">
+                <div className="field-group">
                   <span>Tanggal melamar</span>
-                  <span className="field-control">
-                    <input
-                      name="appliedAt"
-                      type="date"
-                      defaultValue={new Date().toISOString().slice(0, 10)}
-                    />
-                  </span>
-                </label>
+                  <ThemedDateOnlyPicker
+                    name="appliedAt"
+                    defaultValue={new Date().toISOString().slice(0, 10)}
+                  />
+                </div>
                 <div className="dialog-actions">
                   <button className="filter-button" type="button" onClick={closeContextualDialog}>
                     Lewati
@@ -1022,14 +825,12 @@ export function ApplicationWorkspace({
                     <textarea name="benefits" rows={3} />
                   </span>
                 </label>
-                <label className="field-group">
+                <div className="field-group">
                   <span>
                     Tanggal mulai <small>(opsional)</small>
                   </span>
-                  <span className="field-control">
-                    <input name="startDate" type="date" />
-                  </span>
-                </label>
+                  <ThemedDateOnlyPicker name="startDate" />
+                </div>
                 <div className="field-group">
                   <span>
                     Tenggat tawaran <small>(opsional)</small>

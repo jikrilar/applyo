@@ -43,7 +43,7 @@ export default function Home() {
           <a href="#how-it-works">Cara kerja</a>
           <a href="#for-teams">Untuk tim</a>
           <ThemeToggle />
-          <a className="button button-small" href="#get-started">
+          <a className="button button-small" href="/masuk">
             Mulai pantau
           </a>
         </div>
@@ -60,7 +60,7 @@ export default function Home() {
             ramah.
           </p>
           <div className="hero-actions">
-            <a className="button" href="#get-started">
+            <a className="button" href="/masuk">
               Mulai pantau <ArrowRight aria-hidden="true" />
             </a>
             <a className="text-link" href="#how-it-works">
@@ -153,7 +153,7 @@ export default function Home() {
             berikutnya.
           </p>
         </div>
-        <a className="button" href="mailto:hello@applyo.app?subject=Akses%20awal%20Applyo">
+        <a className="button" href="/masuk">
           Mulai pantau <ArrowRight aria-hidden="true" />
         </a>
       </section>

@@ -19,8 +19,7 @@
 .application-full-form .field-control input, .application-full-form .field-control select { min-height: 44px; padding: 9px 12px; }
 .application-full-form .field-control textarea { min-height: 130px; padding: 11px 12px; resize: vertical; line-height: 1.5; }
 .application-full-form .field-control select { appearance: none; padding-right: 40px; background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%), linear-gradient(135deg, var(--ink) 50%, transparent 50%); background-position: calc(100% - 18px) 21px, calc(100% - 12px) 21px; background-size: 6px 6px, 6px 6px; background-repeat: no-repeat; cursor: pointer; }
-.application-full-form input[type="date"], .application-full-form input[type="number"] { color-scheme: light; }
-.application-full-form input[type="date"]::-webkit-calendar-picker-indicator { padding: 5px; border: 2px solid var(--ink); border-radius: 5px; background: var(--yellow); cursor: pointer; opacity: 1; }
+.application-full-form input[type="number"] { color-scheme: light; }
 .application-full-form input[type="number"]::-webkit-inner-spin-button { width: 22px; height: 32px; opacity: 1; cursor: pointer; }
 .application-full-form input::placeholder, .application-full-form textarea::placeholder { color: var(--muted-text); opacity: 1; }
 .application-full-form .dialog-actions { padding-top: 4px; }
@@ -35,9 +34,8 @@
 .application-full-form .form-dropdown-menu button { min-height: 42px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 10px; padding: 8px 10px; border: 2px solid transparent; border-radius: 8px; background: transparent; color: var(--ink); font: inherit; font-size: .82rem; font-weight: 750; text-align: left; cursor: pointer; }
 .application-full-form .form-dropdown-menu button:hover, .application-full-form .form-dropdown-menu button:focus-visible { border-color: var(--ink); background: var(--muted); outline: 0; }
 .application-full-form .form-dropdown-menu button.selected { border-color: var(--ink); background: var(--yellow); color: #151515; box-shadow: 2px 2px 0 var(--ink); }
-.application-full-form .date-only-picker .date-only-popover-fixed { position: fixed; inset: auto; z-index: 60; max-height: min(360px, calc(100dvh - 24px)); overflow-y: auto; }
+.application-full-form .date-only-picker .date-only-popover-fixed { z-index: 60; }
 .application-full-form .date-only-picker .date-picker-weekdays, .application-full-form .date-only-picker .date-picker-days { grid-template-columns: repeat(7, minmax(0, 1fr)); }
 .application-full-form .date-only-picker .date-picker-weekdays span, .application-full-form .date-only-picker .date-picker-day { min-width: 0; width: 100%; }
 .application-full-form .date-only-picker .date-picker-day { min-height: 36px; }
-[data-theme="dark"] .application-full-form input[type="date"] { color-scheme: dark; }
 @media (max-width: 767px) { .application-form-grid { grid-template-columns: 1fr; } .application-form-grid .form-wide { grid-column: auto; } .application-full-form fieldset { padding: 14px; } .application-full-form details > .application-form-grid, .application-full-form details > .field-group { padding: 13px; } }

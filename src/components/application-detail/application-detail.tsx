@@ -31,6 +31,7 @@ import {
   updateDetailEventAction,
   upsertDetailOfferAction,
 } from "@/app/(workspace)/aplikasi/[id]/actions";
+import { ThemedDateOnlyPicker, ThemedDatePicker } from "@/components/ui/date-picker";
 
 const fmt = (value: string | null, timezone: string) => {
   if (!value) return "Belum diisi";
@@ -448,6 +449,11 @@ export function ApplicationDetail({
 
 function Fact({ label, value }: { label: string; value: string | null }) { return <div><span>{label}</span><strong>{value || "Belum diisi"}</strong></div>; }
 function Modal({ title, onClose, children }: { title: string; onClose: () => void; children: React.ReactNode }) { return <div className="dialog-backdrop" onMouseDown={onClose}><section className="application-dialog" role="dialog" aria-modal="true" aria-label={title} onMouseDown={(event) => event.stopPropagation()}><header><h2>{title}</h2><button onClick={onClose} aria-label="Tutup dialog"><X /></button></header>{children}</section></div>; }
-function Field({ name, label, defaultValue = "", type = "text", required = false }: { name: string; label: string; defaultValue?: string; type?: string; required?: boolean }) { return <label className="field-group"><span>{label}</span><span className="field-control"><input name={name} type={type} defaultValue={defaultValue} required={required} min={type === "number" ? 0 : undefined} /></span></label>; }
+function Field({ name, label, defaultValue = "", type = "text", required = false }: { name: string; label: string; defaultValue?: string; type?: string; required?: boolean }) {
+  if (type === "date" || type === "datetime-local") {
+    return <div className="field-group"><span>{label}</span>{type === "date" ? <ThemedDateOnlyPicker name={name} defaultValue={defaultValue} placeholder={`Pilih ${label.toLowerCase()}`} /> : <ThemedDatePicker name={name} defaultValue={defaultValue} placeholder={`Pilih ${label.toLowerCase()}`} />}</div>;
+  }
+  return <label className="field-group"><span>{label}</span><span className="field-control"><input name={name} type={type} defaultValue={defaultValue} required={required} min={type === "number" ? 0 : undefined} /></span></label>;
+}
 function SelectField({ name, label, defaultValue, options }: { name: string; label: string; defaultValue: string; options: string[][] }) { return <label className="field-group"><span>{label}</span><span className="field-control"><select name={name} defaultValue={defaultValue}>{options.map(([value, text]) => <option value={value} key={value}>{text}</option>)}</select></span></label>; }
 function FormActions({ pending, cancel }: { pending: boolean; cancel: () => void }) { return <div className="dialog-actions detail-form-wide"><button className="filter-button" type="button" onClick={cancel}>Batal</button><button className="button" type="submit" disabled={pending}><Save /> {pending ? "Menyimpan..." : "Simpan"}</button></div>; }
