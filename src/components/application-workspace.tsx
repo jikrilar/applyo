@@ -597,8 +597,12 @@ export function ApplicationWorkspace({
             </header>
             <ApplicationForm
               stages={stages}
+              currency={currency}
               onCancel={() => setDialogOpen(false)}
-              onSaved={() => setDialogOpen(false)}
+              onSaved={(nextBoard) => {
+                setBoard(nextBoard);
+                setDialogOpen(false);
+              }}
             />
           </section>
         </div>

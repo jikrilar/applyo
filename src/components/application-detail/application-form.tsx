@@ -3,12 +3,12 @@
 import { FormEvent, KeyboardEvent, useEffect, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { Check, ChevronDown, BriefcaseBusiness, Layers3 } from "lucide-react";
-import type { StageDTO } from "@/backend/dto";
+import type { BoardDTO, StageDTO } from "@/backend/dto";
 import type { ApplicationRow } from "@/types/database";
 import { createApplicationAction, updateApplicationAction } from "@/app/(workspace)/aplikasi/actions";
 import { ThemedDateOnlyPicker } from "@/components/ui/date-picker";
 
-type Props = { stages: StageDTO[]; application?: ApplicationRow; onSaved?: () => void; onCancel: () => void };
+type Props = { stages: StageDTO[]; currency: string; application?: ApplicationRow; onSaved?: (board: BoardDTO) => void; onCancel: () => void };
 
 const text = (data: FormData, name: string) => String(data.get(name) ?? "");
 const nullable = (data: FormData, name: string) => text(data, name).trim() || null;
@@ -42,7 +42,7 @@ function ThemedFormDropdown({ name, value, options, label, icon: Icon, onChange 
   return <div className="form-dropdown" onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false); }}><input type="hidden" name={name} value={value} /><button className="form-dropdown-trigger" type="button" aria-haspopup="listbox" aria-expanded={open} onClick={() => setOpen((current) => !current)} onKeyDown={keyDown}><Icon aria-hidden="true" /><span>{selected[1]}</span><ChevronDown aria-hidden="true" /></button>{open && <div className="form-dropdown-menu" role="listbox" aria-label={`Pilih ${label.toLowerCase()}`}>{options.map(([option, text]) => <button className={option === value ? "selected" : ""} type="button" role="option" aria-selected={option === value} onClick={() => { onChange(option); setOpen(false); }} key={option}><span>{text}</span>{option === value && <Check aria-hidden="true" />}</button>)}</div>}</div>;
 }
 
-export function ApplicationForm({ stages, application, onSaved, onCancel }: Props) {
+export function ApplicationForm({ stages, currency, application, onSaved, onCancel }: Props) {
   const router = useRouter();
   const [dirty, setDirty] = useState(false);
   const [error, setError] = useState("");
@@ -70,7 +70,7 @@ export function ApplicationForm({ stages, application, onSaved, onCancel }: Prop
     startTransition(async () => {
       const result = application ? await updateApplicationAction({ applicationId: application.id, ...fields }) : await createApplicationAction({ stageId: text(data, "stageId"), ...fields });
       if (!result.success) { setError(result.error.message); return; }
-      setDirty(false); setError(""); onSaved?.(); router.refresh();
+      setDirty(false); setError(""); onSaved?.(result.data); router.refresh();
     });
   };
 
@@ -90,9 +90,9 @@ export function ApplicationForm({ stages, application, onSaved, onCancel }: Prop
       <label className="field-group form-wide"><span>Deskripsi pekerjaan</span><span className="field-control"><textarea name="jobDescription" defaultValue={application?.job_description ?? ""} maxLength={50000} rows={7} /></span></label>
     </div></details>
     <details><summary>Kompensasi <ChevronDown /></summary><div className="application-form-grid application-salary-grid">
+      <input type="hidden" name="currency" value={application?.currency ?? currency} />
       <label className="field-group"><span>Gaji minimum</span><span className="field-control"><input name="salaryMin" type="number" min="0" step="1" defaultValue={application?.salary_min ?? ""} /></span></label>
       <label className="field-group"><span>Gaji maksimum</span><span className="field-control"><input name="salaryMax" type="number" min="0" step="1" defaultValue={application?.salary_max ?? ""} /></span></label>
-      <label className="field-group"><span>Mata uang</span><span className="field-control"><input name="currency" defaultValue={application?.currency ?? "IDR"} minLength={3} maxLength={3} /></span></label>
     </div></details>
     <details open={Boolean(application?.notes)}><summary>Catatan pribadi <ChevronDown /></summary><label className="field-group"><span>Catatan</span><span className="field-control"><textarea name="notes" defaultValue={application?.notes ?? ""} maxLength={20000} rows={6} /></span></label></details>
     {error && <p className="form-error" role="alert">{error}</p>}

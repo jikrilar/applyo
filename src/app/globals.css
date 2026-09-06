@@ -1484,11 +1484,13 @@ footer > a:last-child {
   padding: 11px;
 }
 .workspace-card {
+  position: relative;
   padding: 14px;
   border: var(--border);
   border-radius: 10px;
   background: var(--card-surface);
   box-shadow: 3px 3px 0 var(--ink);
+  cursor: pointer;
   touch-action: manipulation;
 }
 .workspace-card.dragging {
@@ -1523,6 +1525,8 @@ footer > a:last-child {
   font-size: 1rem;
 }
 .card-controls {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 2px;
@@ -1835,6 +1839,53 @@ footer > a:last-child {
   font-family: var(--font-display);
   font-size: 2.2rem;
   letter-spacing: -0.04em;
+}
+.account-delete-dialog {
+  position: relative;
+}
+.account-delete-dialog h2 {
+  margin-top: 0;
+  padding-right: 48px;
+}
+.delete-dialog-close {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: var(--border);
+  border-radius: 8px;
+  background: var(--background);
+  color: var(--ink);
+  box-shadow: 2px 2px 0 transparent;
+  cursor: pointer;
+  transition:
+    transform var(--motion-fast) var(--ease-out),
+    box-shadow var(--motion-fast) var(--ease-out),
+    background var(--motion-fast) ease;
+}
+.delete-dialog-close:hover {
+  transform: translate(-1px, -1px);
+  background: var(--yellow);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+.delete-dialog-close:focus {
+  outline: none;
+}
+.delete-dialog-close:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+}
+.delete-dialog-close:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
+.delete-dialog-close svg {
+  width: 20px;
+  height: 20px;
 }
 .delete-dialog p {
   margin: 0;
@@ -3464,6 +3515,22 @@ button.date-picker-day:disabled {
   color: var(--ink);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+a.workspace-card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+a.workspace-card-link {
+  border-radius: inherit;
+}
+a.workspace-card-link:focus-visible {
+  outline: 0;
+}
+a.workspace-card-link:focus-visible::after {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
 }
 .application-detail-page > .text-link {
   margin-bottom: 24px;

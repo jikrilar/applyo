@@ -75,6 +75,7 @@ export function ApplicationList({
   items,
   total,
   stages,
+  currency,
   locations,
   params,
   pageSize,
@@ -82,6 +83,7 @@ export function ApplicationList({
   items: ApplicationListItemDTO[];
   total: number;
   stages: StageDTO[];
+  currency: string;
   locations: string[];
   params: ApplicationListParams;
   pageSize: number;
@@ -379,6 +381,7 @@ export function ApplicationList({
             </header>
             <ApplicationForm
               stages={stages}
+              currency={currency}
               onCancel={() => setDialogOpen(false)}
               onSaved={() => setDialogOpen(false)}
             />
@@ -403,6 +406,7 @@ export function ApplicationList({
             <ApplicationForm
               application={editing}
               stages={stages}
+              currency={currency}
               onCancel={() => setEditing(null)}
               onSaved={() => setEditing(null)}
             />

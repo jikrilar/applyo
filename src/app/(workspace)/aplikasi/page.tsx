@@ -91,6 +91,7 @@ export default async function ApplicationsPage({
           items={results.items}
           total={results.total}
           stages={board.stages}
+          currency={preferences.currency}
           locations={locations}
           params={params}
           pageSize={pageSize}
