@@ -1,6 +1,6 @@
 "use client";
 
-import { type KeyboardEvent, useState } from "react";
+import { type KeyboardEvent, useEffect, useState } from "react";
 import { CalendarDays, Check, ChevronDown, ChevronLeft, ChevronRight, Clock3 } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "./menu";
 
@@ -161,12 +161,24 @@ export function ThemedDateOnlyPicker({
   const [open, setOpen] = useState(false);
   const [month, setMonth] = useState((value || isoToday()).slice(0, 7));
   const { monthLabel } = monthData(month);
-
   const close = () => setOpen(false);
   const chooseDate = (day: number) => {
     setValue(`${month}-${String(day).padStart(2, "0")}`);
     close();
   };
+  useEffect(() => {
+    if (!open) return;
+    const id = window.setTimeout(() => {
+      const popovers = Array.from(document.querySelectorAll<HTMLDivElement>(".themed-date-picker-popover"));
+      const root = popovers[popovers.length - 1] as HTMLElement | undefined;
+      if (!root) return;
+      const target =
+        (root.querySelector<HTMLButtonElement>('button.date-picker-day[tabindex="0"]') ??
+          root.querySelector<HTMLButtonElement>("button.date-picker-day:not(:disabled)"));
+      target?.focus();
+    }, 0);
+    return () => window.clearTimeout(id);
+  }, [open, month, value]);
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -263,6 +275,19 @@ export function ThemedDatePicker({
   const [open, setOpen] = useState(false);
   const [month, setMonth] = useState((value || isoToday()).slice(0, 7));
   const { monthLabel } = monthData(month);
+  useEffect(() => {
+    if (!open) return;
+    const id = window.setTimeout(() => {
+      const popovers = Array.from(document.querySelectorAll<HTMLDivElement>(".themed-date-picker-popover"));
+      const root = popovers[popovers.length - 1] as HTMLElement | undefined;
+      if (!root) return;
+      const target =
+        (root.querySelector<HTMLButtonElement>('button.date-picker-day[tabindex="0"]') ??
+          root.querySelector<HTMLButtonElement>("button.date-picker-day:not(:disabled)"));
+      target?.focus();
+    }, 0);
+    return () => window.clearTimeout(id);
+  }, [open, month, value]);
   const selectedDate = value.slice(0, 10);
   const selectedTime = value.slice(11, 16) || "09:00";
 

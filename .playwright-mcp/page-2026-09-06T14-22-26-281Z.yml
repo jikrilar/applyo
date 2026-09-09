@@ -1,0 +1,125 @@
+- generic [ref=f31e1]:
+  - generic [ref=f31e2]:
+    - complementary [ref=f31e3]:
+      - link "Beranda Applyo" [ref=f31e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f31e5]:
+        - link "Dasbor" [ref=f31e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f31e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f31e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f31e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f31e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f31e33] [cursor=pointer]
+    - generic [ref=f31e37]:
+      - banner [ref=f31e38]:
+        - generic [ref=f31e39]:
+          - button "Gunakan mode gelap" [ref=f31e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f31e44] [cursor=pointer]:
+            - generic [ref=f31e45]: QP
+            - generic [ref=f31e46]:
+              - strong [ref=f31e47]: QA Phase2
+              - generic [ref=f31e48]: qa-phase2@applyo.test
+      - main [ref=f31e51]:
+        - generic [ref=f31e52]:
+          - generic [ref=f31e53]:
+            - generic [ref=f31e54]:
+              - generic [ref=f31e55]: Ruang kerja lamaran
+              - heading "Lamaran saya" [level=1] [ref=f31e56]
+              - paragraph [ref=f31e57]: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation "Tampilan lamaran" [ref=f31e58]:
+              - link "Papan" [ref=f31e59] [cursor=pointer]:
+                - /url: /aplikasi
+              - link "Daftar" [ref=f31e65] [cursor=pointer]:
+                - /url: /aplikasi?view=list
+          - generic [ref=f31e67]:
+            - generic [ref=f31e68]:
+              - generic [ref=f31e72]: Cari lamaran
+              - textbox "Cari lamaran" [ref=f31e73]:
+                - /placeholder: Cari perusahaan atau posisi...
+            - button "Filter" [ref=f31e75] [cursor=pointer]
+            - button "Tambah lamaran" [active] [ref=f31e77]
+          - generic [ref=f31e79]:
+            - generic [ref=f31e80]:
+              - generic [ref=f31e81]:
+                - strong [ref=f31e82]: Incaran
+                - generic [ref=f31e83]: "1"
+              - article [ref=f31e197] [cursor=pointer]:
+                - generic [ref=f31e198]:
+                  - strong [ref=f31e199]: PT Tarik Diri
+                  - generic [ref=f31e200]:
+                    - button "Pindahkan kartu PT Tarik Diri" [ref=f31e201]
+                    - button "Tindakan untuk PT Tarik Diri" [ref=f31e210]
+                - link "Staff Admin" [ref=f31e215]:
+                  - /url: /aplikasi/9d3f77a6-c2c9-4b98-a548-c3215af86811
+                - generic [ref=f31e216]: Lokasi belum diisi
+                - generic [ref=f31e220]: Baru diperbarui
+            - generic [ref=f31e86]:
+              - generic [ref=f31e87]:
+                - strong [ref=f31e88]: Dilamar
+                - generic [ref=f31e89]: "0"
+              - paragraph [ref=f31e91]: Letakkan lamaran di sini
+            - generic [ref=f31e92]:
+              - generic [ref=f31e93]:
+                - strong [ref=f31e94]: Seleksi Awal
+                - generic [ref=f31e95]: "0"
+              - paragraph [ref=f31e97]: Letakkan lamaran di sini
+            - generic [ref=f31e98]:
+              - generic [ref=f31e99]:
+                - strong [ref=f31e100]: Wawancara
+                - generic [ref=f31e101]: "0"
+              - paragraph [ref=f31e103]: Letakkan lamaran di sini
+            - generic [ref=f31e104]:
+              - generic [ref=f31e105]:
+                - strong [ref=f31e106]: Asesmen
+                - generic [ref=f31e107]: "0"
+              - paragraph [ref=f31e109]: Letakkan lamaran di sini
+            - generic [ref=f31e110]:
+              - generic [ref=f31e111]:
+                - strong [ref=f31e112]: Tawaran
+                - generic [ref=f31e113]: "0"
+              - paragraph [ref=f31e115]: Letakkan lamaran di sini
+          - status [ref=f31e116]
+          - dialog [ref=f31e224]:
+            - generic [ref=f31e226]:
+              - heading "Tambah lamaran" [level=2] [ref=f31e227]
+              - paragraph [ref=f31e228]: Mulai dari informasi utama, lalu lengkapi seperlunya.
+            - generic [ref=f31e229]:
+              - group "Informasi utama" [ref=f31e230]:
+                - generic [ref=f31e232]:
+                  - generic [ref=f31e233]:
+                    - generic [ref=f31e234]: Perusahaan *
+                    - textbox "Perusahaan *" [ref=f31e236]
+                  - generic [ref=f31e237]:
+                    - generic [ref=f31e238]: Posisi *
+                    - textbox "Posisi *" [ref=f31e240]
+                  - generic [ref=f31e241]:
+                    - generic [ref=f31e242]: Tahap *
+                    - button "Incaran" [ref=f31e244] [cursor=pointer]
+                  - generic [ref=f31e252]:
+                    - generic [ref=f31e253]: Lokasi
+                    - textbox "Lokasi" [ref=f31e255]
+                  - generic [ref=f31e256]:
+                    - generic [ref=f31e257]: Pengaturan kerja
+                    - button "Belum ditentukan" [ref=f31e259] [cursor=pointer]
+                  - generic [ref=f31e267]:
+                    - generic [ref=f31e268]: Jenis pekerjaan
+                    - button "Belum ditentukan" [ref=f31e270] [cursor=pointer]
+              - group [ref=f31e278]:
+                - generic "Informasi lowongan" [ref=f31e279] [cursor=pointer]
+              - group [ref=f31e282]:
+                - generic "Kompensasi" [ref=f31e283] [cursor=pointer]
+              - group [ref=f31e286]:
+                - generic "Catatan pribadi" [ref=f31e287] [cursor=pointer]
+              - generic [ref=f31e290]:
+                - button "Batal" [ref=f31e291] [cursor=pointer]
+                - button "Simpan lamaran" [ref=f31e292]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f31e122] [cursor=pointer]
+  - alert [ref=f31e126]

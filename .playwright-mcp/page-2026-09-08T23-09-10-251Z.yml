@@ -1,0 +1,116 @@
+- generic [ref=f10e1]:
+  - generic [ref=f10e2]:
+    - complementary [ref=f10e3]:
+      - link "Beranda Applyo" [ref=f10e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f10e5]:
+        - link "Dasbor" [ref=f10e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f10e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f10e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f10e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f10e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f10e33] [cursor=pointer]
+    - generic [ref=f10e37]:
+      - banner [ref=f10e38]:
+        - generic [ref=f10e39]:
+          - button "Gunakan mode gelap" [ref=f10e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f10e44] [cursor=pointer]:
+            - generic [ref=f10e45]: RT
+            - generic [ref=f10e46]:
+              - strong [ref=f10e47]: Reg Test
+              - generic [ref=f10e48]: reg-test@applyo.test
+      - main [ref=f10e51]:
+        - generic [ref=f10e69]:
+          - generic [ref=f10e70]:
+            - generic [ref=f10e71]:
+              - generic [ref=f10e72]: Ruang kerja lamaran
+              - heading "Lamaran saya" [level=1] [ref=f10e73]
+              - paragraph [ref=f10e74]: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation "Tampilan lamaran" [ref=f10e75]:
+              - link "Papan" [ref=f10e76] [cursor=pointer]:
+                - /url: /aplikasi
+              - link "Daftar" [ref=f10e82] [cursor=pointer]:
+                - /url: /aplikasi?view=list
+          - generic [ref=f10e84]:
+            - generic [ref=f10e85]:
+              - generic [ref=f10e89]: Cari lamaran
+              - textbox "Cari lamaran" [ref=f10e90]:
+                - /placeholder: Cari perusahaan atau posisi...
+            - button "Filter" [ref=f10e92] [cursor=pointer]
+            - button "Tambah lamaran" [ref=f10e94]
+          - generic [ref=f10e96]:
+            - generic [ref=f10e97]:
+              - generic [ref=f10e98]:
+                - strong [ref=f10e99]: Incaran
+                - generic [ref=f10e100]: "0"
+              - paragraph [ref=f10e102]: Letakkan lamaran di sini
+            - generic [ref=f10e103]:
+              - generic [ref=f10e104]:
+                - strong [ref=f10e105]: Dilamar
+                - generic [ref=f10e106]: "2"
+              - generic [ref=f10e107]:
+                - article [ref=f10e108] [cursor=pointer]:
+                  - generic [ref=f10e109]:
+                    - strong [ref=f10e110]: PT Regresi Tiga
+                    - generic [ref=f10e111]:
+                      - button "Pindahkan kartu PT Regresi Tiga" [ref=f10e112]
+                      - button "Tindakan untuk PT Regresi Tiga" [ref=f10e121]
+                  - link "QA Engineer" [ref=f10e126]:
+                    - /url: /aplikasi/71e513cc-aa62-4cb6-ae47-442cc71c2300
+                  - generic [ref=f10e127]: Lokasi belum diisi
+                  - generic [ref=f10e131]: Baru diperbarui
+                - article [ref=f10e134] [cursor=pointer]:
+                  - generic [ref=f10e135]:
+                    - strong [ref=f10e136]: PT Regresi Dua
+                    - generic [ref=f10e137]:
+                      - button "Pindahkan kartu PT Regresi Dua" [ref=f10e138]
+                      - button "Tindakan untuk PT Regresi Dua" [ref=f10e147]
+                  - link "Frontend Developer" [ref=f10e152]:
+                    - /url: /aplikasi/f06e4565-fbdc-4ab7-a4d7-a046279e25cc
+                  - generic [ref=f10e153]: Bandung
+                  - generic [ref=f10e157]: Baru diperbarui
+            - generic [ref=f10e160]:
+              - generic [ref=f10e161]:
+                - strong [ref=f10e162]: Seleksi Awal
+                - generic [ref=f10e163]: "0"
+              - paragraph [ref=f10e165]: Letakkan lamaran di sini
+            - generic [ref=f10e166]:
+              - generic [ref=f10e167]:
+                - strong [ref=f10e168]: Wawancara
+                - generic [ref=f10e169]: "0"
+              - paragraph [ref=f10e171]: Letakkan lamaran di sini
+            - generic [ref=f10e172]:
+              - generic [ref=f10e173]:
+                - strong [ref=f10e174]: Asesmen
+                - generic [ref=f10e175]: "0"
+              - paragraph [ref=f10e177]: Letakkan lamaran di sini
+            - generic [ref=f10e178]:
+              - generic [ref=f10e179]:
+                - strong [ref=f10e180]: Tawaran
+                - generic [ref=f10e181]: "1"
+              - article [ref=f10e183] [cursor=pointer]:
+                - generic [ref=f10e184]:
+                  - strong [ref=f10e185]: PT Regresi Satu
+                  - generic [ref=f10e186]:
+                    - button "Pindahkan kartu PT Regresi Satu" [ref=f10e187]
+                    - generic [ref=f10e195]:
+                      - button "Tindakan untuk PT Regresi Satu" [expanded] [active] [ref=f10e196]
+                      - menu [ref=f10e344]:
+                        - menuitem "Edit lamaran" [ref=f10e345]
+                        - menuitem "Tambah agenda" [ref=f10e349]
+                        - menuitem "Hapus lamaran" [ref=f10e352]
+                - link "Senior Backend Developer" [ref=f10e201]:
+                  - /url: /aplikasi/a8b5ec16-0ac0-4923-ab8f-88b9763ff387
+                - generic [ref=f10e202]: Lokasi belum diisi
+                - generic [ref=f10e206]: 12 Sep 2026
+          - status [ref=f10e209]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f10e64] [cursor=pointer]
+  - alert [ref=f10e68]

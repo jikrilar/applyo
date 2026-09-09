@@ -1,0 +1,168 @@
+- generic:
+  - generic:
+    - complementary [aria-hidden]:
+      - link:
+        - /url: /
+        - text: Applyo
+      - navigation:
+        - link:
+          - /url: /dashboard
+          - generic: Dasbor
+        - link:
+          - /url: /aplikasi
+          - generic: Lamaran
+        - link:
+          - /url: /kalender
+          - generic: Kalender
+        - link:
+          - /url: /analitik
+          - generic: Analitik
+        - link:
+          - /url: /pengaturan
+          - generic: Pengaturan
+      - generic:
+        - button: Keluar
+    - generic:
+      - banner [aria-hidden]:
+        - generic:
+          - button
+          - generic:
+            - button:
+              - generic: QP
+              - generic:
+                - strong: QA Phase2
+                - generic: qa-phase2@applyo.test
+      - main:
+        - generic:
+          - generic [aria-hidden]:
+            - generic:
+              - generic: Ruang kerja lamaran
+              - heading [level=1]: Lamaran saya
+              - paragraph: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation:
+              - link:
+                - /url: /aplikasi
+                - text: Papan
+              - link:
+                - /url: /aplikasi?view=list
+                - text: Daftar
+          - generic [aria-hidden]:
+            - generic:
+              - generic: Cari lamaran
+              - textbox:
+                - /placeholder: Cari perusahaan atau posisi...
+            - generic:
+              - button: Filter
+            - button: Tambah lamaran
+          - generic [aria-hidden]:
+            - generic:
+              - generic:
+                - strong: Incaran
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Dilamar
+                - generic: "1"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Cari Kerja
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/22e20c34-fafd-449a-9850-d72f6aa0f860
+                    - text: Backend Developer
+                  - generic: Lokasi belum diisi
+                  - generic: Baru diperbarui
+            - generic:
+              - generic:
+                - strong: Seleksi Awal
+                - generic: "1"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Maju Mundur
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/832298d3-ff03-43c6-96bc-a3d53b82ca1e
+                    - text: QA Engineer
+                  - generic: Lokasi belum diisi
+                  - generic: Baru diperbarui
+            - generic:
+              - generic:
+                - strong: Wawancara
+                - generic: "1"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Sinar Pagi
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/bf512c6e-219e-4e66-aeed-79f291a2c05e
+                    - text: Frontend Developer
+                  - generic: Lokasi belum diisi
+                  - generic: 8 Sep 2026
+            - generic:
+              - generic:
+                - strong: Asesmen
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Tawaran
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+          - status
+  - button "Open Next.js Dev Tools" [ref=f4e64] [cursor=pointer]
+  - alert
+  - dialog [ref=f4e823]:
+    - heading "Tambah agenda" [level=2] [ref=f4e824]
+    - paragraph [ref=f4e825]: PT Maju Mundur. Formulir ini dapat dilewati dan dilengkapi nanti.
+    - generic [ref=f4e826]:
+      - generic [ref=f4e827]:
+        - generic [ref=f4e828]: Jenis agenda
+        - generic [ref=f4e829]:
+          - button "Wawancara" [expanded] [active] [ref=f4e830] [cursor=pointer]
+          - listbox "Pilih jenis agenda" [ref=f4e868]:
+            - option "Wawancara" [selected] [ref=f4e869] [cursor=pointer]
+            - option "Asesmen" [ref=f4e873] [cursor=pointer]
+            - option "Tindak lanjut" [ref=f4e875] [cursor=pointer]
+            - option "Lainnya" [ref=f4e877] [cursor=pointer]
+      - generic [ref=f4e835]:
+        - generic [ref=f4e836]: Jenis wawancara
+        - combobox "Jenis wawancara" [ref=f4e838]:
+          - option "Wawancara HR" [selected]
+          - option "Wawancara user"
+          - option "Wawancara teknis"
+          - option "Wawancara akhir"
+          - option "Wawancara lainnya"
+      - generic [ref=f4e839]:
+        - generic [ref=f4e840]: Judul
+        - textbox "Judul" [ref=f4e842]
+      - generic [ref=f4e843]:
+        - generic [ref=f4e844]: Tanggal dan waktu
+        - button "Pilih tanggal dan waktu" [ref=f4e846] [cursor=pointer]
+        - generic [ref=f4e852]: Waktu mengikuti zona waktu pada Pengaturan.
+      - generic [ref=f4e853]:
+        - generic [ref=f4e854]: Lokasi atau tautan
+        - textbox "Lokasi atau tautan" [ref=f4e856]:
+          - /placeholder: Alamat atau https://...
+      - generic [ref=f4e857]:
+        - generic [ref=f4e858]: Catatan (opsional)
+        - textbox "Catatan (opsional)" [ref=f4e860]
+      - generic [ref=f4e861]:
+        - button "Batal" [ref=f4e862] [cursor=pointer]
+        - button "Simpan agenda" [disabled] [ref=f4e863]
+    - button "Tutup dialog" [ref=f4e864] [cursor=pointer]

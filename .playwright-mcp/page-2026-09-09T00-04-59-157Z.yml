@@ -1,0 +1,159 @@
+- generic [ref=f35e1]:
+  - generic [ref=f35e3]:
+    - banner [ref=f35e4]:
+      - link "Applyo" [ref=f35e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f35e7]:
+        - button "Gunakan mode gelap" [ref=f35e8] [cursor=pointer]
+        - button "Buka menu profil" [ref=f35e12] [cursor=pointer]:
+          - generic [ref=f35e13]: UA
+    - main [ref=f35e14]:
+      - generic [ref=f35e15]:
+        - link "Kembali ke lamaran" [ref=f35e16] [cursor=pointer]:
+          - /url: /aplikasi
+        - generic [ref=f35e19]:
+          - generic [ref=f35e20]:
+            - generic [ref=f35e21]: Incaran
+            - heading "PT Nusantara Teknologi Maju Bersama Sejahtera Abadi Sentosa" [level=1] [ref=f35e22]
+            - paragraph [ref=f35e23]: Senior Frontend Developer Spesialis Antarmuka Pengguna dan Pengalaman Digital
+          - generic [ref=f35e24]:
+            - button "Edit" [ref=f35e25] [cursor=pointer]
+            - button "Arsipkan" [ref=f35e29] [cursor=pointer]
+            - button "Tutup lamaran" [ref=f35e33]
+            - button "Hapus" [ref=f35e34] [cursor=pointer]
+        - generic [ref=f35e38]:
+          - main [ref=f35e39]:
+            - generic [ref=f35e40]:
+              - heading "Informasi lowongan" [level=2] [ref=f35e42]
+              - generic [ref=f35e43]:
+                - generic [ref=f35e44]:
+                  - generic [ref=f35e45]: Lokasi
+                  - strong [ref=f35e46]: Belum diisi
+                - generic [ref=f35e47]:
+                  - generic [ref=f35e48]: Sistem kerja
+                  - strong [ref=f35e49]: Belum diisi
+                - generic [ref=f35e50]:
+                  - generic [ref=f35e51]: Jenis pekerjaan
+                  - strong [ref=f35e52]: Belum diisi
+                - generic [ref=f35e53]:
+                  - generic [ref=f35e54]: Sumber
+                  - strong [ref=f35e55]: Belum diisi
+                - generic [ref=f35e56]:
+                  - generic [ref=f35e57]: Tanggal melamar
+                  - strong [ref=f35e58]: Belum diisi
+                - generic [ref=f35e59]:
+                  - generic [ref=f35e60]: Gaji
+                  - strong [ref=f35e61]: Belum diisi
+            - generic [ref=f35e62]:
+              - generic [ref=f35e63]:
+                - heading "Catatan" [level=2] [ref=f35e64]
+                - button "Edit catatan" [ref=f35e65] [cursor=pointer]
+              - paragraph [ref=f35e69]: Catatan sangat panjang untuk stress test tampilan kartu dan halaman detail aplikasi. Baris kedua catatan yang juga cukup panjang untuk melihat wrapping teks. Baris ketiga sebagai tambahan agar konten benar-benar menantang layout.
+            - generic [ref=f35e70]:
+              - heading "Agenda rekrutmen" [level=2] [ref=f35e72]
+              - article [ref=f35e74]:
+                - generic [ref=f35e75]:
+                  - generic [ref=f35e76]: Wawancara · Terjadwal
+                  - heading "Wawancara HR dengan Manajer Perekrutan dan Tim Teknis Senior" [level=3] [ref=f35e77]
+                  - paragraph [ref=f35e78]: 12 Sep 2026, 09.00
+                - generic [ref=f35e79]:
+                  - button "Edit Wawancara HR dengan Manajer Perekrutan dan Tim Teknis Senior" [ref=f35e80] [cursor=pointer]
+                  - button "Tandai selesai" [ref=f35e84] [cursor=pointer]
+                  - button "Hapus Wawancara HR dengan Manajer Perekrutan dan Tim Teknis Senior" [ref=f35e85] [cursor=pointer]
+            - generic [ref=f35e89]:
+              - heading "Timeline" [level=2] [ref=f35e91]
+              - list [ref=f35e92]:
+                - listitem [ref=f35e93]:
+                  - generic [ref=f35e95]:
+                    - time [ref=f35e96]: 12 Sep 2026, 09.00
+                    - heading "Wawancara HR dengan Manajer Perekrutan dan Tim Teknis Senior" [level=3] [ref=f35e97]
+                    - paragraph [ref=f35e98]: Wawancara
+                - listitem [ref=f35e99]:
+                  - generic [ref=f35e101]:
+                    - time [ref=f35e102]: 9 Sep 2026, 06.55
+                    - heading "Lamaran ditambahkan" [level=3] [ref=f35e103]
+          - complementary [ref=f35e104]:
+            - generic [ref=f35e105]:
+              - heading "Ringkasan" [level=2] [ref=f35e107]
+              - generic [ref=f35e108]:
+                - paragraph [ref=f35e109]: "Dilamar: Belum diisi"
+                - paragraph [ref=f35e112]: "Aktivitas terakhir: 12 Sep 2026, 09.00"
+                - paragraph [ref=f35e116]: "Menunggu: 0 hari"
+                - paragraph [ref=f35e120]: "Tahap: Incaran"
+                - paragraph [ref=f35e125]: "Berikutnya: Wawancara HR dengan Manajer Perekrutan dan Tim Teknis Senior"
+              - button "Catat tindak lanjut" [ref=f35e128] [cursor=pointer]
+            - generic [ref=f35e132]:
+              - generic [ref=f35e133]:
+                - heading "Tawaran" [level=2] [ref=f35e134]
+                - button "Edit tawaran" [ref=f35e135] [cursor=pointer]
+              - paragraph [ref=f35e139]: Belum ada detail tawaran.
+        - dialog "Edit lamaran" [ref=f35e178]:
+          - generic [ref=f35e179]:
+            - heading "Edit lamaran" [level=2] [ref=f35e180]
+            - button "Tutup dialog" [ref=f35e181] [cursor=pointer]
+          - generic [ref=f35e185]:
+            - generic [ref=f35e186]:
+              - generic [ref=f35e187]: Perusahaan
+              - textbox "Perusahaan" [ref=f35e189]: PT Nusantara Teknologi Maju Bersama Sejahtera Abadi Sentosa
+            - generic [ref=f35e190]:
+              - generic [ref=f35e191]: Posisi
+              - textbox "Posisi" [ref=f35e193]: Senior Frontend Developer Spesialis Antarmuka Pengguna dan Pengalaman Digital
+            - generic [ref=f35e194]:
+              - generic [ref=f35e195]: URL Lowongan
+              - textbox "URL Lowongan" [ref=f35e197]
+            - generic [ref=f35e198]:
+              - generic [ref=f35e199]: Lokasi
+              - textbox "Lokasi" [ref=f35e201]
+            - generic [ref=f35e202]:
+              - generic [ref=f35e203]: Sistem kerja
+              - combobox "Sistem kerja" [ref=f35e205]:
+                - option "Belum diisi" [selected]
+                - option "Di lokasi"
+                - option "Hibrida"
+                - option "Jarak jauh"
+            - generic [ref=f35e206]:
+              - generic [ref=f35e207]: Jenis pekerjaan
+              - combobox "Jenis pekerjaan" [ref=f35e209]:
+                - option "Belum diisi" [selected]
+                - option "Penuh waktu"
+                - option "Paruh waktu"
+                - option "Kontrak"
+                - option "Magang"
+                - option "Freelance"
+                - option "Lainnya"
+            - generic [ref=f35e210]:
+              - generic [ref=f35e211]: Sumber
+              - textbox "Sumber" [ref=f35e213]
+            - generic [ref=f35e214]:
+              - generic [ref=f35e215]: Tanggal melamar
+              - button "5 Sep 2026" [active] [ref=f35e295] [cursor=pointer]
+            - generic [ref=f35e223]:
+              - generic [ref=f35e224]: Gaji minimum
+              - spinbutton "Gaji minimum" [ref=f35e226]
+            - generic [ref=f35e227]:
+              - generic [ref=f35e228]: Gaji maksimum
+              - spinbutton "Gaji maksimum" [ref=f35e230]
+            - generic [ref=f35e231]:
+              - generic [ref=f35e232]: Mata uang
+              - textbox "Mata uang" [ref=f35e234]: IDR
+            - generic [ref=f35e235]:
+              - generic [ref=f35e236]: Deskripsi pekerjaan
+              - textbox "Deskripsi pekerjaan" [ref=f35e238]
+            - generic [ref=f35e239]:
+              - button "Batal" [ref=f35e240] [cursor=pointer]
+              - button "Simpan" [ref=f35e241]
+    - navigation "Navigasi aplikasi seluler" [ref=f35e140]:
+      - link "Dasbor" [ref=f35e141] [cursor=pointer]:
+        - /url: /dashboard
+      - link "Lamaran" [ref=f35e148] [cursor=pointer]:
+        - /url: /aplikasi
+      - link "Kalender" [ref=f35e154] [cursor=pointer]:
+        - /url: /kalender
+      - link "Analitik" [ref=f35e158] [cursor=pointer]:
+        - /url: /analitik
+      - link "Pengaturan" [ref=f35e162] [cursor=pointer]:
+        - /url: /pengaturan
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f35e172] [cursor=pointer]
+  - alert [ref=f35e176]

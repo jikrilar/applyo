@@ -1,0 +1,163 @@
+- generic:
+  - generic:
+    - complementary [aria-hidden]:
+      - link:
+        - /url: /
+        - text: Applyo
+      - navigation:
+        - link:
+          - /url: /dashboard
+          - generic: Dasbor
+        - link:
+          - /url: /aplikasi
+          - generic: Lamaran
+        - link:
+          - /url: /kalender
+          - generic: Kalender
+        - link:
+          - /url: /analitik
+          - generic: Analitik
+        - link:
+          - /url: /pengaturan
+          - generic: Pengaturan
+      - generic:
+        - button: Keluar
+    - generic:
+      - banner [aria-hidden]:
+        - generic:
+          - button
+          - generic:
+            - button:
+              - generic: RT
+              - generic:
+                - strong: Reg Test
+                - generic: reg-test@applyo.test
+      - main:
+        - generic:
+          - generic [aria-hidden]:
+            - generic:
+              - generic: Ruang kerja lamaran
+              - heading [level=1]: Lamaran saya
+              - paragraph: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation:
+              - link:
+                - /url: /aplikasi
+                - text: Papan
+              - link:
+                - /url: /aplikasi?view=list
+                - text: Daftar
+          - generic [aria-hidden]:
+            - generic:
+              - generic: Cari lamaran
+              - textbox:
+                - /placeholder: Cari perusahaan atau posisi...
+            - generic:
+              - button: Filter
+            - button: Tambah lamaran
+          - generic [aria-hidden]:
+            - generic:
+              - generic:
+                - strong: Incaran
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Dilamar
+                - generic: "2"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Regresi Tiga
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/71e513cc-aa62-4cb6-ae47-442cc71c2300
+                    - text: QA Engineer
+                  - generic: Lokasi belum diisi
+                  - generic: Baru diperbarui
+                - article:
+                  - generic:
+                    - strong: PT Regresi Dua
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/f06e4565-fbdc-4ab7-a4d7-a046279e25cc
+                    - text: Frontend Developer
+                  - generic: Bandung
+                  - generic: Baru diperbarui
+            - generic:
+              - generic:
+                - strong: Seleksi Awal
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Wawancara
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Asesmen
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Tawaran
+                - generic: "1"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Regresi Satu
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/a8b5ec16-0ac0-4923-ab8f-88b9763ff387
+                    - text: Senior Backend Developer
+                  - generic: Lokasi belum diisi
+                  - generic: Baru diperbarui
+          - status
+  - button "Open Next.js Dev Tools" [ref=f10e64] [cursor=pointer]
+  - alert
+  - dialog [ref=f10e223]:
+    - heading "Tambah agenda" [level=2] [ref=f10e224]
+    - paragraph [ref=f10e225]: PT Regresi Satu. Formulir ini dapat dilewati dan dilengkapi nanti.
+    - generic [ref=f10e226]:
+      - generic [ref=f10e227]:
+        - generic [ref=f10e228]: Jenis agenda
+        - button "Wawancara" [ref=f10e230] [cursor=pointer]
+      - generic [ref=f10e235]:
+        - generic [ref=f10e236]: Jenis wawancara
+        - combobox "Jenis wawancara" [ref=f10e238]:
+          - option "Wawancara HR" [selected]
+          - option "Wawancara user"
+          - option "Wawancara teknis"
+          - option "Wawancara akhir"
+          - option "Wawancara lainnya"
+      - generic [ref=f10e239]:
+        - generic [ref=f10e240]: Judul
+        - textbox "Judul" [ref=f10e242]: Reg Interview
+      - generic [ref=f10e243]:
+        - generic [ref=f10e244]: Tanggal dan waktu
+        - button "12 Sep 2026, 09.00" [active] [ref=f10e342] [cursor=pointer]
+        - generic [ref=f10e252]: Waktu mengikuti zona waktu pada Pengaturan.
+      - generic [ref=f10e253]:
+        - generic [ref=f10e254]: Lokasi atau tautan
+        - textbox "Lokasi atau tautan" [ref=f10e256]:
+          - /placeholder: Alamat atau https://...
+      - generic [ref=f10e257]:
+        - generic [ref=f10e258]: Catatan (opsional)
+        - textbox "Catatan (opsional)" [ref=f10e260]
+      - generic [ref=f10e261]:
+        - button "Batal" [ref=f10e262] [cursor=pointer]
+        - button "Simpan agenda" [ref=f10e263]
+    - button "Tutup dialog" [ref=f10e264] [cursor=pointer]

@@ -1,0 +1,48 @@
+- generic [active] [ref=f29e1]:
+  - main [ref=f29e2]:
+    - generic [ref=f29e3]:
+      - link "Applyo" [ref=f29e4] [cursor=pointer]:
+        - /url: /
+      - button "Gunakan mode gelap" [ref=f29e5] [cursor=pointer]
+    - generic [ref=f29e8]:
+      - generic [ref=f29e10]:
+        - generic [ref=f29e11]:
+          - generic [ref=f29e12]: Mulai bersama Applyo
+          - heading "Buat pencarianmu lebih teratur." [level=1] [ref=f29e13]
+          - paragraph [ref=f29e14]: Simpan semua lamaran dan jadwal dalam satu ruang kerja.
+        - generic [ref=f29e15]:
+          - generic [ref=f29e16]:
+            - generic [ref=f29e17]: Nama
+            - textbox "Nama" [ref=f29e22]:
+              - /placeholder: Nama lengkap
+          - generic [ref=f29e23]:
+            - generic [ref=f29e24]: Email
+            - textbox "Email" [ref=f29e29]:
+              - /placeholder: nama@email.com
+          - generic [ref=f29e30]:
+            - generic [ref=f29e31]: Kata sandi
+            - generic [ref=f29e32]:
+              - textbox "Kata sandi Tampilkan kata sandi" [ref=f29e37]:
+                - /placeholder: Minimal 8 karakter
+              - button "Tampilkan kata sandi" [ref=f29e38] [cursor=pointer]
+          - generic [ref=f29e42]:
+            - generic [ref=f29e43]: Konfirmasi kata sandi
+            - textbox "Konfirmasi kata sandi" [ref=f29e49]:
+              - /placeholder: Ulangi kata sandi
+          - button "Buat akun" [ref=f29e50]
+          - paragraph [ref=f29e53]:
+            - text: Sudah punya akun?
+            - link "Masuk" [ref=f29e54] [cursor=pointer]:
+              - /url: /masuk
+      - complementary "Manfaat Applyo" [ref=f29e55]:
+        - generic [ref=f29e56]:
+          - generic [ref=f29e57]: Rapi sejak lamaran pertama
+          - heading "Satu tempat untuk setiap peluang." [level=2] [ref=f29e58]
+          - paragraph [ref=f29e59]: Pantau tahap, jadwal, dan tindak lanjut tanpa merawat spreadsheet lain.
+        - generic [aria-hidden] [ref=f29e60]:
+          - generic [ref=f29e61]: Lowongan disimpan
+          - generic [ref=f29e65]: Lamaran dikirim
+          - generic [ref=f29e69]: Wawancara dijadwalkan
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f29e78] [cursor=pointer]

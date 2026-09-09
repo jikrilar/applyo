@@ -1,0 +1,109 @@
+- generic [active] [ref=f37e1]:
+  - generic [ref=f37e2]:
+    - complementary [ref=f37e3]:
+      - link "Beranda Applyo" [ref=f37e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f37e5]:
+        - link "Dasbor" [ref=f37e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f37e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f37e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f37e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f37e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f37e33] [cursor=pointer]
+    - generic [ref=f37e37]:
+      - banner [ref=f37e38]:
+        - generic [ref=f37e39]:
+          - button "Gunakan mode gelap" [ref=f37e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f37e44] [cursor=pointer]:
+            - generic [ref=f37e45]: UA
+            - generic [ref=f37e46]:
+              - strong [ref=f37e47]: UI Audit
+              - generic [ref=f37e48]: ui-audit@applyo.test
+      - main [ref=f37e51]:
+        - generic [ref=f37e52]:
+          - generic [ref=f37e54]:
+            - generic [ref=f37e55]: Agenda rekrutmen
+            - heading "Kalender" [level=1] [ref=f37e56]
+            - paragraph [ref=f37e57]: Wawancara, asesmen, dan tenggat dalam satu tampilan.
+          - generic [ref=f37e58]:
+            - generic [ref=f37e59]:
+              - link "Bulan sebelumnya" [ref=f37e60] [cursor=pointer]:
+                - /url: /kalender?month=2026-08
+              - strong [ref=f37e63]: September 2026
+              - link "Bulan berikutnya" [ref=f37e64] [cursor=pointer]:
+                - /url: /kalender?month=2026-10
+            - generic [ref=f37e67]:
+              - button "Bulan" [ref=f37e68] [cursor=pointer]
+              - button "Agenda" [ref=f37e69] [cursor=pointer]
+          - generic [ref=f37e70]:
+            - generic [ref=f37e71]:
+              - generic [ref=f37e72]: Sen
+              - generic [ref=f37e73]: Sel
+              - generic [ref=f37e74]: Rab
+              - generic [ref=f37e75]: Kam
+              - generic [ref=f37e76]: Jum
+              - generic [ref=f37e77]: Sab
+              - generic [ref=f37e78]: Min
+            - generic [ref=f37e79]:
+              - generic [ref=f37e80]: "31"
+              - generic [ref=f37e82]: "1"
+              - generic [ref=f37e84]: "2"
+              - generic [ref=f37e86]: "3"
+              - generic [ref=f37e88]: "4"
+              - generic [ref=f37e90]: "5"
+              - generic [ref=f37e92]: "6"
+              - generic [ref=f37e94]: "7"
+              - generic [ref=f37e96]: "8"
+              - generic [ref=f37e98]: "9"
+              - generic [ref=f37e100]: "10"
+              - generic [ref=f37e102]: "11"
+              - generic [ref=f37e104]:
+                - generic [ref=f37e105]: "12"
+                - button "09.00 Wawancara HR dengan Manajer Perekrutan dan Tim Teknis Senior" [ref=f37e106] [cursor=pointer]:
+                  - generic [ref=f37e107]: "09.00"
+                  - strong [ref=f37e108]: Wawancara HR dengan Manajer Perekrutan dan Tim Teknis Senior
+              - generic [ref=f37e109]: "13"
+              - generic [ref=f37e111]: "14"
+              - generic [ref=f37e113]: "15"
+              - generic [ref=f37e115]: "16"
+              - generic [ref=f37e117]: "17"
+              - generic [ref=f37e119]: "18"
+              - generic [ref=f37e121]: "19"
+              - generic [ref=f37e123]: "20"
+              - generic [ref=f37e125]: "21"
+              - generic [ref=f37e127]: "22"
+              - generic [ref=f37e129]: "23"
+              - generic [ref=f37e131]: "24"
+              - generic [ref=f37e133]: "25"
+              - generic [ref=f37e135]: "26"
+              - generic [ref=f37e137]: "27"
+              - generic [ref=f37e139]: "28"
+              - generic [ref=f37e141]: "29"
+              - generic [ref=f37e143]: "30"
+              - generic [ref=f37e145]: "1"
+              - generic [ref=f37e147]: "2"
+              - generic [ref=f37e149]: "3"
+              - generic [ref=f37e151]: "4"
+              - generic [ref=f37e153]: "5"
+              - generic [ref=f37e155]: "6"
+              - generic [ref=f37e157]: "7"
+              - generic [ref=f37e159]: "8"
+              - generic [ref=f37e161]: "9"
+              - generic [ref=f37e163]: "10"
+              - generic [ref=f37e165]: "11"
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f37e172] [cursor=pointer]:
+    - generic [ref=f37e175]:
+      - text: Compiling
+      - generic [ref=f37e176]:
+        - generic [ref=f37e177]: .
+        - generic [ref=f37e178]: .
+        - generic [ref=f37e179]: .
+  - alert [ref=f37e180]

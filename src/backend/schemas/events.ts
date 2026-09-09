@@ -3,7 +3,13 @@ import { ASSESSMENT_SUBTYPES, EVENT_CATEGORIES, EVENT_STATUSES, INTERVIEW_SUBTYP
 
 const emptyToNull = z.union([z.string(), z.null()]).optional().transform((value) => value === undefined ? undefined : value?.trim() || null);
 const timestamp = z.union([z.iso.datetime({ offset: true }), z.literal(""), z.null()]).optional().transform((value) => value === undefined ? undefined : value || null);
-const httpUrl = z.url().refine((value) => ["http:", "https:"].includes(new URL(value).protocol), "URL harus menggunakan HTTP atau HTTPS");
+const httpUrl = z.url().refine((value) => {
+  try {
+    return ["http:", "https:"].includes(new URL(value).protocol);
+  } catch {
+    return false;
+  }
+}, "URL harus menggunakan HTTP atau HTTPS");
 const optionalUrl = z.union([httpUrl, z.literal(""), z.null()]).optional().transform((value) => value === undefined ? undefined : value || null);
 
 const eventFields = z.object({

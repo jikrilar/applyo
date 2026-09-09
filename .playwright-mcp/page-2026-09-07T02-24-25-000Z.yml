@@ -1,0 +1,204 @@
+- generic [ref=f5e1]:
+  - generic [ref=f5e2]:
+    - complementary [ref=f5e3]:
+      - link "Beranda Applyo" [ref=f5e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f5e5]:
+        - link "Dasbor" [ref=f5e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f5e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f5e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f5e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f5e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f5e33] [cursor=pointer]
+    - generic [ref=f5e37]:
+      - banner [ref=f5e38]:
+        - generic [ref=f5e39]:
+          - button "Gunakan mode gelap" [ref=f5e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f5e44] [cursor=pointer]:
+            - generic [ref=f5e45]: QP
+            - generic [ref=f5e46]:
+              - strong [ref=f5e47]: QA Phase2
+              - generic [ref=f5e48]: qa-phase2@applyo.test
+      - main [ref=f5e51]:
+        - generic [ref=f5e69]:
+          - generic [ref=f5e70]:
+            - generic [ref=f5e71]:
+              - generic [ref=f5e72]: Ruang kerja lamaran
+              - heading "Lamaran saya" [level=1] [ref=f5e73]
+              - paragraph [ref=f5e74]: Cari dan tinjau seluruh riwayat lamaran.
+            - navigation "Tampilan lamaran" [ref=f5e75]:
+              - link "Papan" [ref=f5e76] [cursor=pointer]:
+                - /url: /aplikasi
+              - link "Daftar" [ref=f5e82] [cursor=pointer]:
+                - /url: /aplikasi?view=list
+          - generic [ref=f5e84]:
+            - generic [ref=f5e85]:
+              - generic [ref=f5e86]:
+                - generic [ref=f5e90]: Cari lamaran
+                - textbox "Cari lamaran" [ref=f5e91]:
+                  - /placeholder: Cari perusahaan atau posisi...
+              - generic [ref=f5e92]:
+                - button "Filter" [expanded] [active] [ref=f5e93] [cursor=pointer]
+                - generic [ref=f5e273]:
+                  - generic [ref=f5e274]:
+                    - strong [ref=f5e275]: Filter lamaran
+                    - button "Tutup filter" [ref=f5e276] [cursor=pointer]
+                  - group "Tahap" [ref=f5e280]:
+                    - generic [ref=f5e282]:
+                      - generic [ref=f5e283] [cursor=pointer]:
+                        - checkbox "Incaran" [ref=f5e284]
+                        - generic [ref=f5e285]: Incaran
+                      - generic [ref=f5e289] [cursor=pointer]:
+                        - checkbox "Dilamar" [ref=f5e290]
+                        - generic [ref=f5e291]: Dilamar
+                      - generic [ref=f5e295] [cursor=pointer]:
+                        - checkbox "Seleksi Awal" [ref=f5e296]
+                        - generic [ref=f5e297]: Seleksi Awal
+                      - generic [ref=f5e301] [cursor=pointer]:
+                        - checkbox "Wawancara" [ref=f5e302]
+                        - generic [ref=f5e303]: Wawancara
+                      - generic [ref=f5e307] [cursor=pointer]:
+                        - checkbox "Asesmen" [ref=f5e308]
+                        - generic [ref=f5e309]: Asesmen
+                      - generic [ref=f5e313] [cursor=pointer]:
+                        - checkbox "Tawaran" [ref=f5e314]
+                        - generic [ref=f5e315]: Tawaran
+                  - group "Lokasi" [ref=f5e319]:
+                    - paragraph [ref=f5e321]: Belum ada lokasi yang tercatat.
+                  - generic [ref=f5e322]:
+                    - button "Hapus filter" [ref=f5e323] [cursor=pointer]
+                    - button "Terapkan filter" [ref=f5e324]
+              - button "Tambah lamaran" [ref=f5e95]
+            - generic [ref=f5e97]:
+              - strong [ref=f5e98]: 6 lamaran
+              - generic [ref=f5e99]: Menampilkan halaman 1 dari 1
+            - table [ref=f5e101]:
+              - caption [ref=f5e102]: Daftar lamaran
+              - rowgroup [ref=f5e103]:
+                - row [ref=f5e104]:
+                  - columnheader "Perusahaan / posisi" [ref=f5e105]
+                  - columnheader "Tahap" [ref=f5e106]
+                  - columnheader "Sumber" [ref=f5e107]
+                  - columnheader [ref=f5e108]:
+                    - generic [ref=f5e109]:
+                      - text: Dilamar
+                      - button "Urutkan dari terlama dilamar" [pressed] [ref=f5e110] [cursor=pointer]
+                  - columnheader [ref=f5e113]:
+                    - generic [ref=f5e114]:
+                      - text: Agenda berikutnya
+                      - button "Urutkan agenda dari terdekat" [ref=f5e115] [cursor=pointer]
+                  - columnheader "Aktivitas terakhir" [ref=f5e118]
+                  - columnheader "Aksi" [ref=f5e119]
+              - rowgroup [ref=f5e120]:
+                - row [ref=f5e121]:
+                  - cell [ref=f5e122]:
+                    - link "PT Maju Mundur QA Engineer Lokasi belum diisi" [ref=f5e123] [cursor=pointer]:
+                      - /url: /aplikasi/832298d3-ff03-43c6-96bc-a3d53b82ca1e
+                      - strong [ref=f5e124]: PT Maju Mundur
+                      - generic [ref=f5e125]: QA Engineer
+                      - generic [ref=f5e126]: Lokasi belum diisi
+                  - cell "Seleksi Awal" [ref=f5e130]
+                  - cell "Jobstreet" [ref=f5e132]
+                  - cell "5 Sep 2026" [ref=f5e133]
+                  - cell "9 Sep 2026" [ref=f5e134]
+                  - cell "9 Sep 2026" [ref=f5e135]
+                  - cell [ref=f5e136]:
+                    - generic [ref=f5e137]:
+                      - button "Edit PT Maju Mundur" [ref=f5e138] [cursor=pointer]
+                      - button "Hapus PT Maju Mundur" [ref=f5e142] [cursor=pointer]
+                - row [ref=f5e146]:
+                  - cell [ref=f5e147]:
+                    - link "PT Cari Kerja Backend Developer Lokasi belum diisi" [ref=f5e148] [cursor=pointer]:
+                      - /url: /aplikasi/22e20c34-fafd-449a-9850-d72f6aa0f860
+                      - strong [ref=f5e149]: PT Cari Kerja
+                      - generic [ref=f5e150]: Backend Developer
+                      - generic [ref=f5e151]: Lokasi belum diisi
+                  - cell "Dilamar" [ref=f5e155]
+                  - cell "LinkedIn" [ref=f5e157]
+                  - cell "25 Agu 2026" [ref=f5e158]
+                  - cell "-" [ref=f5e159]
+                  - cell "7 Sep 2026" [ref=f5e160]
+                  - cell [ref=f5e161]:
+                    - generic [ref=f5e162]:
+                      - button "Edit PT Cari Kerja" [ref=f5e163] [cursor=pointer]
+                      - button "Hapus PT Cari Kerja" [ref=f5e167] [cursor=pointer]
+                - row [ref=f5e171]:
+                  - cell [ref=f5e172]:
+                    - link "PT Sinar Pagi Frontend Developer Lokasi belum diisi" [ref=f5e173] [cursor=pointer]:
+                      - /url: /aplikasi/bf512c6e-219e-4e66-aeed-79f291a2c05e
+                      - strong [ref=f5e174]: PT Sinar Pagi
+                      - generic [ref=f5e175]: Frontend Developer
+                      - generic [ref=f5e176]: Lokasi belum diisi
+                  - cell "Wawancara" [ref=f5e180]
+                  - cell "Glints" [ref=f5e182]
+                  - cell "-" [ref=f5e183]
+                  - cell "8 Sep 2026" [ref=f5e184]
+                  - cell "8 Sep 2026" [ref=f5e185]
+                  - cell [ref=f5e186]:
+                    - generic [ref=f5e187]:
+                      - button "Edit PT Sinar Pagi" [ref=f5e188] [cursor=pointer]
+                      - button "Hapus PT Sinar Pagi" [ref=f5e192] [cursor=pointer]
+                - row [ref=f5e196]:
+                  - cell [ref=f5e197]:
+                    - link "PT Sinar Abadi Senior Frontend Developer Jakarta" [ref=f5e198] [cursor=pointer]:
+                      - /url: /aplikasi/effdb375-b145-4ffc-800e-24ba62175098
+                      - strong [ref=f5e199]: PT Sinar Abadi
+                      - generic [ref=f5e200]: Senior Frontend Developer
+                      - generic [ref=f5e201]: Jakarta
+                  - cell "Diterima" [ref=f5e205]
+                  - cell "Glints" [ref=f5e207]
+                  - cell "-" [ref=f5e208]
+                  - cell "15 Sep 2026" [ref=f5e209]
+                  - cell "15 Sep 2026" [ref=f5e210]
+                  - cell [ref=f5e211]:
+                    - generic [ref=f5e212]:
+                      - button "Edit PT Sinar Abadi" [ref=f5e213] [cursor=pointer]
+                      - button "Hapus PT Sinar Abadi" [ref=f5e217] [cursor=pointer]
+                - row [ref=f5e221]:
+                  - cell [ref=f5e222]:
+                    - link "PT Maju Bersama QA Engineer Lokasi belum diisi" [ref=f5e223] [cursor=pointer]:
+                      - /url: /aplikasi/f0fc2bc4-7417-4b44-9909-ce6e560790ac
+                      - strong [ref=f5e224]: PT Maju Bersama
+                      - generic [ref=f5e225]: QA Engineer
+                      - generic [ref=f5e226]: Lokasi belum diisi
+                  - cell "Ditolak" [ref=f5e230]
+                  - cell "-" [ref=f5e232]
+                  - cell "-" [ref=f5e233]
+                  - cell "-" [ref=f5e234]
+                  - cell "6 Sep 2026" [ref=f5e235]
+                  - cell [ref=f5e236]:
+                    - generic [ref=f5e237]:
+                      - button "Edit PT Maju Bersama" [ref=f5e238] [cursor=pointer]
+                      - button "Hapus PT Maju Bersama" [ref=f5e242] [cursor=pointer]
+                - row [ref=f5e246]:
+                  - cell [ref=f5e247]:
+                    - link "PT Tanpa Kabar Operator Lokasi belum diisi" [ref=f5e248] [cursor=pointer]:
+                      - /url: /aplikasi/e6a3bbba-0b27-411d-a27c-8937d0e56b81
+                      - strong [ref=f5e249]: PT Tanpa Kabar
+                      - generic [ref=f5e250]: Operator
+                      - generic [ref=f5e251]: Lokasi belum diisi
+                  - cell "Tanpa Kabar" [ref=f5e255]
+                  - cell "-" [ref=f5e257]
+                  - cell "-" [ref=f5e258]
+                  - cell "-" [ref=f5e259]
+                  - cell "6 Sep 2026" [ref=f5e260]
+                  - cell [ref=f5e261]:
+                    - generic [ref=f5e262]:
+                      - button "Edit PT Tanpa Kabar" [ref=f5e263] [cursor=pointer]
+                      - button "Hapus PT Tanpa Kabar" [ref=f5e267] [cursor=pointer]
+            - navigation "Paginasi" [ref=f5e271]:
+              - link "Sebelumnya" [disabled]:
+                - /url: /aplikasi?view=list&offset=0
+              - generic [ref=f5e272]: Halaman 1 dari 1 · 6 lamaran
+              - link "Berikutnya" [disabled]:
+                - /url: /aplikasi?view=list&offset=0
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f5e64] [cursor=pointer]
+  - alert [ref=f5e68]

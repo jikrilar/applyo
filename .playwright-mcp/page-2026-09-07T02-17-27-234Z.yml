@@ -1,0 +1,221 @@
+- generic:
+  - generic:
+    - complementary [aria-hidden]:
+      - link:
+        - /url: /
+        - text: Applyo
+      - navigation:
+        - link:
+          - /url: /dashboard
+          - generic: Dasbor
+        - link:
+          - /url: /aplikasi
+          - generic: Lamaran
+        - link:
+          - /url: /kalender
+          - generic: Kalender
+        - link:
+          - /url: /analitik
+          - generic: Analitik
+        - link:
+          - /url: /pengaturan
+          - generic: Pengaturan
+      - generic:
+        - button: Keluar
+    - generic:
+      - banner [aria-hidden]:
+        - generic:
+          - button
+          - generic:
+            - button:
+              - generic: QP
+              - generic:
+                - strong: QA Phase2
+                - generic: qa-phase2@applyo.test
+      - main:
+        - generic:
+          - generic [aria-hidden]:
+            - generic:
+              - generic: Ruang kerja lamaran
+              - heading [level=1]: Lamaran saya
+              - paragraph: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation:
+              - link:
+                - /url: /aplikasi
+                - text: Papan
+              - link:
+                - /url: /aplikasi?view=list
+                - text: Daftar
+          - generic [aria-hidden]:
+            - generic:
+              - generic: Cari lamaran
+              - textbox:
+                - /placeholder: Cari perusahaan atau posisi...
+            - generic:
+              - button: Filter
+            - button: Tambah lamaran
+          - generic [aria-hidden]:
+            - generic:
+              - generic:
+                - strong: Incaran
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Dilamar
+                - generic: "1"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Cari Kerja
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/22e20c34-fafd-449a-9850-d72f6aa0f860
+                    - text: Backend Developer
+                  - generic: Lokasi belum diisi
+                  - generic: Baru diperbarui
+            - generic:
+              - generic:
+                - strong: Seleksi Awal
+                - generic: "1"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Maju Mundur
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/832298d3-ff03-43c6-96bc-a3d53b82ca1e
+                    - text: QA Engineer
+                  - generic: Lokasi belum diisi
+                  - generic: Baru diperbarui
+            - generic:
+              - generic:
+                - strong: Wawancara
+                - generic: "1"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Sinar Pagi
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/bf512c6e-219e-4e66-aeed-79f291a2c05e
+                    - text: Frontend Developer
+                  - generic: Lokasi belum diisi
+                  - generic: Baru diperbarui
+            - generic:
+              - generic:
+                - strong: Asesmen
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Tawaran
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+          - status
+  - button "Open Next.js Dev Tools" [ref=f4e64] [cursor=pointer]
+  - alert
+  - dialog [ref=f4e689]:
+    - heading "Tambah agenda" [level=2] [ref=f4e690]
+    - paragraph [ref=f4e691]: PT Sinar Pagi. Formulir ini dapat dilewati dan dilengkapi nanti.
+    - generic [ref=f4e692]:
+      - generic [ref=f4e693]:
+        - generic [ref=f4e694]: Jenis agenda
+        - button "Wawancara" [ref=f4e696] [cursor=pointer]
+      - generic [ref=f4e701]:
+        - generic [ref=f4e702]: Jenis wawancara
+        - combobox "Jenis wawancara" [ref=f4e704]:
+          - option "Wawancara HR"
+          - option "Wawancara user" [selected]
+          - option "Wawancara teknis"
+          - option "Wawancara akhir"
+          - option "Wawancara lainnya"
+      - generic [ref=f4e705]:
+        - generic [ref=f4e706]: Judul
+        - textbox "Judul" [ref=f4e708]: Wawancara User
+      - generic [ref=f4e709]:
+        - generic [ref=f4e710]: Tanggal dan waktu
+        - button "8 Sep 2026, 09.00" [expanded] [ref=f4e808] [cursor=pointer]
+        - generic [ref=f4e718]: Waktu mengikuti zona waktu pada Pengaturan.
+      - generic [ref=f4e719]:
+        - generic [ref=f4e720]: Lokasi atau tautan
+        - textbox "Lokasi atau tautan" [ref=f4e722]:
+          - /placeholder: Alamat atau https://...
+      - generic [ref=f4e723]:
+        - generic [ref=f4e724]: Catatan (opsional)
+        - textbox "Catatan (opsional)" [ref=f4e726]
+      - generic [ref=f4e727]:
+        - button "Batal" [ref=f4e728] [cursor=pointer]
+        - button "Simpan agenda" [ref=f4e729]
+    - button "Tutup dialog" [ref=f4e730] [cursor=pointer]
+  - dialog "Pilih tanggal dan waktu" [ref=f4e734]:
+    - generic [ref=f4e735]:
+      - button "Bulan sebelumnya" [ref=f4e736] [cursor=pointer]
+      - strong [ref=f4e739]: September 2026
+      - button "Bulan berikutnya" [ref=f4e740] [cursor=pointer]
+    - generic [aria-hidden] [ref=f4e743]:
+      - generic [ref=f4e744]: Sen
+      - generic [ref=f4e745]: Sel
+      - generic [ref=f4e746]: Rab
+      - generic [ref=f4e747]: Kam
+      - generic [ref=f4e748]: Jum
+      - generic [ref=f4e749]: Sab
+      - generic [ref=f4e750]: Min
+    - grid "September 2026" [ref=f4e751]:
+      - gridcell "1" [ref=f4e752] [cursor=pointer]
+      - gridcell "2" [ref=f4e753] [cursor=pointer]
+      - gridcell "3" [ref=f4e754] [cursor=pointer]
+      - gridcell "4" [ref=f4e755] [cursor=pointer]
+      - gridcell "5" [ref=f4e756] [cursor=pointer]
+      - gridcell "6" [ref=f4e757] [cursor=pointer]
+      - gridcell "7" [ref=f4e758] [cursor=pointer]
+      - gridcell "8" [active] [selected] [ref=f4e759] [cursor=pointer]
+      - gridcell "9" [ref=f4e760] [cursor=pointer]
+      - gridcell "10" [ref=f4e761] [cursor=pointer]
+      - gridcell "11" [ref=f4e762] [cursor=pointer]
+      - gridcell "12" [ref=f4e763] [cursor=pointer]
+      - gridcell "13" [ref=f4e764] [cursor=pointer]
+      - gridcell "14" [ref=f4e765] [cursor=pointer]
+      - gridcell "15" [ref=f4e766] [cursor=pointer]
+      - gridcell "16" [ref=f4e767] [cursor=pointer]
+      - gridcell "17" [ref=f4e768] [cursor=pointer]
+      - gridcell "18" [ref=f4e769] [cursor=pointer]
+      - gridcell "19" [ref=f4e770] [cursor=pointer]
+      - gridcell "20" [ref=f4e771] [cursor=pointer]
+      - gridcell "21" [ref=f4e772] [cursor=pointer]
+      - gridcell "22" [ref=f4e773] [cursor=pointer]
+      - gridcell "23" [ref=f4e774] [cursor=pointer]
+      - gridcell "24" [ref=f4e775] [cursor=pointer]
+      - gridcell "25" [ref=f4e776] [cursor=pointer]
+      - gridcell "26" [ref=f4e777] [cursor=pointer]
+      - gridcell "27" [ref=f4e778] [cursor=pointer]
+      - gridcell "28" [ref=f4e779] [cursor=pointer]
+      - gridcell "29" [ref=f4e780] [cursor=pointer]
+      - gridcell "30" [ref=f4e781] [cursor=pointer]
+    - generic [ref=f4e782]:
+      - generic [ref=f4e783]: Waktu
+      - generic [ref=f4e784]:
+        - generic [ref=f4e785]:
+          - generic [ref=f4e786]: Jam
+          - button [ref=f4e788] [cursor=pointer]:
+            - strong [ref=f4e792]: "09"
+        - generic [aria-hidden] [ref=f4e795]: ":"
+        - generic [ref=f4e796]:
+          - generic [ref=f4e797]: Menit
+          - button [ref=f4e799] [cursor=pointer]:
+            - strong [ref=f4e803]: "00"
+    - generic [ref=f4e806]:
+      - button "Hapus tanggal" [ref=f4e809] [cursor=pointer]
+      - button "Gunakan tanggal" [ref=f4e807]

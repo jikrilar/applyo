@@ -1,0 +1,82 @@
+- generic [active] [ref=f39e1]:
+  - generic [ref=f39e2]:
+    - complementary [ref=f39e3]:
+      - link "Beranda Applyo" [ref=f39e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f39e5]:
+        - link "Dasbor" [ref=f39e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f39e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f39e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f39e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f39e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f39e33] [cursor=pointer]
+    - generic [ref=f39e37]:
+      - banner [ref=f39e38]:
+        - generic [ref=f39e39]:
+          - button "Gunakan mode gelap" [ref=f39e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f39e44] [cursor=pointer]:
+            - generic [ref=f39e45]: QP
+            - generic [ref=f39e46]:
+              - strong [ref=f39e47]: QA Phase2
+              - generic [ref=f39e48]: qa-phase2@applyo.test
+      - main [ref=f39e51]:
+        - generic [ref=f39e205]:
+          - generic [ref=f39e206]:
+            - generic [ref=f39e207]:
+              - generic [ref=f39e208]: Ruang kerja lamaran
+              - heading "Lamaran saya" [level=1] [ref=f39e209]
+              - paragraph [ref=f39e210]: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation "Tampilan lamaran" [ref=f39e211]:
+              - link "Papan" [ref=f39e212] [cursor=pointer]:
+                - /url: /aplikasi
+              - link "Daftar" [ref=f39e218] [cursor=pointer]:
+                - /url: /aplikasi?view=list
+          - generic [ref=f39e220]:
+            - generic [ref=f39e221]:
+              - generic [ref=f39e225]: Cari lamaran
+              - textbox "Cari lamaran" [ref=f39e226]:
+                - /placeholder: Cari perusahaan atau posisi...
+            - button "Filter" [ref=f39e228] [cursor=pointer]
+            - button "Tambah lamaran" [ref=f39e230]
+          - generic [ref=f39e232]:
+            - generic [ref=f39e233]:
+              - generic [ref=f39e234]:
+                - strong [ref=f39e235]: Incaran
+                - generic [ref=f39e236]: "0"
+              - paragraph [ref=f39e238]: Letakkan lamaran di sini
+            - generic [ref=f39e239]:
+              - generic [ref=f39e240]:
+                - strong [ref=f39e241]: Dilamar
+                - generic [ref=f39e242]: "0"
+              - paragraph [ref=f39e244]: Letakkan lamaran di sini
+            - generic [ref=f39e245]:
+              - generic [ref=f39e246]:
+                - strong [ref=f39e247]: Seleksi Awal
+                - generic [ref=f39e248]: "0"
+              - paragraph [ref=f39e250]: Letakkan lamaran di sini
+            - generic [ref=f39e251]:
+              - generic [ref=f39e252]:
+                - strong [ref=f39e253]: Wawancara
+                - generic [ref=f39e254]: "0"
+              - paragraph [ref=f39e256]: Letakkan lamaran di sini
+            - generic [ref=f39e257]:
+              - generic [ref=f39e258]:
+                - strong [ref=f39e259]: Asesmen
+                - generic [ref=f39e260]: "0"
+              - paragraph [ref=f39e262]: Letakkan lamaran di sini
+            - generic [ref=f39e263]:
+              - generic [ref=f39e264]:
+                - strong [ref=f39e265]: Tawaran
+                - generic [ref=f39e266]: "0"
+              - paragraph [ref=f39e268]: Letakkan lamaran di sini
+          - status [ref=f39e269]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f39e184] [cursor=pointer]
+  - alert [ref=f39e188]: Lamaran | Applyo

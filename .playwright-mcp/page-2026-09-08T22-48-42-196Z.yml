@@ -1,0 +1,59 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e3]:
+      - link "Applyo" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - button "Gunakan mode gelap" [ref=e5] [cursor=pointer]
+    - generic [ref=e8]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: Mulai bersama Applyo
+          - heading "Buat pencarianmu lebih teratur." [level=1] [ref=e13]
+          - paragraph [ref=e14]: Simpan semua lamaran dan jadwal dalam satu ruang kerja.
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - generic [ref=e17]: Nama
+            - textbox "Nama" [ref=e22]:
+              - /placeholder: Nama lengkap
+              - text: Reg Test
+          - generic [ref=e23]:
+            - generic [ref=e24]: Email
+            - textbox "Email" [ref=e29]:
+              - /placeholder: nama@email.com
+              - text: reg-test@applyo.test
+          - generic [ref=e30]:
+            - generic [ref=e31]: Kata sandi
+            - generic [ref=e32]:
+              - textbox "Kata sandi Tampilkan kata sandi" [ref=e37]:
+                - /placeholder: Minimal 8 karakter
+                - text: QATest2026!Reg
+              - button "Tampilkan kata sandi" [ref=e38] [cursor=pointer]
+          - generic [ref=e42]:
+            - generic [ref=e43]: Konfirmasi kata sandi
+            - textbox "Konfirmasi kata sandi" [ref=e49]:
+              - /placeholder: Ulangi kata sandi
+              - text: QATest2026!Reg
+          - button "Menyiapkan ruang kerja..." [disabled] [ref=e83]
+          - paragraph [ref=e53]:
+            - text: Sudah punya akun?
+            - link "Masuk" [ref=e54] [cursor=pointer]:
+              - /url: /masuk
+      - complementary "Manfaat Applyo" [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]: Rapi sejak lamaran pertama
+          - heading "Satu tempat untuk setiap peluang." [level=2] [ref=e58]
+          - paragraph [ref=e59]: Pantau tahap, jadwal, dan tindak lanjut tanpa merawat spreadsheet lain.
+        - generic [aria-hidden] [ref=e60]:
+          - generic [ref=e61]: Lowongan disimpan
+          - generic [ref=e65]: Lamaran dikirim
+          - generic [ref=e69]: Wawancara dijadwalkan
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=e84] [cursor=pointer]:
+    - generic [ref=e87]:
+      - text: Rendering
+      - generic [ref=e88]:
+        - generic [ref=e89]: .
+        - generic [ref=e90]: .
+        - generic [ref=e91]: .
+  - alert [ref=e73]

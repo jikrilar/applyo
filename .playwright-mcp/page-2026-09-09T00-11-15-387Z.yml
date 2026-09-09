@@ -1,0 +1,26 @@
+- generic [active] [ref=f41e1]:
+  - generic [ref=f41e3]:
+    - banner [ref=f41e4]:
+      - link "Applyo" [ref=f41e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f41e7]:
+        - button "Gunakan mode gelap" [ref=f41e8] [cursor=pointer]
+        - button "Buka menu profil" [ref=f41e12] [cursor=pointer]:
+          - generic [ref=f41e13]: UA
+    - main [ref=f41e14]:
+      - generic "Memuat ruang kerja" [ref=f41e15]
+    - navigation "Navigasi aplikasi seluler" [ref=f41e22]:
+      - link "Dasbor" [ref=f41e23] [cursor=pointer]:
+        - /url: /dashboard
+      - link "Lamaran" [ref=f41e30] [cursor=pointer]:
+        - /url: /aplikasi
+      - link "Kalender" [ref=f41e36] [cursor=pointer]:
+        - /url: /kalender
+      - link "Analitik" [ref=f41e40] [cursor=pointer]:
+        - /url: /analitik
+      - link "Pengaturan" [ref=f41e44] [cursor=pointer]:
+        - /url: /pengaturan
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f41e54] [cursor=pointer]
+  - alert [ref=f41e58]

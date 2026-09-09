@@ -1,0 +1,132 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e68]:
+    - complementary [ref=e69]:
+      - link "Beranda Applyo" [ref=e70] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=e71]:
+        - link "Dasbor" [ref=e72] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=e79] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=e85] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=e89] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=e93] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=e99] [cursor=pointer]
+    - generic [ref=e103]:
+      - banner [ref=e104]:
+        - generic [ref=e105]:
+          - button "Gunakan mode gelap" [ref=e106] [cursor=pointer]
+          - button "Buka menu profil" [ref=e110] [cursor=pointer]:
+            - generic [ref=e111]: PA
+            - generic [ref=e112]:
+              - strong [ref=e113]: Performance Audit
+              - generic [ref=e114]: perf-browser-audit@applyo.test
+      - main [ref=e117]:
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - generic [ref=e121]: Ruang kerja hari ini
+              - heading "Selamat datang." [level=1] [ref=e122]
+              - paragraph [ref=e123]: Ini yang sedang berjalan dalam pencarian kerjamu.
+            - link "Tambah lamaran" [ref=e124] [cursor=pointer]:
+              - /url: /aplikasi
+          - generic [ref=e126]:
+            - article [ref=e127]:
+              - strong [ref=e128]: "100"
+              - generic [ref=e129]: Total lamaran
+            - article [ref=e130]:
+              - strong [ref=e131]: "100"
+              - generic [ref=e132]: Lamaran aktif
+            - article [ref=e133]:
+              - strong [ref=e134]: "25"
+              - generic [ref=e135]: Wawancara
+            - article [ref=e136]:
+              - strong [ref=e137]: "25"
+              - generic [ref=e138]: Asesmen
+            - article [ref=e139]:
+              - strong [ref=e140]: "0"
+              - generic [ref=e141]: Tawaran
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - generic [ref=e145]:
+                - heading "Berikutnya" [level=2] [ref=e146]
+                - paragraph [ref=e147]: Agenda yang paling dekat.
+              - link "10 SEP Agenda Agenda 1 Perf Company 001 · 10 Sep 2026, 09.00" [ref=e152] [cursor=pointer]:
+                - /url: /aplikasi/f293e64c-8f76-4ccb-8d3d-859042dd68b6
+                - generic [ref=e153]:
+                  - strong [ref=e154]: "10"
+                  - generic [ref=e155]: SEP
+                - generic [ref=e156]:
+                  - text: Agenda
+                  - heading "Agenda 1" [level=3] [ref=e157]
+                  - paragraph [ref=e158]: Perf Company 001 · 10 Sep 2026, 09.00
+              - link "10 SEP Agenda Agenda 16 Perf Company 031 · 10 Sep 2026, 09.00" [ref=e161] [cursor=pointer]:
+                - /url: /aplikasi/dd92c8ee-0261-4d5b-ba3f-922235aad1fb
+                - generic [ref=e162]:
+                  - strong [ref=e163]: "10"
+                  - generic [ref=e164]: SEP
+                - generic [ref=e165]:
+                  - text: Agenda
+                  - heading "Agenda 16" [level=3] [ref=e166]
+                  - paragraph [ref=e167]: Perf Company 031 · 10 Sep 2026, 09.00
+              - link "10 SEP Agenda Agenda 31 Perf Company 061 · 10 Sep 2026, 09.00" [ref=e170] [cursor=pointer]:
+                - /url: /aplikasi/b652f8f7-f044-4b4d-a6fe-1d2f72b31051
+                - generic [ref=e171]:
+                  - strong [ref=e172]: "10"
+                  - generic [ref=e173]: SEP
+                - generic [ref=e174]:
+                  - text: Agenda
+                  - heading "Agenda 31" [level=3] [ref=e175]
+                  - paragraph [ref=e176]: Perf Company 061 · 10 Sep 2026, 09.00
+            - complementary [ref=e179]:
+              - heading "Perlu perhatian" [level=2] [ref=e184]
+              - link [ref=e185] [cursor=pointer]:
+                - /url: /aplikasi/f293e64c-8f76-4ccb-8d3d-859042dd68b6
+                - generic [ref=e189]:
+                  - strong [ref=e190]: Agenda 1
+                  - paragraph [ref=e191]: 10 Sep 2026, 09.00
+              - link [ref=e192] [cursor=pointer]:
+                - /url: /aplikasi/dfa70012-fff7-4534-b4e2-28214e15a6e1
+                - generic [ref=e196]:
+                  - strong [ref=e197]: Agenda 2
+                  - paragraph [ref=e198]: 11 Sep 2026, 09.00
+              - link [ref=e199] [cursor=pointer]:
+                - /url: /aplikasi/dd92c8ee-0261-4d5b-ba3f-922235aad1fb
+                - generic [ref=e203]:
+                  - strong [ref=e204]: Agenda 16
+                  - paragraph [ref=e205]: 10 Sep 2026, 09.00
+              - link [ref=e206] [cursor=pointer]:
+                - /url: /aplikasi/f84fd4de-cc97-4cc5-9048-861783415931
+                - generic [ref=e210]:
+                  - strong [ref=e211]: Agenda 17
+                  - paragraph [ref=e212]: 11 Sep 2026, 09.00
+              - link [ref=e213] [cursor=pointer]:
+                - /url: /aplikasi/b652f8f7-f044-4b4d-a6fe-1d2f72b31051
+                - generic [ref=e217]:
+                  - strong [ref=e218]: Agenda 31
+                  - paragraph [ref=e219]: 10 Sep 2026, 09.00
+              - link [ref=e220] [cursor=pointer]:
+                - /url: /aplikasi/fde24b87-ddf1-49fe-bfa8-a3f93d4f1bf3
+                - generic [ref=e224]:
+                  - strong [ref=e225]: Agenda 32
+                  - paragraph [ref=e226]: 11 Sep 2026, 09.00
+              - link [ref=e227] [cursor=pointer]:
+                - /url: /aplikasi/f02d7fc1-f1c7-4759-95c2-8ab4dfa392bd
+                - generic [ref=e231]:
+                  - strong [ref=e232]: Agenda 46
+                  - paragraph [ref=e233]: 10 Sep 2026, 09.00
+              - link [ref=e234] [cursor=pointer]:
+                - /url: /aplikasi/19bdc646-c766-4728-8f3d-ae7bfedb69eb
+                - generic [ref=e238]:
+                  - strong [ref=e239]: Agenda 47
+                  - paragraph [ref=e240]: 11 Sep 2026, 09.00
+              - link "Lihat semua lamaran" [ref=e241] [cursor=pointer]:
+                - /url: /aplikasi
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=e63] [cursor=pointer]
+  - alert [ref=e67]

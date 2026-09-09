@@ -1,0 +1,137 @@
+- generic [ref=f8e1]:
+  - generic [ref=f8e2]:
+    - complementary [ref=f8e3]:
+      - link "Beranda Applyo" [ref=f8e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f8e5]:
+        - link "Dasbor" [ref=f8e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f8e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f8e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f8e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f8e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f8e33] [cursor=pointer]
+    - generic [ref=f8e37]:
+      - banner [ref=f8e38]:
+        - generic [ref=f8e39]:
+          - button "Gunakan mode gelap" [ref=f8e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f8e44] [cursor=pointer]:
+            - generic [ref=f8e45]: QP
+            - generic [ref=f8e46]:
+              - strong [ref=f8e47]: QA Phase2
+              - generic [ref=f8e48]: qa-phase2@applyo.test
+      - main [ref=f8e51]:
+        - generic [ref=f8e65]:
+          - link "Kembali ke lamaran" [ref=f8e66] [cursor=pointer]:
+            - /url: /aplikasi
+          - generic [ref=f8e69]:
+            - generic [ref=f8e70]:
+              - generic [ref=f8e71]: Seleksi Awal
+              - heading "PT Maju Mundur" [level=1] [ref=f8e72]
+              - paragraph [ref=f8e73]: QA Engineer
+            - generic [ref=f8e74]:
+              - button "Edit" [ref=f8e75] [cursor=pointer]
+              - button "Arsipkan" [ref=f8e79] [cursor=pointer]
+              - button "Tutup lamaran" [ref=f8e83]
+              - button "Hapus" [ref=f8e84] [cursor=pointer]
+          - generic [ref=f8e88]:
+            - main [ref=f8e89]:
+              - generic [ref=f8e90]:
+                - heading "Informasi lowongan" [level=2] [ref=f8e92]
+                - generic [ref=f8e93]:
+                  - generic [ref=f8e94]:
+                    - generic [ref=f8e95]: Lokasi
+                    - strong [ref=f8e96]: Belum diisi
+                  - generic [ref=f8e97]:
+                    - generic [ref=f8e98]: Sistem kerja
+                    - strong [ref=f8e99]: Belum diisi
+                  - generic [ref=f8e100]:
+                    - generic [ref=f8e101]: Jenis pekerjaan
+                    - strong [ref=f8e102]: Belum diisi
+                  - generic [ref=f8e103]:
+                    - generic [ref=f8e104]: Sumber
+                    - strong [ref=f8e105]: Jobstreet
+                  - generic [ref=f8e106]:
+                    - generic [ref=f8e107]: Tanggal melamar
+                    - strong [ref=f8e108]: 5 Sep 2026
+                  - generic [ref=f8e109]:
+                    - generic [ref=f8e110]: Gaji
+                    - strong [ref=f8e111]: Belum diisi
+              - generic [ref=f8e112]:
+                - generic [ref=f8e113]:
+                  - heading "Catatan" [level=2] [ref=f8e114]
+                  - button "Edit catatan" [ref=f8e115] [cursor=pointer]
+                - paragraph [ref=f8e119]: Belum ada catatan.
+              - generic [ref=f8e120]:
+                - heading "Agenda rekrutmen" [level=2] [ref=f8e122]
+                - article [ref=f8e124]:
+                  - generic [ref=f8e125]:
+                    - generic [ref=f8e126]: Asesmen · Terjadwal
+                    - heading "Studi Kasus" [level=3] [ref=f8e127]
+                    - paragraph [ref=f8e128]: 9 Sep 2026, 09.00
+                  - generic [ref=f8e129]:
+                    - button "Edit Studi Kasus" [active] [ref=f8e130] [cursor=pointer]
+                    - button "Tandai selesai" [ref=f8e134] [cursor=pointer]
+                    - button "Hapus Studi Kasus" [ref=f8e135] [cursor=pointer]
+              - generic [ref=f8e139]:
+                - heading "Timeline" [level=2] [ref=f8e141]
+                - list [ref=f8e142]:
+                  - listitem [ref=f8e143]:
+                    - generic [ref=f8e145]:
+                      - time [ref=f8e146]: 9 Sep 2026, 09.00
+                      - heading "Studi Kasus" [level=3] [ref=f8e147]
+                      - paragraph [ref=f8e148]: Asesmen
+                  - listitem [ref=f8e149]:
+                    - generic [ref=f8e151]:
+                      - time [ref=f8e152]: 7 Sep 2026, 09.15
+                      - heading "Lamaran ditambahkan" [level=3] [ref=f8e153]
+            - complementary [ref=f8e154]:
+              - generic [ref=f8e155]:
+                - heading "Ringkasan" [level=2] [ref=f8e157]
+                - generic [ref=f8e158]:
+                  - paragraph [ref=f8e159]: "Dilamar: 5 Sep 2026"
+                  - paragraph [ref=f8e162]: "Aktivitas terakhir: 9 Sep 2026, 09.00"
+                  - paragraph [ref=f8e166]: "Menunggu: 0 hari"
+                  - paragraph [ref=f8e170]: "Tahap: Seleksi Awal"
+                  - paragraph [ref=f8e175]: "Berikutnya: Studi Kasus"
+                - button "Catat tindak lanjut" [ref=f8e178] [cursor=pointer]
+              - generic [ref=f8e182]:
+                - generic [ref=f8e183]:
+                  - heading "Tawaran" [level=2] [ref=f8e184]
+                  - button "Edit tawaran" [ref=f8e185] [cursor=pointer]
+                - paragraph [ref=f8e189]: Belum ada detail tawaran.
+          - dialog "Edit agenda" [ref=f8e191]:
+            - generic [ref=f8e192]:
+              - heading "Edit agenda" [level=2] [ref=f8e193]
+              - button "Tutup dialog" [ref=f8e194] [cursor=pointer]
+            - generic [ref=f8e198]:
+              - generic [ref=f8e199]:
+                - generic [ref=f8e200]: Judul
+                - textbox "Judul" [ref=f8e202]: Studi Kasus
+              - generic [ref=f8e203]:
+                - generic [ref=f8e204]: Waktu terjadwal
+                - button "Pilih waktu terjadwal" [ref=f8e206] [cursor=pointer]
+              - generic [ref=f8e212]:
+                - generic [ref=f8e213]: Tenggat
+                - button "9 Sep 2026, 09.00" [ref=f8e215] [cursor=pointer]
+              - generic [ref=f8e221]:
+                - generic [ref=f8e222]: Lokasi
+                - textbox "Lokasi" [ref=f8e224]
+              - generic [ref=f8e225]:
+                - generic [ref=f8e226]: URL
+                - textbox "URL" [ref=f8e228]
+              - generic [ref=f8e229]:
+                - generic [ref=f8e230]: Catatan
+                - textbox "Catatan" [ref=f8e232]
+              - generic [ref=f8e233]:
+                - button "Batal" [ref=f8e234] [cursor=pointer]
+                - button "Simpan" [ref=f8e235]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f8e60] [cursor=pointer]
+  - alert [ref=f8e64]

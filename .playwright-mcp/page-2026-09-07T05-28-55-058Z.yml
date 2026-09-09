@@ -1,0 +1,61 @@
+- generic [active] [ref=f12e1]:
+  - generic [ref=f12e83]:
+    - complementary [ref=f12e84]:
+      - link "Beranda Applyo" [ref=f12e85] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f12e86]:
+        - link "Dasbor" [ref=f12e87] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f12e94] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f12e100] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f12e104] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f12e108] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f12e114] [cursor=pointer]
+    - generic [ref=f12e118]:
+      - banner [ref=f12e119]:
+        - generic [ref=f12e120]:
+          - button "Gunakan mode gelap" [ref=f12e121] [cursor=pointer]
+          - button "Buka menu profil" [ref=f12e125] [cursor=pointer]:
+            - generic [ref=f12e126]: FR
+            - generic [ref=f12e127]:
+              - strong [ref=f12e128]: F01 R3
+              - generic [ref=f12e129]: f01-r3@applyo.test
+      - main [ref=f12e132]:
+        - generic [ref=f12e133]:
+          - generic [ref=f12e134]:
+            - generic [ref=f12e135]:
+              - generic [ref=f12e136]: Ruang kerja hari ini
+              - heading "Selamat datang." [level=1] [ref=f12e137]
+              - paragraph [ref=f12e138]: Ini yang sedang berjalan dalam pencarian kerjamu.
+            - link "Tambah lamaran" [ref=f12e139] [cursor=pointer]:
+              - /url: /aplikasi
+          - generic [ref=f12e141]:
+            - article [ref=f12e142]:
+              - strong [ref=f12e143]: "0"
+              - generic [ref=f12e144]: Total lamaran
+            - article [ref=f12e145]:
+              - strong [ref=f12e146]: "0"
+              - generic [ref=f12e147]: Lamaran aktif
+            - article [ref=f12e148]:
+              - strong [ref=f12e149]: "0"
+              - generic [ref=f12e150]: Wawancara
+            - article [ref=f12e151]:
+              - strong [ref=f12e152]: "0"
+              - generic [ref=f12e153]: Asesmen
+            - article [ref=f12e154]:
+              - strong [ref=f12e155]: "0"
+              - generic [ref=f12e156]: Tawaran
+          - generic [ref=f12e157]:
+            - strong [ref=f12e161]: Belum ada lamaran.
+            - paragraph [ref=f12e162]: Tambahkan lamaran pertamamu untuk memulai.
+            - link "Tambah lamaran" [ref=f12e163] [cursor=pointer]:
+              - /url: /aplikasi
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f12e78] [cursor=pointer]
+  - alert [ref=f12e82]

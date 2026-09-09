@@ -1,6 +1,14 @@
 "use client";
 
-import { FormEvent, KeyboardEvent, useState, useTransition } from "react";
+import {
+  FormEvent,
+  KeyboardEvent,
+  memo,
+  useCallback,
+  useRef,
+  useState,
+  useTransition,
+} from "react";
 import Link from "next/link";
 import {
   DndContext,
@@ -45,6 +53,7 @@ import { zonedLocalToUtc } from "@/lib/dates";
 import { ApplicationForm } from "@/components/application-detail/application-form";
 import { ApplicationToolbar } from "@/components/application-toolbar";
 import { cn } from "@/components/shared/cn";
+import { useDialogA11y } from "@/components/shared/use-dialog-a11y";
 import { ThemedDateOnlyPicker, ThemedDatePicker } from "@/components/ui/date-picker";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 
@@ -57,6 +66,7 @@ const stageColor: Record<string, string> = {
   offer: "var(--green)",
 };
 const color = (stage: StageDTO) => stageColor[stage.systemKey ?? ""] ?? "var(--yellow)";
+const DragHandleIcon = memo(GripVertical);
 
 function cardNote(card: ApplicationCardDTO) {
   if (card.upcomingEventAt)
@@ -66,6 +76,86 @@ function cardNote(card: ApplicationCardDTO) {
   if (card.waitingDays > 0) return `Menunggu ${card.waitingDays} hari`;
   return "Baru diperbarui";
 }
+
+const CardMenu = memo(function CardMenu({
+  application,
+  onDelete,
+  onEvent,
+}: {
+  application: ApplicationCardDTO;
+  onDelete: (card: ApplicationCardDTO) => void;
+  onEvent: (card: ApplicationCardDTO) => void;
+}) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const closeMenu = () => {
+    setMenuOpen(false);
+    triggerRef.current?.focus();
+  };
+  return (
+    <div
+      className="card-action-menu"
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setMenuOpen(false);
+      }}
+      onKeyDown={(event) => {
+        if (event.key === "Escape" && menuOpen) {
+          event.stopPropagation();
+          closeMenu();
+        }
+      }}
+    >
+      <button
+        ref={triggerRef}
+        className="card-menu-trigger"
+        type="button"
+        aria-label={`Tindakan untuk ${application.company}`}
+        aria-expanded={menuOpen}
+        onClick={() => setMenuOpen((value) => !value)}
+      >
+        <EllipsisVertical />
+      </button>
+      {menuOpen && (
+        <div className="card-menu-popover" role="menu">
+          <Link role="menuitem" href={`/aplikasi/${application.id}`}>
+            <Pencil /> Edit lamaran
+          </Link>
+          <button type="button" role="menuitem" onClick={() => onEvent(application)}>
+            <CalendarDays /> Tambah agenda
+          </button>
+          <button
+            className="delete-menu-item"
+            type="button"
+            role="menuitem"
+            onClick={() => onDelete(application)}
+          >
+            <Trash2 /> Hapus lamaran
+          </button>
+        </div>
+      )}
+    </div>
+  );
+});
+
+const CardDetails = memo(function CardDetails({
+  application,
+}: {
+  application: ApplicationCardDTO;
+}) {
+  return (
+    <>
+      <Link className="workspace-card-link" href={`/aplikasi/${application.id}`}>
+        {application.position}
+      </Link>
+      <span>
+        <MapPin /> {application.location ?? "Lokasi belum diisi"}
+      </span>
+      <span>
+        <CalendarDays /> {cardNote(application)}
+      </span>
+    </>
+  );
+});
 
 function SortableCard({
   application,
@@ -81,7 +171,6 @@ function SortableCard({
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
     id: application.id,
   });
-  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <article
       ref={setNodeRef}
@@ -99,53 +188,12 @@ function SortableCard({
             {...attributes}
             {...listeners}
           >
-            <GripVertical />
+            <DragHandleIcon />
           </button>
-          <div
-            className="card-action-menu"
-            onBlur={(event) => {
-              if (!event.currentTarget.contains(event.relatedTarget)) setMenuOpen(false);
-            }}
-          >
-            <button
-              className="card-menu-trigger"
-              type="button"
-              aria-label={`Tindakan untuk ${application.company}`}
-              aria-expanded={menuOpen}
-              onClick={() => setMenuOpen((value) => !value)}
-            >
-              <EllipsisVertical />
-            </button>
-            {menuOpen && (
-              <div className="card-menu-popover" role="menu">
-                <Link role="menuitem" href={`/aplikasi/${application.id}`}>
-                  <Pencil /> Edit lamaran
-                </Link>
-                <button type="button" role="menuitem" onClick={() => onEvent(application)}>
-                  <CalendarDays /> Tambah agenda
-                </button>
-                <button
-                  className="delete-menu-item"
-                  type="button"
-                  role="menuitem"
-                  onClick={() => onDelete(application)}
-                >
-                  <Trash2 /> Hapus lamaran
-                </button>
-              </div>
-            )}
-          </div>
+          <CardMenu application={application} onDelete={onDelete} onEvent={onEvent} />
         </div>
       </div>
-      <Link className="workspace-card-link" href={`/aplikasi/${application.id}`}>
-        {application.position}
-      </Link>
-      <span>
-        <MapPin /> {application.location ?? "Lokasi belum diisi"}
-      </span>
-      <span>
-        <CalendarDays /> {cardNote(application)}
-      </span>
+      <CardDetails application={application} />
     </article>
   );
 }
@@ -340,6 +388,8 @@ export function ApplicationWorkspace({
   const [locationFilter, setLocationFilter] = useState<string[]>([]);
   const [message, setMessage] = useState("");
   const [pending, startTransition] = useTransition();
+  const createDialogRef = useDialogA11y<HTMLElement>(dialogOpen, () => setDialogOpen(false));
+  const deleteDialogRef = useDialogA11y<HTMLElement>(deleting !== null, () => setDeleting(null));
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
     useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates }),
@@ -452,6 +502,12 @@ export function ApplicationWorkspace({
     setContextualEvent(false);
     setMessage("");
   };
+  const openEventDialog = useCallback((card: ApplicationCardDTO) => {
+    setEventCategory("interview");
+    setContextualEvent(false);
+    setMessage("");
+    setEventApplication(card);
+  }, []);
   const saveEvent = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!eventApplication) return;
@@ -560,12 +616,7 @@ export function ApplicationWorkspace({
                   }))
                 }
                 onDelete={setDeleting}
-                onEvent={(card) => {
-                  setEventCategory("interview");
-                  setContextualEvent(false);
-                  setMessage("");
-                  setEventApplication(card);
-                }}
+                onEvent={openEventDialog}
                 key={stage.id}
               />
             ))}
@@ -585,6 +636,7 @@ export function ApplicationWorkspace({
       {dialogOpen && (
         <div className="dialog-backdrop">
           <section
+            ref={createDialogRef}
             className="application-dialog application-form-dialog"
             role="dialog"
             aria-modal="true"
@@ -610,6 +662,7 @@ export function ApplicationWorkspace({
       {deleting && (
         <div className="dialog-backdrop" onMouseDown={() => setDeleting(null)}>
           <section
+            ref={deleteDialogRef}
             className="delete-dialog"
             role="alertdialog"
             aria-modal="true"

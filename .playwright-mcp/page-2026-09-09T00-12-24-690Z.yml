@@ -1,0 +1,118 @@
+- generic [ref=f42e1]:
+  - generic [ref=f42e3]:
+    - banner [ref=f42e4]:
+      - link "Applyo" [ref=f42e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f42e7]:
+        - button "Gunakan mode gelap" [ref=f42e8] [cursor=pointer]
+        - button "Buka menu profil" [ref=f42e12] [cursor=pointer]:
+          - generic [ref=f42e13]: UA
+    - main [ref=f42e14]:
+      - generic [ref=f42e59]:
+        - generic [ref=f42e60]:
+          - generic [ref=f42e61]:
+            - generic [ref=f42e62]: Ruang kerja lamaran
+            - heading "Lamaran saya" [level=1] [ref=f42e63]
+            - paragraph [ref=f42e64]: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+          - navigation "Tampilan lamaran" [ref=f42e65]:
+            - link "Papan" [ref=f42e66] [cursor=pointer]:
+              - /url: /aplikasi
+            - link "Daftar" [ref=f42e72] [cursor=pointer]:
+              - /url: /aplikasi?view=list
+        - generic [ref=f42e74]:
+          - generic [ref=f42e75]:
+            - generic [ref=f42e79]: Cari lamaran
+            - textbox "Cari lamaran" [ref=f42e80]:
+              - /placeholder: Cari perusahaan atau posisi...
+          - button "Filter" [ref=f42e82] [cursor=pointer]
+          - button "Tambah lamaran" [active] [ref=f42e84]
+        - generic [ref=f42e86]:
+          - generic [ref=f42e87]:
+            - generic [ref=f42e88]:
+              - strong [ref=f42e89]: Incaran
+              - generic [ref=f42e90]: "1"
+            - article [ref=f42e92] [cursor=pointer]:
+              - generic [ref=f42e93]:
+                - strong [ref=f42e94]: PT Nusantara Teknologi Maju Bersama Sejahtera Abadi Sentosa
+                - generic [ref=f42e95]:
+                  - button "Pindahkan kartu PT Nusantara Teknologi Maju Bersama Sejahtera Abadi Sentosa" [ref=f42e96]
+                  - button "Tindakan untuk PT Nusantara Teknologi Maju Bersama Sejahtera Abadi Sentosa" [ref=f42e105]
+              - link "Senior Frontend Developer Spesialis Antarmuka Pengguna dan Pengalaman Digital" [ref=f42e110]:
+                - /url: /aplikasi/64f69eda-3758-4c88-81eb-c932d3778a65
+              - generic [ref=f42e111]: Lokasi belum diisi
+              - generic [ref=f42e115]: 12 Sep 2026
+          - generic [ref=f42e118]:
+            - generic [ref=f42e119]:
+              - strong [ref=f42e120]: Dilamar
+              - generic [ref=f42e121]: "0"
+            - paragraph [ref=f42e123]: Letakkan lamaran di sini
+          - generic [ref=f42e124]:
+            - generic [ref=f42e125]:
+              - strong [ref=f42e126]: Seleksi Awal
+              - generic [ref=f42e127]: "0"
+            - paragraph [ref=f42e129]: Letakkan lamaran di sini
+          - generic [ref=f42e130]:
+            - generic [ref=f42e131]:
+              - strong [ref=f42e132]: Wawancara
+              - generic [ref=f42e133]: "0"
+            - paragraph [ref=f42e135]: Letakkan lamaran di sini
+          - generic [ref=f42e136]:
+            - generic [ref=f42e137]:
+              - strong [ref=f42e138]: Asesmen
+              - generic [ref=f42e139]: "0"
+            - paragraph [ref=f42e141]: Letakkan lamaran di sini
+          - generic [ref=f42e142]:
+            - generic [ref=f42e143]:
+              - strong [ref=f42e144]: Tawaran
+              - generic [ref=f42e145]: "0"
+            - paragraph [ref=f42e147]: Letakkan lamaran di sini
+        - status [ref=f42e148]
+        - dialog [ref=f42e150]:
+          - generic [ref=f42e152]:
+            - heading "Tambah lamaran" [level=2] [ref=f42e153]
+            - paragraph [ref=f42e154]: Mulai dari informasi utama, lalu lengkapi seperlunya.
+          - generic [ref=f42e155]:
+            - group "Informasi utama" [ref=f42e156]:
+              - generic [ref=f42e158]:
+                - generic [ref=f42e159]:
+                  - generic [ref=f42e160]: Perusahaan *
+                  - textbox "Perusahaan *" [ref=f42e162]
+                - generic [ref=f42e163]:
+                  - generic [ref=f42e164]: Posisi *
+                  - textbox "Posisi *" [ref=f42e166]
+                - generic [ref=f42e167]:
+                  - generic [ref=f42e168]: Tahap *
+                  - button "Incaran" [ref=f42e170] [cursor=pointer]
+                - generic [ref=f42e178]:
+                  - generic [ref=f42e179]: Lokasi
+                  - textbox "Lokasi" [ref=f42e181]
+                - generic [ref=f42e182]:
+                  - generic [ref=f42e183]: Pengaturan kerja
+                  - button "Belum ditentukan" [ref=f42e185] [cursor=pointer]
+                - generic [ref=f42e193]:
+                  - generic [ref=f42e194]: Jenis pekerjaan
+                  - button "Belum ditentukan" [ref=f42e196] [cursor=pointer]
+            - group [ref=f42e204]:
+              - generic "Informasi lowongan" [ref=f42e205] [cursor=pointer]
+            - group [ref=f42e208]:
+              - generic "Kompensasi" [ref=f42e209] [cursor=pointer]
+            - group [ref=f42e212]:
+              - generic "Catatan pribadi" [ref=f42e213] [cursor=pointer]
+            - generic [ref=f42e216]:
+              - button "Batal" [ref=f42e217] [cursor=pointer]
+              - button "Simpan lamaran" [ref=f42e218]
+    - navigation "Navigasi aplikasi seluler" [ref=f42e22]:
+      - link "Dasbor" [ref=f42e23] [cursor=pointer]:
+        - /url: /dashboard
+      - link "Lamaran" [ref=f42e30] [cursor=pointer]:
+        - /url: /aplikasi
+      - link "Kalender" [ref=f42e36] [cursor=pointer]:
+        - /url: /kalender
+      - link "Analitik" [ref=f42e40] [cursor=pointer]:
+        - /url: /analitik
+      - link "Pengaturan" [ref=f42e44] [cursor=pointer]:
+        - /url: /pengaturan
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f42e54] [cursor=pointer]
+  - alert [ref=f42e58]

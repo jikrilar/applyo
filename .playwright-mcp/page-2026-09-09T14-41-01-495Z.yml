@@ -1,0 +1,58 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation "Global" [ref=e4]:
+        - link "Applyo Applyo logo Applyo" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7]: Applyo
+          - img "Applyo logo" [ref=e8]
+          - generic [ref=e9]: Applyo
+        - paragraph [ref=e11]: No payments involved, free browser extension!
+        - link "Log in" [ref=e13] [cursor=pointer]:
+          - /url: /signin
+          - text: Log in →
+    - main [ref=e14]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]:
+            - generic [ref=e20]: What's new
+            - generic [ref=e21]: Just shipped v1.0
+          - heading "Tracking Your Jobs Made Simple!" [level=1] [ref=e24]
+          - paragraph [ref=e25]: Losing track of multiple jobs that you have applied to?
+          - paragraph [ref=e26]: Applyo is a lightweight browser extension and web dashboard that helps you stay organized throughout your job hunt. Capture job listings instantly with an all in one clean, modern interface.
+          - generic [ref=e27]:
+            - link "Add to Chrome" [ref=e28] [cursor=pointer]:
+              - /url: "#"
+            - link "View on GitHub" [ref=e29] [cursor=pointer]:
+              - /url: https://github.com/MartinKamburov/ApplyO
+              - text: View on GitHub
+              - generic [aria-hidden] [ref=e30]: →
+        - img "Applyo Dashboard Screenshot" [ref=e34]
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - text: FAQ
+          - heading "Frequently Asked Questions" [level=2] [ref=e39]
+          - paragraph [ref=e40]: Can’t find the answer you’re looking for? Reach out to my email martin.kamburov23@gmail.com.
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - button "What do I get exactly?" [ref=e44]
+            - paragraph [ref=e50]: You get free access to our comprehensive dashboard, the Chrome extension for one-click saving, and unlimited job application tracking.
+          - generic [ref=e51]:
+            - button "Can I request a feature?" [ref=e52]
+            - paragraph [ref=e58]: Yes of course! I would love to improve the job tracker just click on the support button at the bottom and email me!
+          - generic [ref=e59]:
+            - button "I have another question" [expanded] [ref=e60]
+            - paragraph [ref=e67]: Cool, contact me by email and I'll get back to you as soon as possible, just click the support button at the bottom.
+    - contentinfo [ref=e68]:
+      - generic [ref=e70]:
+        - navigation [ref=e71]:
+          - link "Support" [ref=e72] [cursor=pointer]:
+            - /url: mailto:martin.kamburov23@gmail.com
+          - generic [ref=e73]: "|"
+          - link "Terms of Service" [ref=e74] [cursor=pointer]:
+            - /url: /tos
+          - link "Privacy Policy" [ref=e75] [cursor=pointer]:
+            - /url: /privacy-policy
+        - paragraph [ref=e76]: Applyo is a lightweight browser extension and web dashboard that helps you stay organized throughout your job hunt. Capture job listings instantly with an all-in-one clean, modern interface.
+        - paragraph [ref=e77]: © 2026 Applyo. All rights reserved.
+  - alert [ref=e78]

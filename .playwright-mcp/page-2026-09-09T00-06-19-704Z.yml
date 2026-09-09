@@ -1,0 +1,6 @@
+- generic [active] [ref=f36e1]:
+  - main "Memuat Applyo" [ref=f36e2]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f36e15] [cursor=pointer]
+  - alert [ref=f36e19]

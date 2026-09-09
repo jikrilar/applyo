@@ -1,0 +1,19 @@
+- generic [active] [ref=f25e1]:
+  - main [ref=f25e171]:
+    - generic [ref=f25e172]:
+      - text: Ada yang tersendat.
+      - heading "Applyo tidak dapat memuat halaman ini." [level=1] [ref=f25e173]
+      - paragraph [ref=f25e174]: Lamaranmu tetap aman. Coba muat halaman ini lagi.
+      - button "Coba lagi" [ref=f25e175]
+  - region "Notifications (F8)":
+    - list
+  - generic [ref=f25e14] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=f25e15]
+    - generic [ref=f25e176]:
+      - button "Open issues overlay" [ref=f25e177]:
+        - generic [ref=f25e178]:
+          - generic [aria-hidden] [ref=f25e179]: "0"
+          - generic [ref=f25e180]: "1"
+        - generic [ref=f25e181]: Issue
+      - button "Collapse issues badge" [ref=f25e182]
+  - alert [ref=f25e19]

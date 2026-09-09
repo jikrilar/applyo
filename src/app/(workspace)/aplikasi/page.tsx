@@ -45,18 +45,11 @@ export default async function ApplicationsPage({
     offset: Number(params.offset) || 0,
   };
   const [board, preferences, stages, results] = await Promise.all([
-    getBoard(),
+    listView ? Promise.resolve(null) : getBoard(),
     getPreferences(),
-    getApplicationStages(),
+    listView ? Promise.resolve(null) : getApplicationStages(),
     listView ? searchApplications(filters) : Promise.resolve(null),
   ]);
-  const locations = [
-    ...new Set(
-      board.stages
-        .flatMap((stage) => board.cardsByStage[stage.id] ?? [])
-        .flatMap((application) => (application.location ? [application.location] : [])),
-    ),
-  ].sort();
   return (
     <div className="applications-page">
       <header className="workspace-page-header applications-header">
@@ -90,20 +83,20 @@ export default async function ApplicationsPage({
         <ApplicationList
           items={results.items}
           total={results.total}
-          stages={board.stages}
+          stages={results.stages}
           currency={preferences.currency}
-          locations={locations}
+          locations={results.locations}
           params={params}
           pageSize={pageSize}
         />
-      ) : (
+      ) : board && stages ? (
         <ApplicationWorkspace
           initialBoard={board}
           timezone={preferences.timezone}
           currency={preferences.currency}
           stages={stages}
         />
-      )}
+      ) : null}
     </div>
   );
 }

@@ -1,0 +1,152 @@
+- generic [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - complementary [ref=f4e3]:
+      - link "Beranda Applyo" [ref=f4e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f4e5]:
+        - link "Dasbor" [ref=f4e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f4e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f4e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f4e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f4e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f4e33] [cursor=pointer]
+    - generic [ref=f4e37]:
+      - banner [ref=f4e38]:
+        - generic [ref=f4e39]:
+          - button "Gunakan mode gelap" [ref=f4e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f4e44] [cursor=pointer]:
+            - generic [ref=f4e45]: RT
+            - generic [ref=f4e46]:
+              - strong [ref=f4e47]: Reg Test
+              - generic [ref=f4e48]: reg-test@applyo.test
+      - main [ref=f4e51]:
+        - generic [ref=f4e65]:
+          - link "Kembali ke lamaran" [ref=f4e66] [cursor=pointer]:
+            - /url: /aplikasi
+          - generic [ref=f4e69]:
+            - generic [ref=f4e70]:
+              - generic [ref=f4e71]: Incaran
+              - heading "PT Regresi Satu" [level=1] [ref=f4e72]
+              - paragraph [ref=f4e73]: Backend Developer
+            - generic [ref=f4e74]:
+              - button "Edit" [active] [ref=f4e75] [cursor=pointer]
+              - button "Arsipkan" [ref=f4e79] [cursor=pointer]
+              - button "Tutup lamaran" [ref=f4e83]
+              - button "Hapus" [ref=f4e84] [cursor=pointer]
+          - generic [ref=f4e88]:
+            - main [ref=f4e89]:
+              - generic [ref=f4e90]:
+                - heading "Informasi lowongan" [level=2] [ref=f4e92]
+                - generic [ref=f4e93]:
+                  - generic [ref=f4e94]:
+                    - generic [ref=f4e95]: Lokasi
+                    - strong [ref=f4e96]: Belum diisi
+                  - generic [ref=f4e97]:
+                    - generic [ref=f4e98]: Sistem kerja
+                    - strong [ref=f4e99]: Belum diisi
+                  - generic [ref=f4e100]:
+                    - generic [ref=f4e101]: Jenis pekerjaan
+                    - strong [ref=f4e102]: Belum diisi
+                  - generic [ref=f4e103]:
+                    - generic [ref=f4e104]: Sumber
+                    - strong [ref=f4e105]: Belum diisi
+                  - generic [ref=f4e106]:
+                    - generic [ref=f4e107]: Tanggal melamar
+                    - strong [ref=f4e108]: Belum diisi
+                  - generic [ref=f4e109]:
+                    - generic [ref=f4e110]: Gaji
+                    - strong [ref=f4e111]: Belum diisi
+              - generic [ref=f4e112]:
+                - generic [ref=f4e113]:
+                  - heading "Catatan" [level=2] [ref=f4e114]
+                  - button "Edit catatan" [ref=f4e115] [cursor=pointer]
+                - paragraph [ref=f4e119]: Belum ada catatan.
+              - generic [ref=f4e120]:
+                - heading "Agenda rekrutmen" [level=2] [ref=f4e122]
+                - paragraph [ref=f4e124]: Belum ada agenda.
+              - generic [ref=f4e125]:
+                - heading "Timeline" [level=2] [ref=f4e127]
+                - list [ref=f4e128]:
+                  - listitem [ref=f4e129]:
+                    - generic [ref=f4e131]:
+                      - time [ref=f4e132]: 9 Sep 2026, 05.51
+                      - heading "Lamaran ditambahkan" [level=3] [ref=f4e133]
+            - complementary [ref=f4e134]:
+              - generic [ref=f4e135]:
+                - heading "Ringkasan" [level=2] [ref=f4e137]
+                - generic [ref=f4e138]:
+                  - paragraph [ref=f4e139]: "Dilamar: Belum diisi"
+                  - paragraph [ref=f4e142]: "Aktivitas terakhir: 9 Sep 2026, 05.51"
+                  - paragraph [ref=f4e146]: "Menunggu: 0 hari"
+                  - paragraph [ref=f4e150]: "Tahap: Incaran"
+                - button "Catat tindak lanjut" [ref=f4e155] [cursor=pointer]
+              - generic [ref=f4e159]:
+                - generic [ref=f4e160]:
+                  - heading "Tawaran" [level=2] [ref=f4e161]
+                  - button "Edit tawaran" [ref=f4e162] [cursor=pointer]
+                - paragraph [ref=f4e166]: Belum ada detail tawaran.
+          - dialog "Edit lamaran" [ref=f4e168]:
+            - generic [ref=f4e169]:
+              - heading "Edit lamaran" [level=2] [ref=f4e170]
+              - button "Tutup dialog" [ref=f4e171] [cursor=pointer]
+            - generic [ref=f4e175]:
+              - generic [ref=f4e176]:
+                - generic [ref=f4e177]: Perusahaan
+                - textbox "Perusahaan" [ref=f4e179]: PT Regresi Satu
+              - generic [ref=f4e180]:
+                - generic [ref=f4e181]: Posisi
+                - textbox "Posisi" [ref=f4e183]: Backend Developer
+              - generic [ref=f4e184]:
+                - generic [ref=f4e185]: URL Lowongan
+                - textbox "URL Lowongan" [ref=f4e187]
+              - generic [ref=f4e188]:
+                - generic [ref=f4e189]: Lokasi
+                - textbox "Lokasi" [ref=f4e191]
+              - generic [ref=f4e192]:
+                - generic [ref=f4e193]: Sistem kerja
+                - combobox "Sistem kerja" [ref=f4e195]:
+                  - option "Belum diisi" [selected]
+                  - option "Di lokasi"
+                  - option "Hibrida"
+                  - option "Jarak jauh"
+              - generic [ref=f4e196]:
+                - generic [ref=f4e197]: Jenis pekerjaan
+                - combobox "Jenis pekerjaan" [ref=f4e199]:
+                  - option "Belum diisi" [selected]
+                  - option "Penuh waktu"
+                  - option "Paruh waktu"
+                  - option "Kontrak"
+                  - option "Magang"
+                  - option "Freelance"
+                  - option "Lainnya"
+              - generic [ref=f4e200]:
+                - generic [ref=f4e201]: Sumber
+                - textbox "Sumber" [ref=f4e203]
+              - generic [ref=f4e204]:
+                - generic [ref=f4e205]: Tanggal melamar
+                - button "Pilih tanggal melamar" [ref=f4e207] [cursor=pointer]
+              - generic [ref=f4e213]:
+                - generic [ref=f4e214]: Gaji minimum
+                - spinbutton "Gaji minimum" [ref=f4e216]
+              - generic [ref=f4e217]:
+                - generic [ref=f4e218]: Gaji maksimum
+                - spinbutton "Gaji maksimum" [ref=f4e220]
+              - generic [ref=f4e221]:
+                - generic [ref=f4e222]: Mata uang
+                - textbox "Mata uang" [ref=f4e224]: IDR
+              - generic [ref=f4e225]:
+                - generic [ref=f4e226]: Deskripsi pekerjaan
+                - textbox "Deskripsi pekerjaan" [ref=f4e228]
+              - generic [ref=f4e229]:
+                - button "Batal" [ref=f4e230] [cursor=pointer]
+                - button "Simpan" [ref=f4e231]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f4e60] [cursor=pointer]
+  - alert [ref=f4e64]

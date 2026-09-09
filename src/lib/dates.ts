@@ -9,6 +9,12 @@ export function zonedLocalToUtc(local: string, timeZone: string) {
   return new Date(guess - (represented - guess)).toISOString();
 }
 
+export function utcToZonedLocal(value: string, timeZone: string) {
+  const parts = new Intl.DateTimeFormat("en-CA", { timeZone, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).formatToParts(new Date(value));
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${values.year}-${values.month}-${values.day}T${values.hour}:${values.minute}`;
+}
+
 export function monthRangeUtc(month: string, timeZone: string) {
   const [year, number] = month.split("-").map(Number);
   const next = number === 12 ? `${year + 1}-01-01T00:00` : `${year}-${String(number + 1).padStart(2, "0")}-01T00:00`;

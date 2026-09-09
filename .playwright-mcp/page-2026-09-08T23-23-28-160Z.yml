@@ -1,0 +1,125 @@
+- generic [ref=f17e1]:
+  - generic [ref=f17e2]:
+    - complementary [ref=f17e3]:
+      - link "Beranda Applyo" [ref=f17e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f17e5]:
+        - link "Dasbor" [ref=f17e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f17e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f17e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f17e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f17e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f17e33] [cursor=pointer]
+    - generic [ref=f17e37]:
+      - banner [ref=f17e38]:
+        - generic [ref=f17e39]:
+          - button "Gunakan mode gelap" [ref=f17e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f17e44] [cursor=pointer]:
+            - generic [ref=f17e45]: RT
+            - generic [ref=f17e46]:
+              - strong [ref=f17e47]: Reg Test
+              - generic [ref=f17e48]: reg-test@applyo.test
+      - main [ref=f17e51]:
+        - generic [ref=f17e73]:
+          - generic [ref=f17e74]:
+            - generic [ref=f17e75]:
+              - generic [ref=f17e76]: Ruang kerja lamaran
+              - heading "Lamaran saya" [level=1] [ref=f17e77]
+              - paragraph [ref=f17e78]: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation "Tampilan lamaran" [ref=f17e79]:
+              - link "Papan" [ref=f17e80] [cursor=pointer]:
+                - /url: /aplikasi
+              - link "Daftar" [ref=f17e86] [cursor=pointer]:
+                - /url: /aplikasi?view=list
+          - generic [ref=f17e88]:
+            - generic [ref=f17e89]:
+              - generic [ref=f17e93]: Cari lamaran
+              - textbox "Cari lamaran" [ref=f17e94]:
+                - /placeholder: Cari perusahaan atau posisi...
+            - button "Filter" [ref=f17e96] [cursor=pointer]
+            - button "Tambah lamaran" [active] [ref=f17e98]
+          - generic [ref=f17e100]:
+            - generic [ref=f17e101]:
+              - generic [ref=f17e102]:
+                - strong [ref=f17e103]: Incaran
+                - generic [ref=f17e104]: "1"
+              - article [ref=f17e106] [cursor=pointer]:
+                - generic [ref=f17e107]:
+                  - strong [ref=f17e108]: PT Regresi Satu
+                  - generic [ref=f17e109]:
+                    - button "Pindahkan kartu PT Regresi Satu" [ref=f17e110]
+                    - button "Tindakan untuk PT Regresi Satu" [ref=f17e119]
+                - link "Senior Backend Developer" [ref=f17e124]:
+                  - /url: /aplikasi/a8b5ec16-0ac0-4923-ab8f-88b9763ff387
+                - generic [ref=f17e125]: Lokasi belum diisi
+                - generic [ref=f17e129]: Baru diperbarui
+            - generic [ref=f17e132]:
+              - generic [ref=f17e133]:
+                - strong [ref=f17e134]: Dilamar
+                - generic [ref=f17e135]: "0"
+              - paragraph [ref=f17e137]: Letakkan lamaran di sini
+            - generic [ref=f17e138]:
+              - generic [ref=f17e139]:
+                - strong [ref=f17e140]: Seleksi Awal
+                - generic [ref=f17e141]: "0"
+              - paragraph [ref=f17e143]: Letakkan lamaran di sini
+            - generic [ref=f17e144]:
+              - generic [ref=f17e145]:
+                - strong [ref=f17e146]: Wawancara
+                - generic [ref=f17e147]: "0"
+              - paragraph [ref=f17e149]: Letakkan lamaran di sini
+            - generic [ref=f17e150]:
+              - generic [ref=f17e151]:
+                - strong [ref=f17e152]: Asesmen
+                - generic [ref=f17e153]: "0"
+              - paragraph [ref=f17e155]: Letakkan lamaran di sini
+            - generic [ref=f17e156]:
+              - generic [ref=f17e157]:
+                - strong [ref=f17e158]: Tawaran
+                - generic [ref=f17e159]: "0"
+              - paragraph [ref=f17e161]: Letakkan lamaran di sini
+          - status [ref=f17e162]
+          - dialog [ref=f17e168]:
+            - generic [ref=f17e170]:
+              - heading "Tambah lamaran" [level=2] [ref=f17e171]
+              - paragraph [ref=f17e172]: Mulai dari informasi utama, lalu lengkapi seperlunya.
+            - generic [ref=f17e173]:
+              - group "Informasi utama" [ref=f17e174]:
+                - generic [ref=f17e176]:
+                  - generic [ref=f17e177]:
+                    - generic [ref=f17e178]: Perusahaan *
+                    - textbox "Perusahaan *" [ref=f17e180]
+                  - generic [ref=f17e181]:
+                    - generic [ref=f17e182]: Posisi *
+                    - textbox "Posisi *" [ref=f17e184]
+                  - generic [ref=f17e185]:
+                    - generic [ref=f17e186]: Tahap *
+                    - button "Incaran" [ref=f17e188] [cursor=pointer]
+                  - generic [ref=f17e196]:
+                    - generic [ref=f17e197]: Lokasi
+                    - textbox "Lokasi" [ref=f17e199]
+                  - generic [ref=f17e200]:
+                    - generic [ref=f17e201]: Pengaturan kerja
+                    - button "Belum ditentukan" [ref=f17e203] [cursor=pointer]
+                  - generic [ref=f17e211]:
+                    - generic [ref=f17e212]: Jenis pekerjaan
+                    - button "Belum ditentukan" [ref=f17e214] [cursor=pointer]
+              - group [ref=f17e222]:
+                - generic "Informasi lowongan" [ref=f17e223] [cursor=pointer]
+              - group [ref=f17e226]:
+                - generic "Kompensasi" [ref=f17e227] [cursor=pointer]
+              - group [ref=f17e230]:
+                - generic "Catatan pribadi" [ref=f17e231] [cursor=pointer]
+              - generic [ref=f17e234]:
+                - button "Batal" [ref=f17e235] [cursor=pointer]
+                - button "Simpan lamaran" [ref=f17e236]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f17e163] [cursor=pointer]
+  - alert [ref=f17e72]

@@ -1,0 +1,153 @@
+- generic [ref=f2e1]:
+  - generic [ref=f2e2]:
+    - complementary [ref=f2e3]:
+      - link "Beranda Applyo" [ref=f2e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f2e5]:
+        - link "Dasbor" [ref=f2e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f2e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f2e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f2e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f2e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f2e33] [cursor=pointer]
+    - generic [ref=f2e37]:
+      - banner [ref=f2e38]:
+        - generic [ref=f2e39]:
+          - button "Gunakan mode gelap" [ref=f2e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f2e44] [cursor=pointer]:
+            - generic [ref=f2e45]: QP
+            - generic [ref=f2e46]:
+              - strong [ref=f2e47]: QA Phase2
+              - generic [ref=f2e48]: qa-phase2@applyo.test
+      - main [ref=f2e51]:
+        - generic [ref=f2e65]:
+          - link "Kembali ke lamaran" [ref=f2e66] [cursor=pointer]:
+            - /url: /aplikasi
+          - generic [ref=f2e69]:
+            - generic [ref=f2e70]:
+              - generic [ref=f2e71]: Seleksi Awal
+              - heading "PT Maju Mundur" [level=1] [ref=f2e72]
+              - paragraph [ref=f2e73]: QA Engineer
+            - generic [ref=f2e74]:
+              - button "Edit" [ref=f2e75] [cursor=pointer]
+              - button "Arsipkan" [ref=f2e79] [cursor=pointer]
+              - button "Tutup lamaran" [ref=f2e83]
+              - button "Hapus" [ref=f2e84] [cursor=pointer]
+          - paragraph [ref=f2e261]: Terjadi kesalahan. Silakan coba lagi.
+          - generic [ref=f2e88]:
+            - main [ref=f2e89]:
+              - generic [ref=f2e90]:
+                - heading "Informasi lowongan" [level=2] [ref=f2e92]
+                - generic [ref=f2e93]:
+                  - generic [ref=f2e94]:
+                    - generic [ref=f2e95]: Lokasi
+                    - strong [ref=f2e96]: Belum diisi
+                  - generic [ref=f2e97]:
+                    - generic [ref=f2e98]: Sistem kerja
+                    - strong [ref=f2e99]: Belum diisi
+                  - generic [ref=f2e100]:
+                    - generic [ref=f2e101]: Jenis pekerjaan
+                    - strong [ref=f2e102]: Belum diisi
+                  - generic [ref=f2e103]:
+                    - generic [ref=f2e104]: Sumber
+                    - strong [ref=f2e105]: Jobstreet
+                  - generic [ref=f2e106]:
+                    - generic [ref=f2e107]: Tanggal melamar
+                    - strong [ref=f2e108]: 5 Sep 2026
+                  - generic [ref=f2e109]:
+                    - generic [ref=f2e110]: Gaji
+                    - strong [ref=f2e111]: Belum diisi
+              - generic [ref=f2e112]:
+                - generic [ref=f2e113]:
+                  - heading "Catatan" [level=2] [ref=f2e114]
+                  - button "Edit catatan" [ref=f2e115] [cursor=pointer]
+                - paragraph [ref=f2e119]: Belum ada catatan.
+              - generic [ref=f2e120]:
+                - heading "Agenda rekrutmen" [level=2] [ref=f2e122]
+                - generic [ref=f2e123]:
+                  - article [ref=f2e124]:
+                    - generic [ref=f2e125]:
+                      - generic [ref=f2e126]: Asesmen · Terjadwal
+                      - heading "Studi Kasus" [level=3] [ref=f2e127]
+                      - paragraph [ref=f2e128]: 9 Sep 2026, 09.00
+                    - generic [ref=f2e129]:
+                      - button "Edit Studi Kasus" [ref=f2e130] [cursor=pointer]
+                      - button "Tandai selesai" [ref=f2e134] [cursor=pointer]
+                      - button "Hapus Studi Kasus" [ref=f2e135] [cursor=pointer]
+                  - article [ref=f2e139]:
+                    - generic [ref=f2e140]:
+                      - generic [ref=f2e141]: Wawancara · Terjadwal
+                      - heading "Repro Interview" [level=3] [ref=f2e142]
+                      - paragraph [ref=f2e143]: 11 Sep 2026, 09.00
+                    - generic [ref=f2e144]:
+                      - button "Edit Repro Interview" [active] [ref=f2e145] [cursor=pointer]
+                      - button "Tandai selesai" [ref=f2e149] [cursor=pointer]
+                      - button "Hapus Repro Interview" [ref=f2e150] [cursor=pointer]
+              - generic [ref=f2e154]:
+                - heading "Timeline" [level=2] [ref=f2e156]
+                - list [ref=f2e157]:
+                  - listitem [ref=f2e158]:
+                    - generic [ref=f2e160]:
+                      - time [ref=f2e161]: 11 Sep 2026, 09.00
+                      - heading "Repro Interview" [level=3] [ref=f2e162]
+                      - paragraph [ref=f2e163]: Wawancara
+                  - listitem [ref=f2e164]:
+                    - generic [ref=f2e166]:
+                      - time [ref=f2e167]: 9 Sep 2026, 09.00
+                      - heading "Studi Kasus" [level=3] [ref=f2e168]
+                      - paragraph [ref=f2e169]: Asesmen
+                  - listitem [ref=f2e170]:
+                    - generic [ref=f2e172]:
+                      - time [ref=f2e173]: 7 Sep 2026, 09.15
+                      - heading "Lamaran ditambahkan" [level=3] [ref=f2e174]
+            - complementary [ref=f2e175]:
+              - generic [ref=f2e176]:
+                - heading "Ringkasan" [level=2] [ref=f2e178]
+                - generic [ref=f2e179]:
+                  - paragraph [ref=f2e180]: "Dilamar: 5 Sep 2026"
+                  - paragraph [ref=f2e183]: "Aktivitas terakhir: 11 Sep 2026, 09.00"
+                  - paragraph [ref=f2e187]: "Menunggu: 0 hari"
+                  - paragraph [ref=f2e191]: "Tahap: Seleksi Awal"
+                  - paragraph [ref=f2e196]: "Berikutnya: Studi Kasus"
+                - button "Catat tindak lanjut" [ref=f2e199] [cursor=pointer]
+              - generic [ref=f2e203]:
+                - generic [ref=f2e204]:
+                  - heading "Tawaran" [level=2] [ref=f2e205]
+                  - button "Edit tawaran" [ref=f2e206] [cursor=pointer]
+                - paragraph [ref=f2e210]: Belum ada detail tawaran.
+          - dialog "Edit agenda" [ref=f2e263]:
+            - generic [ref=f2e264]:
+              - heading "Edit agenda" [level=2] [ref=f2e265]
+              - button "Tutup dialog" [ref=f2e266] [cursor=pointer]
+            - generic [ref=f2e270]:
+              - generic [ref=f2e271]:
+                - generic [ref=f2e272]: Judul
+                - textbox "Judul" [ref=f2e274]: Repro Interview
+              - generic [ref=f2e275]:
+                - generic [ref=f2e276]: Waktu terjadwal
+                - button "11 Sep 2026, 02.00" [ref=f2e278] [cursor=pointer]
+              - generic [ref=f2e284]:
+                - generic [ref=f2e285]: Tenggat
+                - button "Pilih tenggat" [ref=f2e287] [cursor=pointer]
+              - generic [ref=f2e293]:
+                - generic [ref=f2e294]: Lokasi
+                - textbox "Lokasi" [ref=f2e296]
+              - generic [ref=f2e297]:
+                - generic [ref=f2e298]: URL
+                - textbox "URL" [ref=f2e300]
+              - generic [ref=f2e301]:
+                - generic [ref=f2e302]: Catatan
+                - textbox "Catatan" [ref=f2e304]
+              - generic [ref=f2e305]:
+                - button "Batal" [ref=f2e306] [cursor=pointer]
+                - button "Simpan" [ref=f2e307]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f2e60] [cursor=pointer]
+  - alert [ref=f2e64]

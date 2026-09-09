@@ -1,0 +1,400 @@
+- generic [active] [ref=f13e1]:
+  - generic [ref=f13e2]:
+    - complementary [ref=f13e3]:
+      - link "Beranda Applyo" [ref=f13e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f13e5]:
+        - link "Dasbor" [ref=f13e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f13e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f13e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f13e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f13e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f13e33] [cursor=pointer]
+    - generic [ref=f13e37]:
+      - banner [ref=f13e38]:
+        - generic [ref=f13e39]:
+          - button "Gunakan mode gelap" [ref=f13e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f13e44] [cursor=pointer]:
+            - generic [ref=f13e45]: P
+            - generic [ref=f13e46]:
+              - strong [ref=f13e47]: perf-list-payload
+              - generic [ref=f13e48]: perf-list-payload@applyo.test
+      - main [ref=f13e51]:
+        - generic [ref=f13e52]:
+          - generic [ref=f13e53]:
+            - generic [ref=f13e54]:
+              - generic [ref=f13e55]: Ruang kerja lamaran
+              - heading "Lamaran saya" [level=1] [ref=f13e56]
+              - paragraph [ref=f13e57]: Cari dan tinjau seluruh riwayat lamaran.
+            - navigation "Tampilan lamaran" [ref=f13e58]:
+              - link "Papan" [ref=f13e59] [cursor=pointer]:
+                - /url: /aplikasi
+              - link "Daftar" [ref=f13e65] [cursor=pointer]:
+                - /url: /aplikasi?view=list
+          - generic [ref=f13e67]:
+            - generic [ref=f13e68]:
+              - generic [ref=f13e69]:
+                - generic [ref=f13e73]: Cari lamaran
+                - textbox "Cari lamaran" [ref=f13e74]:
+                  - /placeholder: Cari perusahaan atau posisi...
+              - button "Filter 1" [ref=f13e686]:
+                - text: Filter
+                - generic [ref=f13e687]: "1"
+              - button "Tambah lamaran" [ref=f13e78]
+            - generic [ref=f13e80]:
+              - strong [ref=f13e81]: 84 lamaran
+              - generic [ref=f13e82]: Menampilkan halaman 1 dari 5
+            - table [ref=f13e84]:
+              - caption [ref=f13e85]: Daftar lamaran
+              - rowgroup [ref=f13e86]:
+                - row [ref=f13e87]:
+                  - columnheader "Perusahaan / posisi" [ref=f13e88]
+                  - columnheader "Tahap" [ref=f13e89]
+                  - columnheader "Sumber" [ref=f13e90]
+                  - columnheader [ref=f13e91]:
+                    - generic [ref=f13e92]:
+                      - text: Dilamar
+                      - button "Urutkan dari terlama dilamar" [ref=f13e93] [cursor=pointer]
+                  - columnheader [ref=f13e96]:
+                    - generic [ref=f13e97]:
+                      - text: Agenda berikutnya
+                      - button "Urutkan agenda dari terdekat" [pressed] [ref=f13e98] [cursor=pointer]
+                  - columnheader "Aktivitas terakhir" [ref=f13e101]
+                  - columnheader "Aksi" [ref=f13e102]
+              - rowgroup [ref=f13e103]:
+                - row [ref=f13e688]:
+                  - cell [ref=f13e689]:
+                    - link "Perf Company 0121 Backend Engineer Bandung" [ref=f13e690] [cursor=pointer]:
+                      - /url: /aplikasi/064d8a13-6ca8-4c64-a26b-cc48cb77d602
+                      - strong [ref=f13e691]: Perf Company 0121
+                      - generic [ref=f13e692]: Backend Engineer
+                      - generic [ref=f13e693]: Bandung
+                  - cell "Dilamar" [ref=f13e697]
+                  - cell "Referral" [ref=f13e699]
+                  - cell "10 Feb 2026" [ref=f13e700]
+                  - cell "23 Sep 2026" [ref=f13e701]
+                  - cell "23 Sep 2026" [ref=f13e702]
+                  - cell [ref=f13e703]:
+                    - generic [ref=f13e704]:
+                      - button "Edit Perf Company 0121" [ref=f13e705] [cursor=pointer]
+                      - button "Hapus Perf Company 0121" [ref=f13e709] [cursor=pointer]
+                - row [ref=f13e713]:
+                  - cell [ref=f13e714]:
+                    - link "Perf Company 0283 Backend Engineer Bandung" [ref=f13e715] [cursor=pointer]:
+                      - /url: /aplikasi/177b84cc-f74b-486c-802c-54d63d271206
+                      - strong [ref=f13e716]: Perf Company 0283
+                      - generic [ref=f13e717]: Backend Engineer
+                      - generic [ref=f13e718]: Bandung
+                  - cell "Dilamar" [ref=f13e722]
+                  - cell "Referral" [ref=f13e724]
+                  - cell "4 Apr 2026" [ref=f13e725]
+                  - cell "23 Sep 2026" [ref=f13e726]
+                  - cell "23 Sep 2026" [ref=f13e727]
+                  - cell [ref=f13e728]:
+                    - generic [ref=f13e729]:
+                      - button "Edit Perf Company 0283" [ref=f13e730] [cursor=pointer]
+                      - button "Hapus Perf Company 0283" [ref=f13e734] [cursor=pointer]
+                - row [ref=f13e738]:
+                  - cell [ref=f13e739]:
+                    - link "Perf Company 0445 Backend Engineer Bandung" [ref=f13e740] [cursor=pointer]:
+                      - /url: /aplikasi/17ccc3f7-96c5-4844-9dfa-467dde22dbd0
+                      - strong [ref=f13e741]: Perf Company 0445
+                      - generic [ref=f13e742]: Backend Engineer
+                      - generic [ref=f13e743]: Bandung
+                  - cell "Dilamar" [ref=f13e747]
+                  - cell "Referral" [ref=f13e749]
+                  - cell "26 Jun 2026" [ref=f13e750]
+                  - cell "23 Sep 2026" [ref=f13e751]
+                  - cell "23 Sep 2026" [ref=f13e752]
+                  - cell [ref=f13e753]:
+                    - generic [ref=f13e754]:
+                      - button "Edit Perf Company 0445" [ref=f13e755] [cursor=pointer]
+                      - button "Hapus Perf Company 0445" [ref=f13e759] [cursor=pointer]
+                - row [ref=f13e763]:
+                  - cell [ref=f13e764]:
+                    - link "Perf Company 0139 Backend Engineer Bandung" [ref=f13e765] [cursor=pointer]:
+                      - /url: /aplikasi/1edc9c0d-0640-494a-89a6-93d90b1d925d
+                      - strong [ref=f13e766]: Perf Company 0139
+                      - generic [ref=f13e767]: Backend Engineer
+                      - generic [ref=f13e768]: Bandung
+                  - cell "Dilamar" [ref=f13e772]
+                  - cell "Referral" [ref=f13e774]
+                  - cell "28 Apr 2026" [ref=f13e775]
+                  - cell "23 Sep 2026" [ref=f13e776]
+                  - cell "23 Sep 2026" [ref=f13e777]
+                  - cell [ref=f13e778]:
+                    - generic [ref=f13e779]:
+                      - button "Edit Perf Company 0139" [ref=f13e780] [cursor=pointer]
+                      - button "Hapus Perf Company 0139" [ref=f13e784] [cursor=pointer]
+                - row [ref=f13e788]:
+                  - cell [ref=f13e789]:
+                    - link "Perf Company 0409 Backend Engineer Bandung" [ref=f13e790] [cursor=pointer]:
+                      - /url: /aplikasi/24b81477-ebb6-4d23-a7a4-6206d4b8a3fb
+                      - strong [ref=f13e791]: Perf Company 0409
+                      - generic [ref=f13e792]: Backend Engineer
+                      - generic [ref=f13e793]: Bandung
+                  - cell "Dilamar" [ref=f13e797]
+                  - cell "Referral" [ref=f13e799]
+                  - cell "18 Feb 2026" [ref=f13e800]
+                  - cell "23 Sep 2026" [ref=f13e801]
+                  - cell "23 Sep 2026" [ref=f13e802]
+                  - cell [ref=f13e803]:
+                    - generic [ref=f13e804]:
+                      - button "Edit Perf Company 0409" [ref=f13e805] [cursor=pointer]
+                      - button "Hapus Perf Company 0409" [ref=f13e809] [cursor=pointer]
+                - row [ref=f13e813]:
+                  - cell [ref=f13e814]:
+                    - link "Perf Company 0013 Backend Engineer Bandung" [ref=f13e815] [cursor=pointer]:
+                      - /url: /aplikasi/24f042a2-9312-4739-a23d-741d525ed5b9
+                      - strong [ref=f13e816]: Perf Company 0013
+                      - generic [ref=f13e817]: Backend Engineer
+                      - generic [ref=f13e818]: Bandung
+                  - cell "Dilamar" [ref=f13e822]
+                  - cell "Referral" [ref=f13e824]
+                  - cell "14 Jun 2026" [ref=f13e825]
+                  - cell "23 Sep 2026" [ref=f13e826]
+                  - cell "23 Sep 2026" [ref=f13e827]
+                  - cell [ref=f13e828]:
+                    - generic [ref=f13e829]:
+                      - button "Edit Perf Company 0013" [ref=f13e830] [cursor=pointer]
+                      - button "Hapus Perf Company 0013" [ref=f13e834] [cursor=pointer]
+                - row [ref=f13e838]:
+                  - cell [ref=f13e839]:
+                    - link "Perf Company 0229 Backend Engineer Bandung" [ref=f13e840] [cursor=pointer]:
+                      - /url: /aplikasi/26b00f06-8f42-486f-8b4e-43add061f1d9
+                      - strong [ref=f13e841]: Perf Company 0229
+                      - generic [ref=f13e842]: Backend Engineer
+                      - generic [ref=f13e843]: Bandung
+                  - cell "Dilamar" [ref=f13e847]
+                  - cell "Referral" [ref=f13e849]
+                  - cell "6 Jun 2026" [ref=f13e850]
+                  - cell "23 Sep 2026" [ref=f13e851]
+                  - cell "23 Sep 2026" [ref=f13e852]
+                  - cell [ref=f13e853]:
+                    - generic [ref=f13e854]:
+                      - button "Edit Perf Company 0229" [ref=f13e855] [cursor=pointer]
+                      - button "Hapus Perf Company 0229" [ref=f13e859] [cursor=pointer]
+                - row [ref=f13e863]:
+                  - cell [ref=f13e864]:
+                    - link "Perf Company 0193 Backend Engineer Bandung" [ref=f13e865] [cursor=pointer]:
+                      - /url: /aplikasi/270e663e-d9ad-4f17-af44-dd9c37c4dd67
+                      - strong [ref=f13e866]: Perf Company 0193
+                      - generic [ref=f13e867]: Backend Engineer
+                      - generic [ref=f13e868]: Bandung
+                  - cell "Dilamar" [ref=f13e872]
+                  - cell "Referral" [ref=f13e874]
+                  - cell "26 Feb 2026" [ref=f13e875]
+                  - cell "23 Sep 2026" [ref=f13e876]
+                  - cell "23 Sep 2026" [ref=f13e877]
+                  - cell [ref=f13e878]:
+                    - generic [ref=f13e879]:
+                      - button "Edit Perf Company 0193" [ref=f13e880] [cursor=pointer]
+                      - button "Hapus Perf Company 0193" [ref=f13e884] [cursor=pointer]
+                - row [ref=f13e888]:
+                  - cell [ref=f13e889]:
+                    - link "Perf Company 0481 Backend Engineer Bandung" [ref=f13e890] [cursor=pointer]:
+                      - /url: /aplikasi/322495f1-1a5f-4d7f-8adb-4ad61f616673
+                      - strong [ref=f13e891]: Perf Company 0481
+                      - generic [ref=f13e892]: Backend Engineer
+                      - generic [ref=f13e893]: Bandung
+                  - cell "Dilamar" [ref=f13e897]
+                  - cell "Referral" [ref=f13e899]
+                  - cell "6 Feb 2026" [ref=f13e900]
+                  - cell "23 Sep 2026" [ref=f13e901]
+                  - cell "23 Sep 2026" [ref=f13e902]
+                  - cell [ref=f13e903]:
+                    - generic [ref=f13e904]:
+                      - button "Edit Perf Company 0481" [ref=f13e905] [cursor=pointer]
+                      - button "Hapus Perf Company 0481" [ref=f13e909] [cursor=pointer]
+                - row [ref=f13e913]:
+                  - cell [ref=f13e914]:
+                    - link "Perf Company 0373 Backend Engineer Bandung" [ref=f13e915] [cursor=pointer]:
+                      - /url: /aplikasi/33746e17-2926-498a-bf98-c8746c010927
+                      - strong [ref=f13e916]: Perf Company 0373
+                      - generic [ref=f13e917]: Backend Engineer
+                      - generic [ref=f13e918]: Bandung
+                  - cell "Dilamar" [ref=f13e922]
+                  - cell "Referral" [ref=f13e924]
+                  - cell "10 Jun 2026" [ref=f13e925]
+                  - cell "23 Sep 2026" [ref=f13e926]
+                  - cell "23 Sep 2026" [ref=f13e927]
+                  - cell [ref=f13e928]:
+                    - generic [ref=f13e929]:
+                      - button "Edit Perf Company 0373" [ref=f13e930] [cursor=pointer]
+                      - button "Hapus Perf Company 0373" [ref=f13e934] [cursor=pointer]
+                - row [ref=f13e938]:
+                  - cell [ref=f13e939]:
+                    - link "Perf Company 0463 Backend Engineer Bandung" [ref=f13e940] [cursor=pointer]:
+                      - /url: /aplikasi/37955f98-72fa-4b39-86ca-301465c59610
+                      - strong [ref=f13e941]: Perf Company 0463
+                      - generic [ref=f13e942]: Backend Engineer
+                      - generic [ref=f13e943]: Bandung
+                  - cell "Dilamar" [ref=f13e947]
+                  - cell "Referral" [ref=f13e949]
+                  - cell "16 Agu 2026" [ref=f13e950]
+                  - cell "23 Sep 2026" [ref=f13e951]
+                  - cell "23 Sep 2026" [ref=f13e952]
+                  - cell [ref=f13e953]:
+                    - generic [ref=f13e954]:
+                      - button "Edit Perf Company 0463" [ref=f13e955] [cursor=pointer]
+                      - button "Hapus Perf Company 0463" [ref=f13e959] [cursor=pointer]
+                - row [ref=f13e963]:
+                  - cell [ref=f13e964]:
+                    - link "Perf Company 0337 Backend Engineer Bandung" [ref=f13e965] [cursor=pointer]:
+                      - /url: /aplikasi/3cb95bd8-6ca9-4949-ac80-850879b32932
+                      - strong [ref=f13e966]: Perf Company 0337
+                      - generic [ref=f13e967]: Backend Engineer
+                      - generic [ref=f13e968]: Bandung
+                  - cell "Dilamar" [ref=f13e972]
+                  - cell "Referral" [ref=f13e974]
+                  - cell "2 Feb 2026" [ref=f13e975]
+                  - cell "23 Sep 2026" [ref=f13e976]
+                  - cell "23 Sep 2026" [ref=f13e977]
+                  - cell [ref=f13e978]:
+                    - generic [ref=f13e979]:
+                      - button "Edit Perf Company 0337" [ref=f13e980] [cursor=pointer]
+                      - button "Hapus Perf Company 0337" [ref=f13e984] [cursor=pointer]
+                - row [ref=f13e988]:
+                  - cell [ref=f13e989]:
+                    - link "Perf Company 0103 Backend Engineer Bandung" [ref=f13e990] [cursor=pointer]:
+                      - /url: /aplikasi/3ce40bf7-b1a5-488c-95e3-19c397668c67
+                      - strong [ref=f13e991]: Perf Company 0103
+                      - generic [ref=f13e992]: Backend Engineer
+                      - generic [ref=f13e993]: Bandung
+                  - cell "Dilamar" [ref=f13e997]
+                  - cell "Referral" [ref=f13e999]
+                  - cell "20 Agu 2026" [ref=f13e1000]
+                  - cell "23 Sep 2026" [ref=f13e1001]
+                  - cell "23 Sep 2026" [ref=f13e1002]
+                  - cell [ref=f13e1003]:
+                    - generic [ref=f13e1004]:
+                      - button "Edit Perf Company 0103" [ref=f13e1005] [cursor=pointer]
+                      - button "Hapus Perf Company 0103" [ref=f13e1009] [cursor=pointer]
+                - row [ref=f13e1013]:
+                  - cell [ref=f13e1014]:
+                    - link "Perf Company 0427 Backend Engineer Bandung" [ref=f13e1015] [cursor=pointer]:
+                      - /url: /aplikasi/505ab9ed-6a92-40fb-9ace-dfdc387ab30d
+                      - strong [ref=f13e1016]: Perf Company 0427
+                      - generic [ref=f13e1017]: Backend Engineer
+                      - generic [ref=f13e1018]: Bandung
+                  - cell "Dilamar" [ref=f13e1022]
+                  - cell "Referral" [ref=f13e1024]
+                  - cell "8 Apr 2026" [ref=f13e1025]
+                  - cell "23 Sep 2026" [ref=f13e1026]
+                  - cell "23 Sep 2026" [ref=f13e1027]
+                  - cell [ref=f13e1028]:
+                    - generic [ref=f13e1029]:
+                      - button "Edit Perf Company 0427" [ref=f13e1030] [cursor=pointer]
+                      - button "Hapus Perf Company 0427" [ref=f13e1034] [cursor=pointer]
+                - row [ref=f13e1038]:
+                  - cell [ref=f13e1039]:
+                    - link "Perf Company 0157 Backend Engineer Bandung" [ref=f13e1040] [cursor=pointer]:
+                      - /url: /aplikasi/50fbc864-a0ad-416e-8eb7-aa3a03e85e85
+                      - strong [ref=f13e1041]: Perf Company 0157
+                      - generic [ref=f13e1042]: Backend Engineer
+                      - generic [ref=f13e1043]: Bandung
+                  - cell "Dilamar" [ref=f13e1047]
+                  - cell "Referral" [ref=f13e1049]
+                  - cell "18 Jun 2026" [ref=f13e1050]
+                  - cell "23 Sep 2026" [ref=f13e1051]
+                  - cell "23 Sep 2026" [ref=f13e1052]
+                  - cell [ref=f13e1053]:
+                    - generic [ref=f13e1054]:
+                      - button "Edit Perf Company 0157" [ref=f13e1055] [cursor=pointer]
+                      - button "Hapus Perf Company 0157" [ref=f13e1059] [cursor=pointer]
+                - row [ref=f13e1063]:
+                  - cell [ref=f13e1064]:
+                    - link "Perf Company 0499 Backend Engineer Bandung" [ref=f13e1065] [cursor=pointer]:
+                      - /url: /aplikasi/56f05c0e-e26c-49fd-9167-576b6d2ce5bc
+                      - strong [ref=f13e1066]: Perf Company 0499
+                      - generic [ref=f13e1067]: Backend Engineer
+                      - generic [ref=f13e1068]: Bandung
+                  - cell "Dilamar" [ref=f13e1072]
+                  - cell "Referral" [ref=f13e1074]
+                  - cell "24 Apr 2026" [ref=f13e1075]
+                  - cell "23 Sep 2026" [ref=f13e1076]
+                  - cell "23 Sep 2026" [ref=f13e1077]
+                  - cell [ref=f13e1078]:
+                    - generic [ref=f13e1079]:
+                      - button "Edit Perf Company 0499" [ref=f13e1080] [cursor=pointer]
+                      - button "Hapus Perf Company 0499" [ref=f13e1084] [cursor=pointer]
+                - row [ref=f13e1088]:
+                  - cell [ref=f13e1089]:
+                    - link "Perf Company 0265 Backend Engineer Bandung" [ref=f13e1090] [cursor=pointer]:
+                      - /url: /aplikasi/62143ccb-1f09-49f0-a0c6-c58c66763293
+                      - strong [ref=f13e1091]: Perf Company 0265
+                      - generic [ref=f13e1092]: Backend Engineer
+                      - generic [ref=f13e1093]: Bandung
+                  - cell "Dilamar" [ref=f13e1097]
+                  - cell "Referral" [ref=f13e1099]
+                  - cell "14 Feb 2026" [ref=f13e1100]
+                  - cell "23 Sep 2026" [ref=f13e1101]
+                  - cell "23 Sep 2026" [ref=f13e1102]
+                  - cell [ref=f13e1103]:
+                    - generic [ref=f13e1104]:
+                      - button "Edit Perf Company 0265" [ref=f13e1105] [cursor=pointer]
+                      - button "Hapus Perf Company 0265" [ref=f13e1109] [cursor=pointer]
+                - row [ref=f13e1113]:
+                  - cell [ref=f13e1114]:
+                    - link "Perf Company 0319 Backend Engineer Bandung" [ref=f13e1115] [cursor=pointer]:
+                      - /url: /aplikasi/6897cea4-d05b-4cd6-a3ce-e2f7180eaa58
+                      - strong [ref=f13e1116]: Perf Company 0319
+                      - generic [ref=f13e1117]: Backend Engineer
+                      - generic [ref=f13e1118]: Bandung
+                  - cell "Dilamar" [ref=f13e1122]
+                  - cell "Referral" [ref=f13e1124]
+                  - cell "12 Agu 2026" [ref=f13e1125]
+                  - cell "23 Sep 2026" [ref=f13e1126]
+                  - cell "23 Sep 2026" [ref=f13e1127]
+                  - cell [ref=f13e1128]:
+                    - generic [ref=f13e1129]:
+                      - button "Edit Perf Company 0319" [ref=f13e1130] [cursor=pointer]
+                      - button "Hapus Perf Company 0319" [ref=f13e1134] [cursor=pointer]
+                - row [ref=f13e1138]:
+                  - cell [ref=f13e1139]:
+                    - link "Perf Company 0175 Backend Engineer Bandung" [ref=f13e1140] [cursor=pointer]:
+                      - /url: /aplikasi/736b1f3e-facf-4cfb-88ee-c5da1ce7d1d4
+                      - strong [ref=f13e1141]: Perf Company 0175
+                      - generic [ref=f13e1142]: Backend Engineer
+                      - generic [ref=f13e1143]: Bandung
+                  - cell "Dilamar" [ref=f13e1147]
+                  - cell "Referral" [ref=f13e1149]
+                  - cell "8 Agu 2026" [ref=f13e1150]
+                  - cell "23 Sep 2026" [ref=f13e1151]
+                  - cell "23 Sep 2026" [ref=f13e1152]
+                  - cell [ref=f13e1153]:
+                    - generic [ref=f13e1154]:
+                      - button "Edit Perf Company 0175" [ref=f13e1155] [cursor=pointer]
+                      - button "Hapus Perf Company 0175" [ref=f13e1159] [cursor=pointer]
+                - row [ref=f13e1163]:
+                  - cell [ref=f13e1164]:
+                    - link "Perf Company 0301 Backend Engineer Bandung" [ref=f13e1165] [cursor=pointer]:
+                      - /url: /aplikasi/83b7d197-57fb-45d8-a446-da1163d86878
+                      - strong [ref=f13e1166]: Perf Company 0301
+                      - generic [ref=f13e1167]: Backend Engineer
+                      - generic [ref=f13e1168]: Bandung
+                  - cell "Dilamar" [ref=f13e1172]
+                  - cell "Referral" [ref=f13e1174]
+                  - cell "22 Jun 2026" [ref=f13e1175]
+                  - cell "23 Sep 2026" [ref=f13e1176]
+                  - cell "23 Sep 2026" [ref=f13e1177]
+                  - cell [ref=f13e1178]:
+                    - generic [ref=f13e1179]:
+                      - button "Edit Perf Company 0301" [ref=f13e1180] [cursor=pointer]
+                      - button "Hapus Perf Company 0301" [ref=f13e1184] [cursor=pointer]
+            - navigation "Paginasi" [ref=f13e604]:
+              - link "Sebelumnya" [disabled]:
+                - /url: /aplikasi?view=list&sort=upcoming_desc&stageId=41ae7ebb-0d6a-407a-ad95-f4cde6b29f6b&offset=0
+              - generic [ref=f13e605]: Halaman 1 dari 5 · 84 lamaran
+              - link "Berikutnya" [ref=f13e606] [cursor=pointer]:
+                - /url: /aplikasi?view=list&sort=upcoming_desc&stageId=41ae7ebb-0d6a-407a-ad95-f4cde6b29f6b&offset=20
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f13e614] [cursor=pointer]
+  - alert [ref=f13e618]

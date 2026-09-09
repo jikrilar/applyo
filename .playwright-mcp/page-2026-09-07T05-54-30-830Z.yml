@@ -1,0 +1,91 @@
+- generic [active] [ref=f23e1]:
+  - generic [ref=f23e2]:
+    - complementary [ref=f23e3]:
+      - link "Beranda Applyo" [ref=f23e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f23e5]:
+        - link "Dasbor" [ref=f23e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f23e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f23e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f23e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f23e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f23e33] [cursor=pointer]
+    - generic [ref=f23e37]:
+      - banner [ref=f23e38]:
+        - generic [ref=f23e39]:
+          - button "Gunakan mode gelap" [ref=f23e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f23e44] [cursor=pointer]:
+            - generic [ref=f23e45]: QF
+            - generic [ref=f23e46]:
+              - strong [ref=f23e47]: QA F06
+              - generic [ref=f23e48]: qa-f06@applyo.test
+      - main [ref=f23e51]:
+        - generic [ref=f23e69]:
+          - generic [ref=f23e70]:
+            - generic [ref=f23e71]:
+              - generic [ref=f23e72]: Ruang kerja lamaran
+              - heading "Lamaran saya" [level=1] [ref=f23e73]
+              - paragraph [ref=f23e74]: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation "Tampilan lamaran" [ref=f23e75]:
+              - link "Papan" [ref=f23e76] [cursor=pointer]:
+                - /url: /aplikasi
+              - link "Daftar" [ref=f23e82] [cursor=pointer]:
+                - /url: /aplikasi?view=list
+          - generic [ref=f23e84]:
+            - generic [ref=f23e85]:
+              - generic [ref=f23e89]: Cari lamaran
+              - textbox "Cari lamaran" [ref=f23e90]:
+                - /placeholder: Cari perusahaan atau posisi...
+            - button "Filter" [ref=f23e92] [cursor=pointer]
+            - button "Tambah lamaran" [ref=f23e94]
+          - generic [ref=f23e96]:
+            - generic [ref=f23e97]:
+              - generic [ref=f23e98]:
+                - strong [ref=f23e99]: Incaran
+                - generic [ref=f23e100]: "1"
+              - article [ref=f23e204] [cursor=pointer]:
+                - generic [ref=f23e205]:
+                  - strong [ref=f23e206]: PT F06 Data
+                  - generic [ref=f23e207]:
+                    - button "Pindahkan kartu PT F06 Data" [ref=f23e208]
+                    - button "Tindakan untuk PT F06 Data" [ref=f23e217]
+                - link "Tester" [ref=f23e222]:
+                  - /url: /aplikasi/2640e933-c179-4867-838c-8703d08ffc59
+                - generic [ref=f23e223]: Lokasi belum diisi
+                - generic [ref=f23e227]: Baru diperbarui
+            - generic [ref=f23e103]:
+              - generic [ref=f23e104]:
+                - strong [ref=f23e105]: Dilamar
+                - generic [ref=f23e106]: "0"
+              - paragraph [ref=f23e108]: Letakkan lamaran di sini
+            - generic [ref=f23e109]:
+              - generic [ref=f23e110]:
+                - strong [ref=f23e111]: Seleksi Awal
+                - generic [ref=f23e112]: "0"
+              - paragraph [ref=f23e114]: Letakkan lamaran di sini
+            - generic [ref=f23e115]:
+              - generic [ref=f23e116]:
+                - strong [ref=f23e117]: Wawancara
+                - generic [ref=f23e118]: "0"
+              - paragraph [ref=f23e120]: Letakkan lamaran di sini
+            - generic [ref=f23e121]:
+              - generic [ref=f23e122]:
+                - strong [ref=f23e123]: Asesmen
+                - generic [ref=f23e124]: "0"
+              - paragraph [ref=f23e126]: Letakkan lamaran di sini
+            - generic [ref=f23e127]:
+              - generic [ref=f23e128]:
+                - strong [ref=f23e129]: Tawaran
+                - generic [ref=f23e130]: "0"
+              - paragraph [ref=f23e132]: Letakkan lamaran di sini
+          - status [ref=f23e133]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f23e64] [cursor=pointer]
+  - alert [ref=f23e68]

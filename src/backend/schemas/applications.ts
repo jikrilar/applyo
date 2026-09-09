@@ -2,7 +2,13 @@ import { z } from "zod";
 import { CLOSED_STAGE_KEYS } from "../domain/constants";
 
 const nullableText = (max: number) => z.string().trim().max(max).nullish().transform((value) => value || null);
-const httpUrl = z.url().refine((value) => ["http:", "https:"].includes(new URL(value).protocol), "URL harus menggunakan HTTP atau HTTPS");
+const httpUrl = z.url().refine((value) => {
+  try {
+    return ["http:", "https:"].includes(new URL(value).protocol);
+  } catch {
+    return false;
+  }
+}, "URL harus menggunakan HTTP atau HTTPS");
 const nullableUrl = z.union([httpUrl, z.literal(""), z.null()]).optional().transform((value) => value || null);
 const nullableDate = z.union([z.iso.date(), z.literal(""), z.null()]).optional().transform((value) => value || null);
 const money = z.coerce.number().nonnegative().finite().nullish().transform((value) => value ?? null);

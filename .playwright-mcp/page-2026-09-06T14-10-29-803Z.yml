@@ -1,0 +1,210 @@
+- generic:
+  - generic:
+    - complementary [aria-hidden]:
+      - link:
+        - /url: /
+        - text: Applyo
+      - navigation:
+        - link:
+          - /url: /dashboard
+          - generic: Dasbor
+        - link:
+          - /url: /aplikasi
+          - generic: Lamaran
+        - link:
+          - /url: /kalender
+          - generic: Kalender
+        - link:
+          - /url: /analitik
+          - generic: Analitik
+        - link:
+          - /url: /pengaturan
+          - generic: Pengaturan
+      - generic:
+        - button: Keluar
+    - generic:
+      - banner [aria-hidden]:
+        - generic:
+          - button
+          - generic:
+            - button:
+              - generic: QP
+              - generic:
+                - strong: QA Phase2
+                - generic: qa-phase2@applyo.test
+      - main:
+        - generic:
+          - generic [aria-hidden]:
+            - generic:
+              - generic: Ruang kerja lamaran
+              - heading [level=1]: Lamaran saya
+              - paragraph: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation:
+              - link:
+                - /url: /aplikasi
+                - text: Papan
+              - link:
+                - /url: /aplikasi?view=list
+                - text: Daftar
+          - generic [aria-hidden]:
+            - generic:
+              - generic: Cari lamaran
+              - textbox:
+                - /placeholder: Cari perusahaan atau posisi...
+            - generic:
+              - button: Filter
+            - button: Tambah lamaran
+          - generic [aria-hidden]:
+            - generic:
+              - generic:
+                - strong: Incaran
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Dilamar
+                - generic: "1"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Maju Bersama
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/f0fc2bc4-7417-4b44-9909-ce6e560790ac
+                    - text: QA Engineer
+                  - generic: Lokasi belum diisi
+                  - generic: Baru diperbarui
+            - generic:
+              - generic:
+                - strong: Seleksi Awal
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Wawancara
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Asesmen
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Tawaran
+                - generic: "1"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Sinar Abadi
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/effdb375-b145-4ffc-800e-24ba62175098
+                    - text: Senior Frontend Developer
+                  - generic: Jakarta
+                  - generic: 10 Sep 2026
+          - status
+  - button "Open Next.js Dev Tools" [ref=f26e64] [cursor=pointer]
+  - alert
+  - dialog [ref=f26e197]:
+    - heading "Tambah agenda" [level=2] [ref=f26e198]
+    - paragraph [ref=f26e199]: PT Sinar Abadi. Formulir ini dapat dilewati dan dilengkapi nanti.
+    - generic [ref=f26e200]:
+      - generic [ref=f26e201]:
+        - generic [ref=f26e202]: Jenis agenda
+        - button "Asesmen" [ref=f26e253] [cursor=pointer]
+      - generic [ref=f26e209]:
+        - generic [ref=f26e210]: Jenis asesmen
+        - combobox "Jenis asesmen" [ref=f26e254]:
+          - option "Tes teknis" [selected]
+          - option "Tes coding"
+          - option "Tes psikologi"
+          - option "Studi kasus"
+          - option "Tugas rumah"
+          - option "Pemeriksaan kesehatan"
+          - option "Asesmen lainnya"
+      - generic [ref=f26e213]:
+        - generic [ref=f26e214]: Judul
+        - textbox "Judul" [ref=f26e255]: Tes Coding
+      - generic [ref=f26e217]:
+        - generic [ref=f26e218]: Tenggat
+        - button "Pilih tenggat" [expanded] [active] [ref=f26e256] [cursor=pointer]
+        - generic [ref=f26e226]: Waktu mengikuti zona waktu pada Pengaturan.
+      - generic [ref=f26e227]:
+        - generic [ref=f26e228]: Tautan
+        - textbox "Tautan" [ref=f26e257]:
+          - /placeholder: https://...
+      - generic [ref=f26e231]:
+        - generic [ref=f26e232]: Catatan (opsional)
+        - textbox "Catatan (opsional)" [ref=f26e234]
+      - generic [ref=f26e235]:
+        - button "Batal" [ref=f26e236] [cursor=pointer]
+        - button "Simpan agenda" [disabled] [ref=f26e237]
+    - button "Tutup dialog" [ref=f26e238] [cursor=pointer]
+  - dialog "Pilih tenggat" [ref=f26e258]:
+    - generic [ref=f26e259]:
+      - button "Bulan sebelumnya" [ref=f26e260] [cursor=pointer]
+      - strong [ref=f26e263]: September 2026
+      - button "Bulan berikutnya" [ref=f26e264] [cursor=pointer]
+    - generic [aria-hidden] [ref=f26e267]:
+      - generic [ref=f26e268]: Sen
+      - generic [ref=f26e269]: Sel
+      - generic [ref=f26e270]: Rab
+      - generic [ref=f26e271]: Kam
+      - generic [ref=f26e272]: Jum
+      - generic [ref=f26e273]: Sab
+      - generic [ref=f26e274]: Min
+    - grid "September 2026" [ref=f26e275]:
+      - gridcell "1" [ref=f26e276] [cursor=pointer]
+      - gridcell "2" [ref=f26e277] [cursor=pointer]
+      - gridcell "3" [ref=f26e278] [cursor=pointer]
+      - gridcell "4" [ref=f26e279] [cursor=pointer]
+      - gridcell "5" [ref=f26e280] [cursor=pointer]
+      - gridcell "6" [ref=f26e281] [cursor=pointer]
+      - gridcell "7" [ref=f26e282] [cursor=pointer]
+      - gridcell "8" [ref=f26e283] [cursor=pointer]
+      - gridcell "9" [ref=f26e284] [cursor=pointer]
+      - gridcell "10" [ref=f26e285] [cursor=pointer]
+      - gridcell "11" [ref=f26e286] [cursor=pointer]
+      - gridcell "12" [ref=f26e287] [cursor=pointer]
+      - gridcell "13" [ref=f26e288] [cursor=pointer]
+      - gridcell "14" [ref=f26e289] [cursor=pointer]
+      - gridcell "15" [ref=f26e290] [cursor=pointer]
+      - gridcell "16" [ref=f26e291] [cursor=pointer]
+      - gridcell "17" [ref=f26e292] [cursor=pointer]
+      - gridcell "18" [ref=f26e293] [cursor=pointer]
+      - gridcell "19" [ref=f26e294] [cursor=pointer]
+      - gridcell "20" [ref=f26e295] [cursor=pointer]
+      - gridcell "21" [ref=f26e296] [cursor=pointer]
+      - gridcell "22" [ref=f26e297] [cursor=pointer]
+      - gridcell "23" [ref=f26e298] [cursor=pointer]
+      - gridcell "24" [ref=f26e299] [cursor=pointer]
+      - gridcell "25" [ref=f26e300] [cursor=pointer]
+      - gridcell "26" [ref=f26e301] [cursor=pointer]
+      - gridcell "27" [ref=f26e302] [cursor=pointer]
+      - gridcell "28" [ref=f26e303] [cursor=pointer]
+      - gridcell "29" [ref=f26e304] [cursor=pointer]
+      - gridcell "30" [ref=f26e305] [cursor=pointer]
+    - generic [ref=f26e306]:
+      - generic [ref=f26e307]: Waktu
+      - generic [ref=f26e308]:
+        - generic [ref=f26e309]:
+          - generic [ref=f26e310]: Jam
+          - button [ref=f26e312] [cursor=pointer]:
+            - strong [ref=f26e316]: "09"
+        - generic [aria-hidden] [ref=f26e319]: ":"
+        - generic [ref=f26e320]:
+          - generic [ref=f26e321]: Menit
+          - button [ref=f26e323] [cursor=pointer]:
+            - strong [ref=f26e327]: "00"
+    - button "Gunakan tanggal" [disabled] [ref=f26e331]

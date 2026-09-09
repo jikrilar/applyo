@@ -1,0 +1,142 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e68]:
+    - complementary [ref=e69]:
+      - link "Beranda Applyo" [ref=e70] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=e71]:
+        - link "Dasbor" [ref=e72] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=e79] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=e85] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=e89] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=e93] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=e99] [cursor=pointer]
+    - generic [ref=e103]:
+      - banner [ref=e104]:
+        - generic [ref=e105]:
+          - button "Gunakan mode gelap" [ref=e106] [cursor=pointer]
+          - button "Buka menu profil" [ref=e110] [cursor=pointer]:
+            - generic [ref=e111]: P
+            - generic [ref=e112]:
+              - strong [ref=e113]: perf-list-payload
+              - generic [ref=e114]: perf-list-payload@applyo.test
+      - main [ref=e117]:
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - generic [ref=e121]: Ruang kerja hari ini
+              - heading "Selamat datang." [level=1] [ref=e122]
+              - paragraph [ref=e123]: Ini yang sedang berjalan dalam pencarian kerjamu.
+            - link "Tambah lamaran" [ref=e124] [cursor=pointer]:
+              - /url: /aplikasi
+          - generic [ref=e126]:
+            - article [ref=e127]:
+              - strong [ref=e128]: "100"
+              - generic [ref=e129]: Total lamaran
+            - article [ref=e130]:
+              - strong [ref=e131]: "100"
+              - generic [ref=e132]: Lamaran aktif
+            - article [ref=e133]:
+              - strong [ref=e134]: "100"
+              - generic [ref=e135]: Wawancara
+            - article [ref=e136]:
+              - strong [ref=e137]: "0"
+              - generic [ref=e138]: Asesmen
+            - article [ref=e139]:
+              - strong [ref=e140]: "0"
+              - generic [ref=e141]: Tawaran
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - generic [ref=e145]:
+                - heading "Berikutnya" [level=2] [ref=e146]
+                - paragraph [ref=e147]: Agenda yang paling dekat.
+              - link "10 SEP Agenda Interview 0 Perf Company 0000 · 10 Sep 2026, 10.00" [ref=e152] [cursor=pointer]:
+                - /url: /aplikasi/352889c2-b303-4ea5-bf58-78da6dfa2a0a
+                - generic [ref=e153]:
+                  - strong [ref=e154]: "10"
+                  - generic [ref=e155]: SEP
+                - generic [ref=e156]:
+                  - text: Agenda
+                  - heading "Interview 0" [level=3] [ref=e157]
+                  - paragraph [ref=e158]: Perf Company 0000 · 10 Sep 2026, 10.00
+              - link "10 SEP Agenda Interview 18 Perf Company 0018 · 10 Sep 2026, 10.00" [ref=e161] [cursor=pointer]:
+                - /url: /aplikasi/1caad1ae-d13d-43b4-979d-a202ab92c41c
+                - generic [ref=e162]:
+                  - strong [ref=e163]: "10"
+                  - generic [ref=e164]: SEP
+                - generic [ref=e165]:
+                  - text: Agenda
+                  - heading "Interview 18" [level=3] [ref=e166]
+                  - paragraph [ref=e167]: Perf Company 0018 · 10 Sep 2026, 10.00
+              - link "10 SEP Agenda Interview 36 Perf Company 0036 · 10 Sep 2026, 10.00" [ref=e170] [cursor=pointer]:
+                - /url: /aplikasi/e30a5ad7-8ce7-4671-a1bf-3a4b621dc7e5
+                - generic [ref=e171]:
+                  - strong [ref=e172]: "10"
+                  - generic [ref=e173]: SEP
+                - generic [ref=e174]:
+                  - text: Agenda
+                  - heading "Interview 36" [level=3] [ref=e175]
+                  - paragraph [ref=e176]: Perf Company 0036 · 10 Sep 2026, 10.00
+            - complementary [ref=e179]:
+              - heading "Perlu perhatian" [level=2] [ref=e184]
+              - link [ref=e185] [cursor=pointer]:
+                - /url: /aplikasi/352889c2-b303-4ea5-bf58-78da6dfa2a0a
+                - generic [ref=e189]:
+                  - strong [ref=e190]: Interview 0
+                  - paragraph [ref=e191]: 10 Sep 2026, 10.00
+              - link [ref=e192] [cursor=pointer]:
+                - /url: /aplikasi/1a67fd54-dc41-4ee7-a869-3009d0b69a25
+                - generic [ref=e196]:
+                  - strong [ref=e197]: Interview 1
+                  - paragraph [ref=e198]: 11 Sep 2026, 10.00
+              - link [ref=e199] [cursor=pointer]:
+                - /url: /aplikasi/1caad1ae-d13d-43b4-979d-a202ab92c41c
+                - generic [ref=e203]:
+                  - strong [ref=e204]: Interview 18
+                  - paragraph [ref=e205]: 10 Sep 2026, 10.00
+              - link [ref=e206] [cursor=pointer]:
+                - /url: /aplikasi/6bbf490b-f36b-4163-969a-e3d7caa45ea8
+                - generic [ref=e210]:
+                  - strong [ref=e211]: Interview 19
+                  - paragraph [ref=e212]: 11 Sep 2026, 10.00
+              - link [ref=e213] [cursor=pointer]:
+                - /url: /aplikasi/e30a5ad7-8ce7-4671-a1bf-3a4b621dc7e5
+                - generic [ref=e217]:
+                  - strong [ref=e218]: Interview 36
+                  - paragraph [ref=e219]: 10 Sep 2026, 10.00
+              - link [ref=e220] [cursor=pointer]:
+                - /url: /aplikasi/345caf74-9fb6-48bb-91ea-e47c98f2e48c
+                - generic [ref=e224]:
+                  - strong [ref=e225]: Interview 37
+                  - paragraph [ref=e226]: 11 Sep 2026, 10.00
+              - link [ref=e227] [cursor=pointer]:
+                - /url: /aplikasi/bea0dfd3-d8c4-4206-ace7-67425cec81af
+                - generic [ref=e231]:
+                  - strong [ref=e232]: Interview 54
+                  - paragraph [ref=e233]: 10 Sep 2026, 10.00
+              - link [ref=e234] [cursor=pointer]:
+                - /url: /aplikasi/7e3c091d-7aad-4cc9-b4fb-1c9241845d11
+                - generic [ref=e238]:
+                  - strong [ref=e239]: Interview 55
+                  - paragraph [ref=e240]: 11 Sep 2026, 10.00
+              - link [ref=e241] [cursor=pointer]:
+                - /url: /aplikasi/24721513-8a09-4dd1-9694-f10f956f9ec2
+                - generic [ref=e245]:
+                  - strong [ref=e246]: Interview 72
+                  - paragraph [ref=e247]: 10 Sep 2026, 10.00
+              - link [ref=e248] [cursor=pointer]:
+                - /url: /aplikasi/137738d5-d730-4df2-a11d-d6c7c7bf870a
+                - generic [ref=e252]:
+                  - strong [ref=e253]: Interview 73
+                  - paragraph [ref=e254]: 11 Sep 2026, 10.00
+              - link "Lihat semua lamaran" [ref=e255] [cursor=pointer]:
+                - /url: /aplikasi
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=e63] [cursor=pointer]
+  - alert [ref=e67]

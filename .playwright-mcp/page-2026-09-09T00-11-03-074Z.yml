@@ -1,0 +1,111 @@
+- generic [active] [ref=f40e1]:
+  - generic [ref=f40e2]:
+    - complementary [ref=f40e3]:
+      - link "Beranda Applyo" [ref=f40e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f40e5]:
+        - link "Dasbor" [ref=f40e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f40e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f40e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f40e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f40e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f40e33] [cursor=pointer]
+    - generic [ref=f40e37]:
+      - banner [ref=f40e38]:
+        - generic [ref=f40e39]:
+          - button "Gunakan mode gelap" [ref=f40e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f40e44] [cursor=pointer]:
+            - generic [ref=f40e45]: UA
+            - generic [ref=f40e46]:
+              - strong [ref=f40e47]: UI Audit
+              - generic [ref=f40e48]: ui-audit@applyo.test
+      - main [ref=f40e51]:
+        - generic [ref=f40e65]:
+          - link "Kembali ke lamaran" [ref=f40e66] [cursor=pointer]:
+            - /url: /aplikasi
+          - generic [ref=f40e69]:
+            - generic [ref=f40e70]:
+              - generic [ref=f40e71]: Incaran
+              - heading "PT Nusantara Teknologi Maju Bersama Sejahtera Abadi Sentosa" [level=1] [ref=f40e72]
+              - paragraph [ref=f40e73]: Senior Frontend Developer Spesialis Antarmuka Pengguna dan Pengalaman Digital
+            - generic [ref=f40e74]:
+              - button "Edit" [ref=f40e75] [cursor=pointer]
+              - button "Arsipkan" [ref=f40e79] [cursor=pointer]
+              - button "Tutup lamaran" [ref=f40e83]
+              - button "Hapus" [ref=f40e84] [cursor=pointer]
+          - generic [ref=f40e88]:
+            - main [ref=f40e89]:
+              - generic [ref=f40e90]:
+                - heading "Informasi lowongan" [level=2] [ref=f40e92]
+                - generic [ref=f40e93]:
+                  - generic [ref=f40e94]:
+                    - generic [ref=f40e95]: Lokasi
+                    - strong [ref=f40e96]: Belum diisi
+                  - generic [ref=f40e97]:
+                    - generic [ref=f40e98]: Sistem kerja
+                    - strong [ref=f40e99]: Belum diisi
+                  - generic [ref=f40e100]:
+                    - generic [ref=f40e101]: Jenis pekerjaan
+                    - strong [ref=f40e102]: Belum diisi
+                  - generic [ref=f40e103]:
+                    - generic [ref=f40e104]: Sumber
+                    - strong [ref=f40e105]: Belum diisi
+                  - generic [ref=f40e106]:
+                    - generic [ref=f40e107]: Tanggal melamar
+                    - strong [ref=f40e108]: Belum diisi
+                  - generic [ref=f40e109]:
+                    - generic [ref=f40e110]: Gaji
+                    - strong [ref=f40e111]: Belum diisi
+              - generic [ref=f40e112]:
+                - generic [ref=f40e113]:
+                  - heading "Catatan" [level=2] [ref=f40e114]
+                  - button "Edit catatan" [ref=f40e115] [cursor=pointer]
+                - paragraph [ref=f40e119]: Catatan sangat panjang untuk stress test tampilan kartu dan halaman detail aplikasi. Baris kedua catatan yang juga cukup panjang untuk melihat wrapping teks. Baris ketiga sebagai tambahan agar konten benar-benar menantang layout.
+              - generic [ref=f40e120]:
+                - heading "Agenda rekrutmen" [level=2] [ref=f40e122]
+                - article [ref=f40e124]:
+                  - generic [ref=f40e125]:
+                    - generic [ref=f40e126]: Wawancara · Terjadwal
+                    - heading "Wawancara HR dengan Manajer Perekrutan dan Tim Teknis Senior" [level=3] [ref=f40e127]
+                    - paragraph [ref=f40e128]: 12 Sep 2026, 09.00
+                  - generic [ref=f40e129]:
+                    - button "Edit Wawancara HR dengan Manajer Perekrutan dan Tim Teknis Senior" [ref=f40e130] [cursor=pointer]
+                    - button "Tandai selesai" [ref=f40e134] [cursor=pointer]
+                    - button "Hapus Wawancara HR dengan Manajer Perekrutan dan Tim Teknis Senior" [ref=f40e135] [cursor=pointer]
+              - generic [ref=f40e139]:
+                - heading "Timeline" [level=2] [ref=f40e141]
+                - list [ref=f40e142]:
+                  - listitem [ref=f40e143]:
+                    - generic [ref=f40e145]:
+                      - time [ref=f40e146]: 12 Sep 2026, 09.00
+                      - heading "Wawancara HR dengan Manajer Perekrutan dan Tim Teknis Senior" [level=3] [ref=f40e147]
+                      - paragraph [ref=f40e148]: Wawancara
+                  - listitem [ref=f40e149]:
+                    - generic [ref=f40e151]:
+                      - time [ref=f40e152]: 9 Sep 2026, 06.55
+                      - heading "Lamaran ditambahkan" [level=3] [ref=f40e153]
+            - complementary [ref=f40e154]:
+              - generic [ref=f40e155]:
+                - heading "Ringkasan" [level=2] [ref=f40e157]
+                - generic [ref=f40e158]:
+                  - paragraph [ref=f40e159]: "Dilamar: Belum diisi"
+                  - paragraph [ref=f40e162]: "Aktivitas terakhir: 12 Sep 2026, 09.00"
+                  - paragraph [ref=f40e166]: "Menunggu: 0 hari"
+                  - paragraph [ref=f40e170]: "Tahap: Incaran"
+                  - paragraph [ref=f40e175]: "Berikutnya: Wawancara HR dengan Manajer Perekrutan dan Tim Teknis Senior"
+                - button "Catat tindak lanjut" [ref=f40e178] [cursor=pointer]
+              - generic [ref=f40e182]:
+                - generic [ref=f40e183]:
+                  - heading "Tawaran" [level=2] [ref=f40e184]
+                  - button "Edit tawaran" [ref=f40e185] [cursor=pointer]
+                - paragraph [ref=f40e189]: Belum ada detail tawaran.
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f40e60] [cursor=pointer]
+  - alert [ref=f40e64]

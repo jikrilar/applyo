@@ -1,0 +1,33 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - complementary [ref=f1e3]:
+      - link "Beranda Applyo" [ref=f1e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f1e5]:
+        - link "Dasbor" [ref=f1e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f1e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f1e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f1e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f1e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f1e33] [cursor=pointer]
+    - generic [ref=f1e37]:
+      - banner [ref=f1e38]:
+        - generic [ref=f1e39]:
+          - button "Gunakan mode gelap" [ref=f1e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f1e44] [cursor=pointer]:
+            - generic [ref=f1e45]: QP
+            - generic [ref=f1e46]:
+              - strong [ref=f1e47]: QA Phase2
+              - generic [ref=f1e48]: qa-phase2@applyo.test
+      - main [ref=f1e51]:
+        - generic "Memuat ruang kerja" [ref=f1e52]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f1e64] [cursor=pointer]
+  - alert [ref=f1e68]

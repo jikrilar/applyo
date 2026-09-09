@@ -1,0 +1,102 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e20]:
+    - complementary [ref=f9e21]:
+      - link "Beranda Applyo" [ref=f9e22] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f9e23]:
+        - link "Dasbor" [ref=f9e24] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f9e31] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f9e37] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f9e41] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f9e45] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f9e51] [cursor=pointer]
+    - generic [ref=f9e55]:
+      - banner [ref=f9e56]:
+        - generic [ref=f9e57]:
+          - button "Gunakan mode gelap" [ref=f9e58] [cursor=pointer]
+          - button "Buka menu profil" [ref=f9e62] [cursor=pointer]:
+            - generic [ref=f9e63]: QP
+            - generic [ref=f9e64]:
+              - strong [ref=f9e65]: QA Phase2
+              - generic [ref=f9e66]: qa-phase2@applyo.test
+      - main [ref=f9e69]:
+        - generic [ref=f9e362]:
+          - link "Kembali ke lamaran" [ref=f9e363] [cursor=pointer]:
+            - /url: /aplikasi
+          - generic [ref=f9e366]:
+            - generic [ref=f9e367]:
+              - generic [ref=f9e368]: Incaran
+              - heading "PT Sinar Abadi" [level=1] [ref=f9e369]
+              - paragraph [ref=f9e370]: Frontend Developer
+            - generic [ref=f9e371]:
+              - button "Edit" [ref=f9e372] [cursor=pointer]
+              - button "Arsipkan" [ref=f9e376] [cursor=pointer]
+              - button "Tutup lamaran" [ref=f9e380]
+              - button "Hapus" [ref=f9e381] [cursor=pointer]
+          - generic [ref=f9e385]:
+            - main [ref=f9e386]:
+              - generic [ref=f9e387]:
+                - heading "Informasi lowongan" [level=2] [ref=f9e389]
+                - generic [ref=f9e390]:
+                  - generic [ref=f9e391]:
+                    - generic [ref=f9e392]: Lokasi
+                    - strong [ref=f9e393]: Jakarta
+                  - generic [ref=f9e394]:
+                    - generic [ref=f9e395]: Sistem kerja
+                    - strong [ref=f9e396]: Belum diisi
+                  - generic [ref=f9e397]:
+                    - generic [ref=f9e398]: Jenis pekerjaan
+                    - strong [ref=f9e399]: Belum diisi
+                  - generic [ref=f9e400]:
+                    - generic [ref=f9e401]: Sumber
+                    - strong [ref=f9e402]: LinkedIn
+                  - generic [ref=f9e403]:
+                    - generic [ref=f9e404]: Tanggal melamar
+                    - strong [ref=f9e405]: Belum diisi
+                  - generic [ref=f9e406]:
+                    - generic [ref=f9e407]: Gaji
+                    - strong [ref=f9e408]: Rp 8.000.000 - Rp 12.000.000
+                - link "Buka lowongan" [ref=f9e409] [cursor=pointer]:
+                  - /url: https://example.com/jobs/123
+                - generic [ref=f9e414]:
+                  - heading "Deskripsi" [level=3] [ref=f9e415]
+                  - paragraph [ref=f9e416]: Membangun antarmuka web modern dengan React.
+              - generic [ref=f9e417]:
+                - generic [ref=f9e418]:
+                  - heading "Catatan" [level=2] [ref=f9e419]
+                  - button "Edit catatan" [ref=f9e420] [cursor=pointer]
+                - paragraph [ref=f9e424]: Catatan QA phase 2.
+              - generic [ref=f9e425]:
+                - heading "Agenda rekrutmen" [level=2] [ref=f9e427]
+                - paragraph [ref=f9e429]: Belum ada agenda.
+              - generic [ref=f9e430]:
+                - heading "Timeline" [level=2] [ref=f9e432]
+                - list [ref=f9e433]:
+                  - listitem [ref=f9e434]:
+                    - generic [ref=f9e436]:
+                      - time [ref=f9e437]: 6 Sep 2026, 20.44
+                      - heading "Lamaran ditambahkan" [level=3] [ref=f9e438]
+            - complementary [ref=f9e439]:
+              - generic [ref=f9e440]:
+                - heading "Ringkasan" [level=2] [ref=f9e442]
+                - generic [ref=f9e443]:
+                  - paragraph [ref=f9e444]: "Dilamar: Belum diisi"
+                  - paragraph [ref=f9e447]: "Aktivitas terakhir: 6 Sep 2026, 20.44"
+                  - paragraph [ref=f9e451]: "Menunggu: 0 hari"
+                  - paragraph [ref=f9e455]: "Tahap: Incaran"
+                - button "Catat tindak lanjut" [ref=f9e460] [cursor=pointer]
+              - generic [ref=f9e464]:
+                - generic [ref=f9e465]:
+                  - heading "Tawaran" [level=2] [ref=f9e466]
+                  - button "Edit tawaran" [ref=f9e467] [cursor=pointer]
+                - paragraph [ref=f9e471]: Belum ada detail tawaran.
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f9e15] [cursor=pointer]
+  - alert [ref=f9e19]

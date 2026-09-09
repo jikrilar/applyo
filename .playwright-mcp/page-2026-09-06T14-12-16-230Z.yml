@@ -1,0 +1,202 @@
+- generic [active] [ref=f27e1]:
+  - generic [ref=f27e2]:
+    - complementary [ref=f27e3]:
+      - link "Beranda Applyo" [ref=f27e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f27e5]:
+        - link "Dasbor" [ref=f27e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f27e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f27e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f27e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f27e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f27e33] [cursor=pointer]
+    - generic [ref=f27e37]:
+      - banner [ref=f27e38]:
+        - generic [ref=f27e39]:
+          - button "Gunakan mode gelap" [ref=f27e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f27e44] [cursor=pointer]:
+            - generic [ref=f27e45]: QP
+            - generic [ref=f27e46]:
+              - strong [ref=f27e47]: QA Phase2
+              - generic [ref=f27e48]: qa-phase2@applyo.test
+      - main [ref=f27e51]:
+        - generic [ref=f27e65]:
+          - link "Kembali ke lamaran" [ref=f27e66] [cursor=pointer]:
+            - /url: /aplikasi
+          - generic [ref=f27e69]:
+            - generic [ref=f27e70]:
+              - generic [ref=f27e71]: Tawaran
+              - heading "PT Sinar Abadi" [level=1] [ref=f27e72]
+              - paragraph [ref=f27e73]: Senior Frontend Developer
+            - generic [ref=f27e74]:
+              - button "Edit" [ref=f27e75] [cursor=pointer]
+              - button "Arsipkan" [ref=f27e79] [cursor=pointer]
+              - button "Tutup lamaran" [ref=f27e83]
+              - button "Hapus" [ref=f27e84] [cursor=pointer]
+          - paragraph [ref=f27e326]: Terjadi kesalahan. Silakan coba lagi.
+          - generic [ref=f27e88]:
+            - main [ref=f27e89]:
+              - generic [ref=f27e90]:
+                - heading "Informasi lowongan" [level=2] [ref=f27e92]
+                - generic [ref=f27e93]:
+                  - generic [ref=f27e94]:
+                    - generic [ref=f27e95]: Lokasi
+                    - strong [ref=f27e96]: Jakarta
+                  - generic [ref=f27e97]:
+                    - generic [ref=f27e98]: Sistem kerja
+                    - strong [ref=f27e99]: Belum diisi
+                  - generic [ref=f27e100]:
+                    - generic [ref=f27e101]: Jenis pekerjaan
+                    - strong [ref=f27e102]: Belum diisi
+                  - generic [ref=f27e103]:
+                    - generic [ref=f27e104]: Sumber
+                    - strong [ref=f27e105]: Glints
+                  - generic [ref=f27e106]:
+                    - generic [ref=f27e107]: Tanggal melamar
+                    - strong [ref=f27e108]: Belum diisi
+                  - generic [ref=f27e109]:
+                    - generic [ref=f27e110]: Gaji
+                    - strong [ref=f27e111]: Rp 8.000.000 - Rp 15.000.000
+                - link "Buka lowongan" [ref=f27e112] [cursor=pointer]:
+                  - /url: https://example.com/jobs/123
+                - generic [ref=f27e117]:
+                  - heading "Deskripsi" [level=3] [ref=f27e118]
+                  - paragraph [ref=f27e119]: Membangun antarmuka web modern dengan React.
+              - generic [ref=f27e120]:
+                - generic [ref=f27e121]:
+                  - heading "Catatan" [level=2] [ref=f27e122]
+                  - button "Edit catatan" [ref=f27e123] [cursor=pointer]
+                - paragraph [ref=f27e127]: Catatan QA phase 2.
+              - generic [ref=f27e128]:
+                - heading "Agenda rekrutmen" [level=2] [ref=f27e130]
+                - generic [ref=f27e131]:
+                  - article [ref=f27e132]:
+                    - generic [ref=f27e133]:
+                      - generic [ref=f27e134]: Asesmen · Terjadwal
+                      - heading "Tes Coding" [level=3] [ref=f27e135]
+                      - paragraph [ref=f27e136]: 15 Sep 2026, 09.00
+                    - generic [ref=f27e137]:
+                      - button "Edit Tes Coding" [ref=f27e138] [cursor=pointer]
+                      - button "Tandai selesai" [ref=f27e142] [cursor=pointer]
+                      - button "Hapus Tes Coding" [ref=f27e143] [cursor=pointer]
+                  - article [ref=f27e147]:
+                    - generic [ref=f27e148]:
+                      - generic [ref=f27e149]: Wawancara · Terjadwal
+                      - heading "Wawancara HR" [level=3] [ref=f27e150]
+                      - paragraph [ref=f27e151]: 10 Sep 2026, 09.00
+                    - generic [ref=f27e152]:
+                      - button "Edit Wawancara HR" [ref=f27e153] [cursor=pointer]
+                      - button "Tandai selesai" [ref=f27e157] [cursor=pointer]
+                      - button "Hapus Wawancara HR" [ref=f27e158] [cursor=pointer]
+                  - article [ref=f27e162]:
+                    - generic [ref=f27e163]:
+                      - generic [ref=f27e164]: Wawancara · Terjadwal
+                      - heading "Wawancara Teknis" [level=3] [ref=f27e165]
+                      - paragraph [ref=f27e166]: 12 Sep 2026, 09.00
+                    - generic [ref=f27e167]:
+                      - button "Edit Wawancara Teknis" [ref=f27e168] [cursor=pointer]
+                      - button "Tandai selesai" [ref=f27e172] [cursor=pointer]
+                      - button "Hapus Wawancara Teknis" [ref=f27e173] [cursor=pointer]
+              - generic [ref=f27e177]:
+                - heading "Timeline" [level=2] [ref=f27e179]
+                - list [ref=f27e180]:
+                  - listitem [ref=f27e181]:
+                    - generic [ref=f27e183]:
+                      - time [ref=f27e184]: 15 Sep 2026, 09.00
+                      - heading "Tes Coding" [level=3] [ref=f27e185]
+                      - paragraph [ref=f27e186]: Asesmen
+                  - listitem [ref=f27e187]:
+                    - generic [ref=f27e189]:
+                      - time [ref=f27e190]: 12 Sep 2026, 09.00
+                      - heading "Wawancara Teknis" [level=3] [ref=f27e191]
+                      - paragraph [ref=f27e192]: Wawancara
+                  - listitem [ref=f27e193]:
+                    - generic [ref=f27e195]:
+                      - time [ref=f27e196]: 10 Sep 2026, 09.00
+                      - heading "Wawancara HR" [level=3] [ref=f27e197]
+                      - paragraph [ref=f27e198]: Wawancara
+                  - listitem [ref=f27e199]:
+                    - generic [ref=f27e201]:
+                      - time [ref=f27e202]: 6 Sep 2026, 21.02
+                      - heading "Tahap diubah" [level=3] [ref=f27e203]
+                      - paragraph [ref=f27e204]: Asesmen → Tawaran
+                  - listitem [ref=f27e205]:
+                    - generic [ref=f27e207]:
+                      - time [ref=f27e208]: 6 Sep 2026, 21.02
+                      - heading "Tahap diubah" [level=3] [ref=f27e209]
+                      - paragraph [ref=f27e210]: Wawancara → Asesmen
+                  - listitem [ref=f27e211]:
+                    - generic [ref=f27e213]:
+                      - time [ref=f27e214]: 6 Sep 2026, 21.00
+                      - heading "Tahap diubah" [level=3] [ref=f27e215]
+                      - paragraph [ref=f27e216]: Tawaran → Wawancara
+                  - listitem [ref=f27e217]:
+                    - generic [ref=f27e219]:
+                      - time [ref=f27e220]: 6 Sep 2026, 20.57
+                      - heading "Tahap diubah" [level=3] [ref=f27e221]
+                      - paragraph [ref=f27e222]: Seleksi Awal → Tawaran
+                  - listitem [ref=f27e223]:
+                    - generic [ref=f27e225]:
+                      - time [ref=f27e226]: 6 Sep 2026, 20.57
+                      - heading "Tahap diubah" [level=3] [ref=f27e227]
+                      - paragraph [ref=f27e228]: Dilamar → Seleksi Awal
+                  - listitem [ref=f27e229]:
+                    - generic [ref=f27e231]:
+                      - time [ref=f27e232]: 6 Sep 2026, 20.56
+                      - heading "Tahap diubah" [level=3] [ref=f27e233]
+                      - paragraph [ref=f27e234]: Incaran → Dilamar
+                  - listitem [ref=f27e235]:
+                    - generic [ref=f27e237]:
+                      - time [ref=f27e238]: 6 Sep 2026, 20.44
+                      - heading "Lamaran ditambahkan" [level=3] [ref=f27e239]
+            - complementary [ref=f27e240]:
+              - generic [ref=f27e241]:
+                - heading "Ringkasan" [level=2] [ref=f27e243]
+                - generic [ref=f27e244]:
+                  - paragraph [ref=f27e245]: "Dilamar: Belum diisi"
+                  - paragraph [ref=f27e248]: "Aktivitas terakhir: 15 Sep 2026, 09.00"
+                  - paragraph [ref=f27e252]: "Menunggu: 0 hari"
+                  - paragraph [ref=f27e256]: "Tahap: Tawaran"
+                  - paragraph [ref=f27e261]: "Berikutnya: Wawancara HR"
+                - button "Catat tindak lanjut" [ref=f27e264] [cursor=pointer]
+              - generic [ref=f27e268]:
+                - generic [ref=f27e269]:
+                  - heading "Tawaran" [level=2] [ref=f27e270]
+                  - button "Edit tawaran" [ref=f27e271] [cursor=pointer]
+                - paragraph [ref=f27e275]: Belum ada detail tawaran.
+          - dialog "Edit agenda" [ref=f27e277]:
+            - generic [ref=f27e278]:
+              - heading "Edit agenda" [level=2] [ref=f27e279]
+              - button "Tutup dialog" [ref=f27e280] [cursor=pointer]
+            - generic [ref=f27e284]:
+              - generic [ref=f27e285]:
+                - generic [ref=f27e286]: Judul
+                - textbox "Judul" [ref=f27e288]: Tes Coding Lanjutan
+              - generic [ref=f27e289]:
+                - generic [ref=f27e290]: Waktu terjadwal
+                - button "Pilih waktu terjadwal" [ref=f27e292] [cursor=pointer]
+              - generic [ref=f27e298]:
+                - generic [ref=f27e299]: Tenggat
+                - button "15 Sep 2026, 02.00" [ref=f27e301] [cursor=pointer]
+              - generic [ref=f27e307]:
+                - generic [ref=f27e308]: Lokasi
+                - textbox "Lokasi" [ref=f27e310]
+              - generic [ref=f27e311]:
+                - generic [ref=f27e312]: URL
+                - textbox "URL" [ref=f27e314]
+              - generic [ref=f27e315]:
+                - generic [ref=f27e316]: Catatan
+                - textbox "Catatan" [ref=f27e318]
+              - generic [ref=f27e319]:
+                - button "Batal" [ref=f27e320] [cursor=pointer]
+                - button "Simpan" [ref=f27e321]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f27e60] [cursor=pointer]
+  - alert [ref=f27e64]

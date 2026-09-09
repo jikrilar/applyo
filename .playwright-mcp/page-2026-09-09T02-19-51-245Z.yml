@@ -1,0 +1,74 @@
+- generic [active] [ref=f56e1]:
+  - generic [ref=f56e3]:
+    - banner [ref=f56e4]:
+      - link "Applyo" [ref=f56e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f56e7]:
+        - button "Gunakan mode gelap" [ref=f56e8] [cursor=pointer]
+        - button "Buka menu profil" [ref=f56e12] [cursor=pointer]:
+          - generic [ref=f56e13]: QP
+    - main [ref=f56e14]:
+      - generic [ref=f56e15]:
+        - generic [ref=f56e16]:
+          - generic [ref=f56e17]:
+            - generic [ref=f56e18]: Ruang kerja hari ini
+            - heading "Selamat datang." [level=1] [ref=f56e19]
+            - paragraph [ref=f56e20]: Ini yang sedang berjalan dalam pencarian kerjamu.
+          - link "Tambah lamaran" [ref=f56e21] [cursor=pointer]:
+            - /url: /aplikasi
+        - generic [ref=f56e23]:
+          - article [ref=f56e24]:
+            - strong [ref=f56e25]: "6"
+            - generic [ref=f56e26]: Total lamaran
+          - article [ref=f56e27]:
+            - strong [ref=f56e28]: "3"
+            - generic [ref=f56e29]: Lamaran aktif
+          - article [ref=f56e30]:
+            - strong [ref=f56e31]: "2"
+            - generic [ref=f56e32]: Wawancara
+          - article [ref=f56e33]:
+            - strong [ref=f56e34]: "2"
+            - generic [ref=f56e35]: Asesmen
+          - article [ref=f56e36]:
+            - strong [ref=f56e37]: "1"
+            - generic [ref=f56e38]: Tawaran
+        - generic [ref=f56e39]:
+          - generic [ref=f56e40]:
+            - generic [ref=f56e42]:
+              - heading "Berikutnya" [level=2] [ref=f56e43]
+              - paragraph [ref=f56e44]: Agenda yang paling dekat.
+            - link "15 SEP Tenggat Tes Coding Verif PT Sinar Abadi · 15 Sep 2026, 09.00" [ref=f56e49] [cursor=pointer]:
+              - /url: /aplikasi/effdb375-b145-4ffc-800e-24ba62175098
+              - generic [ref=f56e50]:
+                - strong [ref=f56e51]: "15"
+                - generic [ref=f56e52]: SEP
+              - generic [ref=f56e53]:
+                - text: Tenggat
+                - heading "Tes Coding Verif" [level=3] [ref=f56e54]
+                - paragraph [ref=f56e55]: PT Sinar Abadi · 15 Sep 2026, 09.00
+          - complementary [ref=f56e58]:
+            - heading "Perlu perhatian" [level=2] [ref=f56e63]
+            - paragraph [ref=f56e64]: Tidak ada yang mendesak saat ini.
+            - link "Lihat semua lamaran" [ref=f56e65] [cursor=pointer]:
+              - /url: /aplikasi
+    - navigation "Navigasi aplikasi seluler" [ref=f56e68]:
+      - link "Dasbor" [ref=f56e69] [cursor=pointer]:
+        - /url: /dashboard
+      - link "Lamaran" [ref=f56e76] [cursor=pointer]:
+        - /url: /aplikasi
+      - link "Kalender" [ref=f56e82] [cursor=pointer]:
+        - /url: /kalender
+      - link "Analitik" [ref=f56e86] [cursor=pointer]:
+        - /url: /analitik
+      - link "Pengaturan" [ref=f56e90] [cursor=pointer]:
+        - /url: /pengaturan
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f56e100] [cursor=pointer]:
+    - generic [ref=f56e103]:
+      - text: Compiling
+      - generic [ref=f56e104]:
+        - generic [ref=f56e105]: .
+        - generic [ref=f56e106]: .
+        - generic [ref=f56e107]: .
+  - alert [ref=f56e108]

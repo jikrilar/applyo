@@ -1,0 +1,103 @@
+- generic [ref=f21e1]:
+  - generic [ref=f21e20]:
+    - complementary [ref=f21e21]:
+      - link "Beranda Applyo" [ref=f21e22] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f21e23]:
+        - link "Dasbor" [ref=f21e24] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f21e31] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f21e37] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f21e41] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f21e45] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f21e51] [cursor=pointer]
+    - generic [ref=f21e55]:
+      - banner [ref=f21e56]:
+        - generic [ref=f21e57]:
+          - button "Gunakan mode gelap" [ref=f21e58] [cursor=pointer]
+          - button "Buka menu profil" [ref=f21e62] [cursor=pointer]:
+            - generic [ref=f21e63]: QP
+            - generic [ref=f21e64]:
+              - strong [ref=f21e65]: QA Phase2
+              - generic [ref=f21e66]: qa-phase2@applyo.test
+      - main [ref=f21e69]:
+        - generic [ref=f21e70]:
+          - generic [ref=f21e72]:
+            - generic [ref=f21e73]: Preferensi ruang kerja
+            - heading "Pengaturan" [level=1] [ref=f21e74]
+            - paragraph [ref=f21e75]: Kelola profil, format, dan tampilan papan.
+          - generic [ref=f21e76]:
+            - generic [ref=f21e77]:
+              - generic [ref=f21e79]:
+                - heading "Profil" [level=2] [ref=f21e80]
+                - paragraph [ref=f21e81]: Informasi dasar yang digunakan di ruang kerjamu.
+              - generic [ref=f21e82]:
+                - generic [ref=f21e83]:
+                  - generic [ref=f21e84]: Nama tampilan
+                  - textbox "Nama tampilan" [ref=f21e86]: QA Phase2
+                - generic [ref=f21e87]:
+                  - generic [ref=f21e88]: Email
+                  - textbox "Email" [disabled] [ref=f21e90]: qa-phase2@applyo.test
+            - generic [ref=f21e91]:
+              - generic [ref=f21e93]:
+                - heading "Preferensi" [level=2] [ref=f21e94]
+                - paragraph [ref=f21e95]: Atur format yang paling nyaman untukmu.
+              - generic [ref=f21e96]:
+                - group "Mata uang utama" [ref=f21e97]:
+                  - generic [ref=f21e99] [cursor=pointer]:
+                    - radio "IDR" [ref=f21e100]
+                    - generic [ref=f21e101]: IDR
+                  - generic [ref=f21e102] [cursor=pointer]:
+                    - radio "USD" [checked] [ref=f21e103]
+                    - generic [ref=f21e104]: USD
+                - group "Format tanggal" [ref=f21e105]:
+                  - generic [ref=f21e107] [cursor=pointer]:
+                    - radio "28 Agu 2026" [ref=f21e108]
+                    - generic [ref=f21e109]: 28 Agu 2026
+                  - generic [ref=f21e110] [cursor=pointer]:
+                    - radio "2026-08-28" [checked] [active] [ref=f21e111]
+                    - generic [ref=f21e112]: 2026-08-28
+              - generic [ref=f21e113]:
+                - generic [ref=f21e114]: Zona waktu
+                - button "WIB, Jakarta UTC+7" [ref=f21e116] [cursor=pointer]:
+                  - generic [ref=f21e121]:
+                    - strong [ref=f21e122]: WIB, Jakarta
+                    - generic [ref=f21e123]: UTC+7
+            - generic [ref=f21e126]:
+              - generic [ref=f21e128]:
+                - heading "Papan Kanban" [level=2] [ref=f21e129]
+                - paragraph [ref=f21e130]: Pilih tahap aktif yang ingin ditampilkan.
+              - generic [ref=f21e131]:
+                - generic [ref=f21e132]:
+                  - strong [ref=f21e134]: Incaran
+                  - button "Tampil" [pressed] [ref=f21e135] [cursor=pointer]
+                - generic [ref=f21e139]:
+                  - strong [ref=f21e141]: Dilamar
+                  - button "Tampil" [pressed] [ref=f21e142] [cursor=pointer]
+                - generic [ref=f21e146]:
+                  - strong [ref=f21e148]: Seleksi Awal
+                  - button "Tampil" [pressed] [ref=f21e149] [cursor=pointer]
+                - generic [ref=f21e153]:
+                  - strong [ref=f21e155]: Wawancara
+                  - button "Tampil" [pressed] [ref=f21e156] [cursor=pointer]
+                - generic [ref=f21e160]:
+                  - strong [ref=f21e162]: Asesmen
+                  - button "Tampil" [pressed] [ref=f21e163] [cursor=pointer]
+                - generic [ref=f21e167]:
+                  - strong [ref=f21e169]: Tawaran
+                  - button "Tampil" [pressed] [ref=f21e170] [cursor=pointer]
+            - generic [ref=f21e174]:
+              - generic [ref=f21e176]:
+                - heading "Akun" [level=2] [ref=f21e177]
+                - paragraph [ref=f21e178]: Penghapusan akun bersifat permanen.
+              - button "Hapus akun" [ref=f21e179] [cursor=pointer]
+            - button "Simpan perubahan" [ref=f21e184]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f21e15] [cursor=pointer]
+  - alert [ref=f21e19]

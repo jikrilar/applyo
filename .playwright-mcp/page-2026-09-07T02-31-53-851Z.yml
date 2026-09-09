@@ -1,0 +1,212 @@
+- generic [ref=f12e1]:
+  - generic [ref=f12e2]:
+    - complementary [ref=f12e3]:
+      - link "Beranda Applyo" [ref=f12e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f12e5]:
+        - link "Dasbor" [ref=f12e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f12e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f12e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f12e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f12e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f12e33] [cursor=pointer]
+    - generic [ref=f12e37]:
+      - banner [ref=f12e38]:
+        - generic [ref=f12e39]:
+          - button "Gunakan mode gelap" [ref=f12e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f12e44] [cursor=pointer]:
+            - generic [ref=f12e45]: QP
+            - generic [ref=f12e46]:
+              - strong [ref=f12e47]: QA Phase2
+              - generic [ref=f12e48]: qa-phase2@applyo.test
+      - main [ref=f12e51]:
+        - generic [ref=f12e65]:
+          - link "Kembali ke lamaran" [ref=f12e66] [cursor=pointer]:
+            - /url: /aplikasi
+          - generic [ref=f12e69]:
+            - generic [ref=f12e70]:
+              - generic [ref=f12e71]: Diterima
+              - heading "PT Sinar Abadi" [level=1] [ref=f12e72]
+              - paragraph [ref=f12e73]: Senior Frontend Developer
+            - generic [ref=f12e74]:
+              - button "Edit" [ref=f12e75] [cursor=pointer]
+              - button "Arsipkan" [ref=f12e79] [cursor=pointer]
+              - button "Buka kembali" [ref=f12e83]
+              - button "Hapus" [ref=f12e87] [cursor=pointer]
+          - generic [ref=f12e91]:
+            - main [ref=f12e92]:
+              - generic [ref=f12e93]:
+                - heading "Informasi lowongan" [level=2] [ref=f12e95]
+                - generic [ref=f12e96]:
+                  - generic [ref=f12e97]:
+                    - generic [ref=f12e98]: Lokasi
+                    - strong [ref=f12e99]: Jakarta
+                  - generic [ref=f12e100]:
+                    - generic [ref=f12e101]: Sistem kerja
+                    - strong [ref=f12e102]: Belum diisi
+                  - generic [ref=f12e103]:
+                    - generic [ref=f12e104]: Jenis pekerjaan
+                    - strong [ref=f12e105]: Belum diisi
+                  - generic [ref=f12e106]:
+                    - generic [ref=f12e107]: Sumber
+                    - strong [ref=f12e108]: Glints
+                  - generic [ref=f12e109]:
+                    - generic [ref=f12e110]: Tanggal melamar
+                    - strong [ref=f12e111]: Belum diisi
+                  - generic [ref=f12e112]:
+                    - generic [ref=f12e113]: Gaji
+                    - strong [ref=f12e114]: Rp 8.000.000 - Rp 15.000.000
+                - link "Buka lowongan" [ref=f12e115] [cursor=pointer]:
+                  - /url: https://example.com/jobs/123
+                - generic [ref=f12e120]:
+                  - heading "Deskripsi" [level=3] [ref=f12e121]
+                  - paragraph [ref=f12e122]: Membangun antarmuka web modern dengan React.
+              - generic [ref=f12e123]:
+                - generic [ref=f12e124]:
+                  - heading "Catatan" [level=2] [ref=f12e125]
+                  - button "Edit catatan" [ref=f12e126] [cursor=pointer]
+                - paragraph [ref=f12e130]: Catatan QA phase 2.
+              - generic [ref=f12e131]:
+                - heading "Agenda rekrutmen" [level=2] [ref=f12e133]
+                - generic [ref=f12e134]:
+                  - article [ref=f12e135]:
+                    - generic [ref=f12e136]:
+                      - generic [ref=f12e137]: Asesmen · Terjadwal
+                      - heading "Tes Coding" [level=3] [ref=f12e138]
+                      - paragraph [ref=f12e139]: 15 Sep 2026, 09.00
+                    - generic [ref=f12e140]:
+                      - button "Edit Tes Coding" [ref=f12e141] [cursor=pointer]
+                      - button "Tandai selesai" [ref=f12e145] [cursor=pointer]
+                      - button "Hapus Tes Coding" [ref=f12e146] [cursor=pointer]
+                  - article [ref=f12e150]:
+                    - generic [ref=f12e151]:
+                      - generic [ref=f12e152]: Wawancara · Selesai
+                      - heading "Wawancara Teknis" [level=3] [ref=f12e153]
+                      - paragraph [ref=f12e154]: 6 Sep 2026, 21.15
+                    - generic [ref=f12e155]:
+                      - button "Edit Wawancara Teknis" [ref=f12e156] [cursor=pointer]
+                      - button "Batalkan selesai" [ref=f12e160] [cursor=pointer]
+                      - button "Hapus Wawancara Teknis" [ref=f12e161] [cursor=pointer]
+                  - article [ref=f12e165]:
+                    - generic [ref=f12e166]:
+                      - generic [ref=f12e167]: Tindak lanjut · Selesai
+                      - heading "Tindak lanjut dikirim" [level=3] [ref=f12e168]
+                      - paragraph [ref=f12e169]: 6 Sep 2026, 21.16
+                    - generic [ref=f12e170]:
+                      - button "Edit Tindak lanjut dikirim" [ref=f12e171] [cursor=pointer]
+                      - button "Batalkan selesai" [ref=f12e175] [cursor=pointer]
+                      - button "Hapus Tindak lanjut dikirim" [ref=f12e176] [cursor=pointer]
+              - generic [ref=f12e180]:
+                - heading "Timeline" [level=2] [ref=f12e182]
+                - list [ref=f12e183]:
+                  - listitem [ref=f12e184]:
+                    - generic [ref=f12e186]:
+                      - time [ref=f12e187]: 15 Sep 2026, 09.00
+                      - heading "Tes Coding" [level=3] [ref=f12e188]
+                      - paragraph [ref=f12e189]: Asesmen
+                  - listitem [ref=f12e190]:
+                    - generic [ref=f12e192]:
+                      - time [ref=f12e193]: 6 Sep 2026, 21.19
+                      - heading "Lamaran ditutup" [level=3] [ref=f12e194]
+                  - listitem [ref=f12e195]:
+                    - generic [ref=f12e197]:
+                      - time [ref=f12e198]: 6 Sep 2026, 21.19
+                      - heading "Diterima" [level=3] [ref=f12e199]
+                  - listitem [ref=f12e200]:
+                    - generic [ref=f12e202]:
+                      - time [ref=f12e203]: 6 Sep 2026, 21.16
+                      - heading "Tindak lanjut dikirim" [level=3] [ref=f12e204]
+                      - paragraph [ref=f12e205]: Tindak lanjut
+                  - listitem [ref=f12e206]:
+                    - generic [ref=f12e208]:
+                      - time [ref=f12e209]: 6 Sep 2026, 21.15
+                      - heading "Wawancara Teknis" [level=3] [ref=f12e210]
+                      - paragraph [ref=f12e211]: Wawancara
+                  - listitem [ref=f12e212]:
+                    - generic [ref=f12e214]:
+                      - time [ref=f12e215]: 6 Sep 2026, 21.02
+                      - heading "Tahap diubah" [level=3] [ref=f12e216]
+                      - paragraph [ref=f12e217]: Asesmen → Tawaran
+                  - listitem [ref=f12e218]:
+                    - generic [ref=f12e220]:
+                      - time [ref=f12e221]: 6 Sep 2026, 21.02
+                      - heading "Tahap diubah" [level=3] [ref=f12e222]
+                      - paragraph [ref=f12e223]: Wawancara → Asesmen
+                  - listitem [ref=f12e224]:
+                    - generic [ref=f12e226]:
+                      - time [ref=f12e227]: 6 Sep 2026, 21.00
+                      - heading "Tahap diubah" [level=3] [ref=f12e228]
+                      - paragraph [ref=f12e229]: Tawaran → Wawancara
+                  - listitem [ref=f12e230]:
+                    - generic [ref=f12e232]:
+                      - time [ref=f12e233]: 6 Sep 2026, 20.57
+                      - heading "Tahap diubah" [level=3] [ref=f12e234]
+                      - paragraph [ref=f12e235]: Seleksi Awal → Tawaran
+                  - listitem [ref=f12e236]:
+                    - generic [ref=f12e238]:
+                      - time [ref=f12e239]: 6 Sep 2026, 20.57
+                      - heading "Tahap diubah" [level=3] [ref=f12e240]
+                      - paragraph [ref=f12e241]: Dilamar → Seleksi Awal
+                  - listitem [ref=f12e242]:
+                    - generic [ref=f12e244]:
+                      - time [ref=f12e245]: 6 Sep 2026, 20.56
+                      - heading "Tahap diubah" [level=3] [ref=f12e246]
+                      - paragraph [ref=f12e247]: Incaran → Dilamar
+                  - listitem [ref=f12e248]:
+                    - generic [ref=f12e250]:
+                      - time [ref=f12e251]: 6 Sep 2026, 20.44
+                      - heading "Lamaran ditambahkan" [level=3] [ref=f12e252]
+            - complementary [ref=f12e253]:
+              - generic [ref=f12e254]:
+                - heading "Ringkasan" [level=2] [ref=f12e256]
+                - generic [ref=f12e257]:
+                  - paragraph [ref=f12e258]: "Dilamar: Belum diisi"
+                  - paragraph [ref=f12e261]: "Aktivitas terakhir: 15 Sep 2026, 09.00"
+                  - paragraph [ref=f12e265]: "Menunggu: 0 hari"
+                  - paragraph [ref=f12e269]: "Tahap: Diterima"
+                  - paragraph [ref=f12e274]: "Berikutnya: Tes Coding"
+              - generic [ref=f12e277]:
+                - generic [ref=f12e278]:
+                  - heading "Tawaran" [level=2] [ref=f12e279]
+                  - button "Edit tawaran" [active] [ref=f12e280] [cursor=pointer]
+                - strong [ref=f12e284]: Rp 22.000.000
+                - paragraph [ref=f12e285]: "Mulai: Belum diisi"
+                - paragraph [ref=f12e286]: "Tenggat: Belum diisi"
+                - paragraph [ref=f12e287]: Asuransi + THR
+                - button "Hapus tawaran" [ref=f12e288]
+          - dialog "Detail tawaran" [ref=f12e290]:
+            - generic [ref=f12e291]:
+              - heading "Detail tawaran" [level=2] [ref=f12e292]
+              - button "Tutup dialog" [ref=f12e293] [cursor=pointer]
+            - generic [ref=f12e297]:
+              - generic [ref=f12e298]:
+                - generic [ref=f12e299]: Gaji
+                - spinbutton "Gaji" [ref=f12e301]: "22000000"
+              - generic [ref=f12e302]:
+                - generic [ref=f12e303]: Mata uang
+                - textbox "Mata uang" [ref=f12e305]: IDR
+              - generic [ref=f12e306]:
+                - generic [ref=f12e307]: Benefit
+                - textbox "Benefit" [ref=f12e309]: Asuransi + THR
+              - generic [ref=f12e310]:
+                - generic [ref=f12e311]: Tanggal mulai
+                - button "Pilih tanggal mulai" [ref=f12e313] [cursor=pointer]
+              - generic [ref=f12e319]:
+                - generic [ref=f12e320]: Tenggat tawaran
+                - button "Pilih tenggat tawaran" [ref=f12e322] [cursor=pointer]
+              - generic [ref=f12e328]:
+                - generic [ref=f12e329]: Catatan
+                - textbox "Catatan" [ref=f12e331]: Tawaran QA phase 2.
+              - generic [ref=f12e332]:
+                - button "Batal" [ref=f12e333] [cursor=pointer]
+                - button "Simpan" [ref=f12e334]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f12e60] [cursor=pointer]
+  - alert [ref=f12e64]

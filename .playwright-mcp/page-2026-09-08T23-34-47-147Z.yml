@@ -1,0 +1,67 @@
+- generic [active] [ref=f27e1]:
+  - generic [ref=f27e223]:
+    - complementary [ref=f27e224]:
+      - link "Beranda Applyo" [ref=f27e225] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f27e226]:
+        - link "Dasbor" [ref=f27e227] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f27e234] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f27e240] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f27e244] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f27e248] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f27e254] [cursor=pointer]
+    - generic [ref=f27e258]:
+      - banner [ref=f27e259]:
+        - generic [ref=f27e260]:
+          - button "Gunakan mode gelap" [ref=f27e261] [cursor=pointer]
+          - button "Buka menu profil" [ref=f27e265] [cursor=pointer]:
+            - generic [ref=f27e266]: RT
+            - generic [ref=f27e267]:
+              - strong [ref=f27e268]: Reg Test
+              - generic [ref=f27e269]: reg-test@applyo.test
+      - main [ref=f27e272]:
+        - generic [ref=f27e273]:
+          - generic [ref=f27e274]:
+            - generic [ref=f27e275]:
+              - generic [ref=f27e276]: Ruang kerja hari ini
+              - heading "Selamat datang." [level=1] [ref=f27e277]
+              - paragraph [ref=f27e278]: Ini yang sedang berjalan dalam pencarian kerjamu.
+            - link "Tambah lamaran" [ref=f27e279] [cursor=pointer]:
+              - /url: /aplikasi
+          - generic [ref=f27e281]:
+            - article [ref=f27e282]:
+              - strong [ref=f27e283]: "3"
+              - generic [ref=f27e284]: Total lamaran
+            - article [ref=f27e285]:
+              - strong [ref=f27e286]: "1"
+              - generic [ref=f27e287]: Lamaran aktif
+            - article [ref=f27e288]:
+              - strong [ref=f27e289]: "1"
+              - generic [ref=f27e290]: Wawancara
+            - article [ref=f27e291]:
+              - strong [ref=f27e292]: "0"
+              - generic [ref=f27e293]: Asesmen
+            - article [ref=f27e294]:
+              - strong [ref=f27e295]: "1"
+              - generic [ref=f27e296]: Tawaran
+          - generic [ref=f27e297]:
+            - generic [ref=f27e298]:
+              - generic [ref=f27e300]:
+                - heading "Berikutnya" [level=2] [ref=f27e301]
+                - paragraph [ref=f27e302]: Agenda yang paling dekat.
+              - paragraph [ref=f27e307]: Belum ada agenda tujuh hari ke depan.
+            - complementary [ref=f27e308]:
+              - heading "Perlu perhatian" [level=2] [ref=f27e313]
+              - paragraph [ref=f27e314]: Tidak ada yang mendesak saat ini.
+              - link "Lihat semua lamaran" [ref=f27e315] [cursor=pointer]:
+                - /url: /aplikasi
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f27e163] [cursor=pointer]
+  - alert [ref=f27e72]

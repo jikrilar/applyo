@@ -1,0 +1,109 @@
+- generic [active] [ref=f23e1]:
+  - generic [ref=f23e2]:
+    - complementary [ref=f23e3]:
+      - link "Beranda Applyo" [ref=f23e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f23e5]:
+        - link "Dasbor" [ref=f23e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f23e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f23e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f23e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f23e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f23e33] [cursor=pointer]
+    - generic [ref=f23e37]:
+      - banner [ref=f23e38]:
+        - generic [ref=f23e39]:
+          - button "Gunakan mode gelap" [ref=f23e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f23e44] [cursor=pointer]:
+            - generic [ref=f23e45]: QP
+            - generic [ref=f23e46]:
+              - strong [ref=f23e47]: QA Phase2
+              - generic [ref=f23e48]: qa-phase2@applyo.test
+      - main [ref=f23e51]:
+        - generic [ref=f23e52]:
+          - generic [ref=f23e54]:
+            - generic [ref=f23e55]: Agenda rekrutmen
+            - heading "Kalender" [level=1] [ref=f23e56]
+            - paragraph [ref=f23e57]: Wawancara, asesmen, dan tenggat dalam satu tampilan.
+          - generic [ref=f23e58]:
+            - generic [ref=f23e59]:
+              - link "Bulan sebelumnya" [ref=f23e60] [cursor=pointer]:
+                - /url: /kalender?month=2026-08
+              - strong [ref=f23e63]: September 2026
+              - link "Bulan berikutnya" [ref=f23e64] [cursor=pointer]:
+                - /url: /kalender?month=2026-10
+            - generic [ref=f23e67]:
+              - button "Bulan" [ref=f23e68] [cursor=pointer]
+              - button "Agenda" [ref=f23e69] [cursor=pointer]
+          - generic [ref=f23e70]:
+            - generic [ref=f23e71]:
+              - generic [ref=f23e72]: Sen
+              - generic [ref=f23e73]: Sel
+              - generic [ref=f23e74]: Rab
+              - generic [ref=f23e75]: Kam
+              - generic [ref=f23e76]: Jum
+              - generic [ref=f23e77]: Sab
+              - generic [ref=f23e78]: Min
+            - generic [ref=f23e79]:
+              - generic [ref=f23e80]: "31"
+              - generic [ref=f23e82]: "1"
+              - generic [ref=f23e84]: "2"
+              - generic [ref=f23e86]: "3"
+              - generic [ref=f23e88]: "4"
+              - generic [ref=f23e90]: "5"
+              - generic [ref=f23e92]: "6"
+              - generic [ref=f23e94]: "7"
+              - generic [ref=f23e96]: "8"
+              - generic [ref=f23e98]: "9"
+              - generic [ref=f23e100]:
+                - generic [ref=f23e101]: "10"
+                - button "09.00 Wawancara HR" [ref=f23e102] [cursor=pointer]:
+                  - generic [ref=f23e103]: "09.00"
+                  - strong [ref=f23e104]: Wawancara HR
+              - generic [ref=f23e105]: "11"
+              - generic [ref=f23e107]: "12"
+              - generic [ref=f23e109]: "13"
+              - generic [ref=f23e111]: "14"
+              - generic [ref=f23e113]: "15"
+              - generic [ref=f23e115]: "16"
+              - generic [ref=f23e117]: "17"
+              - generic [ref=f23e119]: "18"
+              - generic [ref=f23e121]: "19"
+              - generic [ref=f23e123]: "20"
+              - generic [ref=f23e125]: "21"
+              - generic [ref=f23e127]: "22"
+              - generic [ref=f23e129]: "23"
+              - generic [ref=f23e131]: "24"
+              - generic [ref=f23e133]: "25"
+              - generic [ref=f23e135]: "26"
+              - generic [ref=f23e137]: "27"
+              - generic [ref=f23e139]: "28"
+              - generic [ref=f23e141]: "29"
+              - generic [ref=f23e143]: "30"
+              - generic [ref=f23e145]: "1"
+              - generic [ref=f23e147]: "2"
+              - generic [ref=f23e149]: "3"
+              - generic [ref=f23e151]: "4"
+              - generic [ref=f23e153]: "5"
+              - generic [ref=f23e155]: "6"
+              - generic [ref=f23e157]: "7"
+              - generic [ref=f23e159]: "8"
+              - generic [ref=f23e161]: "9"
+              - generic [ref=f23e163]: "10"
+              - generic [ref=f23e165]: "11"
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f23e172] [cursor=pointer]:
+    - generic [ref=f23e175]:
+      - text: Compiling
+      - generic [ref=f23e176]:
+        - generic [ref=f23e177]: .
+        - generic [ref=f23e178]: .
+        - generic [ref=f23e179]: .
+  - alert [ref=f23e180]

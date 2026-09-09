@@ -1,0 +1,48 @@
+- generic [active] [ref=f20e1]:
+  - main [ref=f20e2]:
+    - generic [ref=f20e3]:
+      - link "Applyo" [ref=f20e4] [cursor=pointer]:
+        - /url: /
+      - button "Gunakan mode gelap" [ref=f20e5] [cursor=pointer]
+    - generic [ref=f20e8]:
+      - generic [ref=f20e10]:
+        - generic [ref=f20e11]:
+          - generic [ref=f20e12]: Mulai bersama Applyo
+          - heading "Buat pencarianmu lebih teratur." [level=1] [ref=f20e13]
+          - paragraph [ref=f20e14]: Simpan semua lamaran dan jadwal dalam satu ruang kerja.
+        - generic [ref=f20e15]:
+          - generic [ref=f20e16]:
+            - generic [ref=f20e17]: Nama
+            - textbox "Nama" [ref=f20e22]:
+              - /placeholder: Nama lengkap
+          - generic [ref=f20e23]:
+            - generic [ref=f20e24]: Email
+            - textbox "Email" [ref=f20e29]:
+              - /placeholder: nama@email.com
+          - generic [ref=f20e30]:
+            - generic [ref=f20e31]: Kata sandi
+            - generic [ref=f20e32]:
+              - textbox "Kata sandi Tampilkan kata sandi" [ref=f20e37]:
+                - /placeholder: Minimal 8 karakter
+              - button "Tampilkan kata sandi" [ref=f20e38] [cursor=pointer]
+          - generic [ref=f20e42]:
+            - generic [ref=f20e43]: Konfirmasi kata sandi
+            - textbox "Konfirmasi kata sandi" [ref=f20e49]:
+              - /placeholder: Ulangi kata sandi
+          - button "Buat akun" [ref=f20e50]
+          - paragraph [ref=f20e53]:
+            - text: Sudah punya akun?
+            - link "Masuk" [ref=f20e54] [cursor=pointer]:
+              - /url: /masuk
+      - complementary "Manfaat Applyo" [ref=f20e55]:
+        - generic [ref=f20e56]:
+          - generic [ref=f20e57]: Rapi sejak lamaran pertama
+          - heading "Satu tempat untuk setiap peluang." [level=2] [ref=f20e58]
+          - paragraph [ref=f20e59]: Pantau tahap, jadwal, dan tindak lanjut tanpa merawat spreadsheet lain.
+        - generic [aria-hidden] [ref=f20e60]:
+          - generic [ref=f20e61]: Lowongan disimpan
+          - generic [ref=f20e65]: Lamaran dikirim
+          - generic [ref=f20e69]: Wawancara dijadwalkan
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=f20e73]

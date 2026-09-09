@@ -18,6 +18,8 @@ import {
 } from "lucide-react";
 import type { ApplicationDetailDTO, PreferencesDTO, RecruitmentEventDTO, StageDTO } from "@/backend/dto";
 import { waitingState } from "@/backend/calculations";
+import { useDialogA11y } from "@/components/shared/use-dialog-a11y";
+import { utcToZonedLocal, zonedLocalToUtc } from "@/lib/dates";
 import {
   archiveDetailAction,
   closeDetailAction,
@@ -135,10 +137,10 @@ export function ApplicationDetail({
         subtype: editingEvent.subtype,
         title: data.get("title"),
         scheduledAt: data.get("scheduledAt")
-          ? new Date(String(data.get("scheduledAt"))).toISOString()
+          ? zonedLocalToUtc(String(data.get("scheduledAt")), preferences.timezone)
           : null,
         deadlineAt: data.get("deadlineAt")
-          ? new Date(String(data.get("deadlineAt"))).toISOString()
+          ? zonedLocalToUtc(String(data.get("deadlineAt")), preferences.timezone)
           : null,
         location: data.get("location"),
         url: data.get("url"),
@@ -161,7 +163,7 @@ export function ApplicationDetail({
         benefits: data.get("benefits"),
         startDate: data.get("startDate"),
         offerDeadline: data.get("offerDeadline")
-          ? new Date(String(data.get("offerDeadline"))).toISOString()
+          ? zonedLocalToUtc(String(data.get("offerDeadline")), preferences.timezone)
           : null,
         notes: data.get("notes"),
       }),
@@ -396,8 +398,8 @@ export function ApplicationDetail({
         <Modal title="Edit agenda" onClose={() => setEditingEvent(null)}>
           <form onSubmit={saveEvent} className="detail-form">
             <Field name="title" label="Judul" defaultValue={editingEvent.title} required />
-            <Field name="scheduledAt" label="Waktu terjadwal" defaultValue={editingEvent.scheduledAt?.slice(0, 16) ?? ""} type="datetime-local" />
-            <Field name="deadlineAt" label="Tenggat" defaultValue={editingEvent.deadlineAt?.slice(0, 16) ?? ""} type="datetime-local" />
+            <Field name="scheduledAt" label="Waktu terjadwal" defaultValue={editingEvent.scheduledAt ? utcToZonedLocal(editingEvent.scheduledAt, preferences.timezone) : ""} type="datetime-local" />
+            <Field name="deadlineAt" label="Tenggat" defaultValue={editingEvent.deadlineAt ? utcToZonedLocal(editingEvent.deadlineAt, preferences.timezone) : ""} type="datetime-local" />
             <Field name="location" label="Lokasi" defaultValue={editingEvent.location ?? ""} />
             <Field name="url" label="URL" defaultValue={editingEvent.url ?? ""} type="url" />
             <label className="field-group detail-form-wide"><span>Catatan</span><span className="field-control textarea-control"><textarea name="notes" defaultValue={editingEvent.notes ?? ""} /></span></label>
@@ -413,7 +415,7 @@ export function ApplicationDetail({
             <Field name="currency" label="Mata uang" defaultValue={detail.offer?.currency ?? preferences.currency} />
             <Field name="benefits" label="Benefit" defaultValue={detail.offer?.benefits ?? ""} />
             <Field name="startDate" label="Tanggal mulai" defaultValue={detail.offer?.start_date ?? ""} type="date" />
-            <Field name="offerDeadline" label="Tenggat tawaran" defaultValue={detail.offer?.offer_deadline?.slice(0, 16) ?? ""} type="datetime-local" />
+            <Field name="offerDeadline" label="Tenggat tawaran" defaultValue={detail.offer?.offer_deadline ? utcToZonedLocal(detail.offer.offer_deadline, preferences.timezone) : ""} type="datetime-local" />
             <label className="field-group detail-form-wide"><span>Catatan</span><span className="field-control textarea-control"><textarea name="notes" defaultValue={detail.offer?.notes ?? ""} /></span></label>
             <FormActions pending={pending} cancel={() => setOfferEdit(false)} />
           </form>
@@ -448,7 +450,7 @@ export function ApplicationDetail({
 }
 
 function Fact({ label, value }: { label: string; value: string | null }) { return <div><span>{label}</span><strong>{value || "Belum diisi"}</strong></div>; }
-function Modal({ title, onClose, children }: { title: string; onClose: () => void; children: React.ReactNode }) { return <div className="dialog-backdrop" onMouseDown={onClose}><section className="application-dialog" role="dialog" aria-modal="true" aria-label={title} onMouseDown={(event) => event.stopPropagation()}><header><h2>{title}</h2><button onClick={onClose} aria-label="Tutup dialog"><X /></button></header>{children}</section></div>; }
+function Modal({ title, onClose, children }: { title: string; onClose: () => void; children: React.ReactNode }) { const ref = useDialogA11y<HTMLElement>(true, onClose); return <div className="dialog-backdrop" onMouseDown={onClose}><section ref={ref} className="application-dialog" role="dialog" aria-modal="true" aria-label={title} onMouseDown={(event) => event.stopPropagation()}><header><h2>{title}</h2><button onClick={onClose} aria-label="Tutup dialog"><X /></button></header>{children}</section></div>; }
 function Field({ name, label, defaultValue = "", type = "text", required = false }: { name: string; label: string; defaultValue?: string; type?: string; required?: boolean }) {
   if (type === "date" || type === "datetime-local") {
     return <div className="field-group"><span>{label}</span>{type === "date" ? <ThemedDateOnlyPicker name={name} defaultValue={defaultValue} placeholder={`Pilih ${label.toLowerCase()}`} /> : <ThemedDatePicker name={name} defaultValue={defaultValue} placeholder={`Pilih ${label.toLowerCase()}`} />}</div>;

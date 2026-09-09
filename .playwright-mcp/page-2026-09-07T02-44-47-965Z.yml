@@ -1,0 +1,41 @@
+- generic [active] [ref=f28e1]:
+  - main [ref=f28e181]:
+    - generic [ref=f28e182]:
+      - link "Applyo" [ref=f28e183] [cursor=pointer]:
+        - /url: /
+      - button "Gunakan mode gelap" [ref=f28e184] [cursor=pointer]
+    - generic [ref=f28e187]:
+      - generic [ref=f28e189]:
+        - generic [ref=f28e190]:
+          - generic [ref=f28e191]: Selamat datang kembali
+          - heading "Lanjutkan pencarian kerjamu." [level=1] [ref=f28e192]
+          - paragraph [ref=f28e193]: Masuk untuk melihat lamaran dan langkah berikutnya.
+        - generic [ref=f28e194]:
+          - generic [ref=f28e195]:
+            - generic [ref=f28e196]: Email
+            - textbox "Email" [ref=f28e201]:
+              - /placeholder: nama@email.com
+          - generic [ref=f28e202]:
+            - generic [ref=f28e203]: Kata sandi
+            - generic [ref=f28e204]:
+              - textbox "Kata sandi Tampilkan kata sandi" [ref=f28e209]:
+                - /placeholder: Minimal 8 karakter
+              - button "Tampilkan kata sandi" [ref=f28e210] [cursor=pointer]
+          - button "Masuk" [ref=f28e214]
+          - paragraph [ref=f28e217]:
+            - text: Belum punya akun?
+            - link "Daftar gratis" [ref=f28e218] [cursor=pointer]:
+              - /url: /daftar
+      - complementary "Manfaat Applyo" [ref=f28e219]:
+        - generic [ref=f28e220]:
+          - generic [ref=f28e221]: Rapi sejak lamaran pertama
+          - heading "Satu tempat untuk setiap peluang." [level=2] [ref=f28e222]
+          - paragraph [ref=f28e223]: Pantau tahap, jadwal, dan tindak lanjut tanpa merawat spreadsheet lain.
+        - generic [aria-hidden] [ref=f28e224]:
+          - generic [ref=f28e225]: Lowongan disimpan
+          - generic [ref=f28e229]: Lamaran dikirim
+          - generic [ref=f28e233]: Wawancara dijadwalkan
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f28e176] [cursor=pointer]
+  - alert [ref=f28e180]: Lanjutkan pencarian kerjamu.

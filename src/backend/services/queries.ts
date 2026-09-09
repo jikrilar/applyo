@@ -16,6 +16,7 @@ import {
   type ApplicationListItemDTO,
   type CalendarEventDTO,
   type DashboardSummaryDTO,
+  type DashboardUpcomingDTO,
   type TimelineItemDTO,
 } from "@/backend/dto";
 import { calendarRangeSchema, searchFiltersSchema } from "@/backend/schemas/search";
@@ -43,18 +44,129 @@ type ApplicationCardRow = Pick<
   | "location"
 >;
 
-async function ownedRows() {
+type ApplicationListRow = Pick<
+  ApplicationRow,
+  | "id"
+  | "stage_id"
+  | "company"
+  | "position"
+  | "source"
+  | "applied_at"
+  | "created_at"
+  | "updated_at"
+  | "location"
+>;
+type ApplicationListEventRow = Pick<
+  RecruitmentEventRow,
+  | "application_id"
+  | "scheduled_at"
+  | "deadline_at"
+  | "status"
+  | "completed_at"
+  | "created_at"
+>;
+type ApplicationListHistoryRow = Pick<ApplicationHistoryRow, "application_id" | "occurred_at">;
+type ApplicationListStageRow = Pick<
+  PipelineStageRow,
+  "id" | "name" | "system_key" | "color_key" | "position" | "is_closed" | "is_visible"
+>;
+
+function listItem(
+  application: ApplicationListRow,
+  stage: ApplicationListStageRow,
+  events: ApplicationListEventRow[],
+  histories: ApplicationListHistoryRow[],
+  now = new Date(),
+): ApplicationListItemDTO {
+  const upcoming =
+    events
+      .filter((event) => event.status === "scheduled")
+      .flatMap((event) => [event.scheduled_at, event.deadline_at])
+      .filter((date): date is string => Boolean(date) && new Date(date as string) >= now)
+      .sort()[0] ?? null;
+  const activityDates = [
+    ...events.map(
+      (event) => event.completed_at ?? event.scheduled_at ?? event.deadline_at ?? event.created_at,
+    ),
+    ...histories.map((history) => history.occurred_at),
+  ];
+  return {
+    id: application.id,
+    company: application.company,
+    position: application.position,
+    location: application.location,
+    stage: toStageDTO(stage),
+    appliedAt: application.applied_at,
+    source: application.source,
+    upcomingEventAt: upcoming,
+    lastActivityAt:
+      [...activityDates, application.updated_at, application.applied_at ?? application.created_at]
+        .sort()
+        .at(-1) ?? application.created_at,
+  };
+}
+
+async function dashboardRows() {
+  const { client, user } = await requireAuth();
+  const [applications, stages, events, histories, offers] = await Promise.all([
+    client
+      .from("applications")
+      .select("id,stage_id,company,applied_at,archived_at,created_at,updated_at")
+      .eq("user_id", user.id),
+    client.from("pipeline_stages").select("id,is_closed").eq("user_id", user.id),
+    client
+      .from("recruitment_events")
+      .select(
+        "id,application_id,category,title,scheduled_at,deadline_at,status,completed_at,created_at",
+      )
+      .eq("user_id", user.id),
+    client
+      .from("application_history")
+      .select("application_id,occurred_at")
+      .eq("user_id", user.id),
+    client
+      .from("application_offers")
+      .select("id,application_id,offer_deadline")
+      .eq("user_id", user.id),
+  ]);
+  for (const result of [applications, stages, events, histories, offers])
+    if (result.error) throw databaseError("read_dashboard_data", result.error);
+  return {
+    applications: applications.data ?? [],
+    stages: stages.data ?? [],
+    events: events.data ?? [],
+    histories: histories.data ?? [],
+    offers: offers.data ?? [],
+  };
+}
+
+async function analyticsRows() {
   const { client, user } = await requireAuth();
   const [applications, stages, events, histories, outcomes, offers] = await Promise.all([
-    client.from("applications").select("*").eq("user_id", user.id),
-    client.from("pipeline_stages").select("*").eq("user_id", user.id),
-    client.from("recruitment_events").select("*").eq("user_id", user.id),
-    client.from("application_history").select("*").eq("user_id", user.id),
-    client.from("application_outcomes").select("*").eq("user_id", user.id),
-    client.from("application_offers").select("*").eq("user_id", user.id),
+    client
+      .from("applications")
+      .select("id,stage_id,source,applied_at,archived_at,created_at")
+      .eq("user_id", user.id),
+    client
+      .from("pipeline_stages")
+      .select("id,system_key,is_closed")
+      .eq("user_id", user.id),
+    client
+      .from("recruitment_events")
+      .select("application_id,category,status")
+      .eq("user_id", user.id),
+    client
+      .from("application_history")
+      .select("application_id,to_stage_id")
+      .eq("user_id", user.id),
+    client
+      .from("application_outcomes")
+      .select("application_id,outcome_key")
+      .eq("user_id", user.id),
+    client.from("application_offers").select("application_id").eq("user_id", user.id),
   ]);
   for (const result of [applications, stages, events, histories, outcomes, offers])
-    if (result.error) throw databaseError("read_domain_data", result.error);
+    if (result.error) throw databaseError("read_analytics_data", result.error);
   return {
     applications: applications.data ?? [],
     stages: stages.data ?? [],
@@ -189,6 +301,19 @@ export async function searchApplications(raw: unknown = {}) {
   if (!parsed.success) throw validationError(parsed.error);
   const filters = parsed.data;
   const { client, user } = await requireAuth();
+  const listContextPromise = Promise.all([
+    client
+      .from("pipeline_stages")
+      .select("id,name,system_key,color_key,position,is_closed,is_visible")
+      .eq("user_id", user.id)
+      .order("position"),
+    client
+      .from("applications")
+      .select("location")
+      .eq("user_id", user.id)
+      .is("archived_at", null)
+      .is("closed_at", null),
+  ]);
   let outcomeIds: string[] | null = null;
   if (filters.outcome) {
     const outcomeResult = await client
@@ -199,12 +324,28 @@ export async function searchApplications(raw: unknown = {}) {
       .is("reopened_at", null);
     if (outcomeResult.error) throw databaseError("filter_outcomes", outcomeResult.error);
     outcomeIds = [...new Set((outcomeResult.data ?? []).map((row) => row.application_id))];
-    if (!outcomeIds.length) return { items: [], total: 0 };
+    if (!outcomeIds.length) {
+      const [stageResult, locationResult] = await listContextPromise;
+      for (const result of [stageResult, locationResult])
+        if (result.error) throw databaseError("search_application_context", result.error);
+      return {
+        items: [],
+        total: 0,
+        stages: (stageResult.data ?? [])
+          .filter((stage) => !stage.is_closed && stage.is_visible)
+          .map(toStageDTO),
+        locations: [
+          ...new Set(
+            (locationResult.data ?? []).flatMap((row) => (row.location ? [row.location] : [])),
+          ),
+        ].sort(),
+      };
+    }
   }
   let query = client
     .from("applications")
     .select(
-      "id,stage_id,company,position,source,applied_at,sort_order,closed_at,archived_at,created_at,updated_at,location",
+      "id,stage_id,company,position,source,applied_at,created_at,updated_at,location",
       { count: "exact" },
     )
     .eq("user_id", user.id);
@@ -242,39 +383,60 @@ export async function searchApplications(raw: unknown = {}) {
   if (applicationResult.error) throw databaseError("search_applications", applicationResult.error);
   const applications = applicationResult.data ?? [];
   const ids = applications.map((app) => app.id);
-  const [stageResult, eventResult, historyResult] = await Promise.all([
-    client
-      .from("pipeline_stages")
-      .select(
-        "id,user_id,name,slug,system_key,color_key,position,is_closed,is_visible,created_at,updated_at",
-      )
-      .eq("user_id", user.id),
+  const [[stageResult, locationResult], eventResult, historyResult] = await Promise.all([
+    listContextPromise,
     ids.length
-      ? client
-          .from("recruitment_events")
-          .select(
-            "id,user_id,application_id,category,subtype,title,scheduled_at,deadline_at,location,url,notes,status,completed_at,created_at,updated_at",
-          )
-          .in("application_id", ids)
+      ? upcomingSort
+        ? client
+            .from("recruitment_events")
+            .select(
+              "application_id,scheduled_at,deadline_at,status,completed_at,created_at",
+            )
+            .eq("user_id", user.id)
+        : client
+            .from("recruitment_events")
+            .select(
+              "application_id,scheduled_at,deadline_at,status,completed_at,created_at",
+            )
+            .in("application_id", ids)
       : Promise.resolve({ data: [], error: null }),
     ids.length
-      ? client
-          .from("application_history")
-          .select(
-            "id,user_id,application_id,event_type,from_stage_id,to_stage_id,metadata,occurred_at,created_at",
-          )
-          .in("application_id", ids)
+      ? upcomingSort
+        ? client
+            .from("application_history")
+            .select("application_id,occurred_at")
+            .eq("user_id", user.id)
+        : client
+            .from("application_history")
+            .select("application_id,occurred_at")
+            .in("application_id", ids)
       : Promise.resolve({ data: [], error: null }),
   ]);
-  for (const result of [stageResult, eventResult, historyResult])
+  for (const result of [stageResult, locationResult, eventResult, historyResult])
     if (result.error) throw databaseError("search_application_context", result.error);
   const stageMap = new Map((stageResult.data ?? []).map((stage) => [stage.id, stage]));
+  const eventsByApplication = new Map<string, ApplicationListEventRow[]>();
+  for (const event of eventResult.data ?? [])
+    eventsByApplication.set(event.application_id, [
+      ...(eventsByApplication.get(event.application_id) ?? []),
+      event,
+    ]);
+  const historiesByApplication = new Map<string, ApplicationListHistoryRow[]>();
+  for (const history of historyResult.data ?? [])
+    historiesByApplication.set(history.application_id, [
+      ...(historiesByApplication.get(history.application_id) ?? []),
+      history,
+    ]);
   let items = applications.flatMap((app): ApplicationListItemDTO[] => {
     const stage = stageMap.get(app.stage_id);
     if (!stage) return [];
-    const value = card(app, stage, eventResult.data ?? [], historyResult.data ?? []);
     return [
-      { ...value, location: app.location, archivedAt: app.archived_at, closedAt: app.closed_at },
+      listItem(
+        app,
+        stage,
+        eventsByApplication.get(app.id) ?? [],
+        historiesByApplication.get(app.id) ?? [],
+      ),
     ];
   });
   if (upcomingSort) {
@@ -287,7 +449,18 @@ export async function searchApplications(raw: unknown = {}) {
       })
       .slice(filters.offset, filters.offset + filters.limit);
   }
-  return { items, total: applicationResult.count ?? items.length };
+  return {
+    items,
+    total: applicationResult.count ?? items.length,
+    stages: (stageResult.data ?? [])
+      .filter((stage) => !stage.is_closed && stage.is_visible)
+      .map(toStageDTO),
+    locations: [
+      ...new Set(
+        (locationResult.data ?? []).flatMap((row) => (row.location ? [row.location] : [])),
+      ),
+    ].sort(),
+  };
 }
 
 export async function getApplicationDetail(
@@ -508,11 +681,11 @@ export async function getCalendarEvents(raw: unknown): Promise<CalendarEventDTO[
 }
 
 export async function getDashboardSummary(now = new Date()): Promise<DashboardSummaryDTO> {
-  const rows = await ownedRows();
+  const rows = await dashboardRows();
   rows.applications = rows.applications.filter((app) => !app.archived_at);
   const stageMap = new Map(rows.stages.map((stage) => [stage.id, stage]));
   const active = rows.applications.filter((app) => !stageMap.get(app.stage_id)?.is_closed);
-  const upcoming: CalendarEventDTO[] = [];
+  const upcoming: DashboardUpcomingDTO[] = [];
   const horizon = new Date(now.getTime() + 7 * 86_400_000).toISOString();
   const nowIso = now.toISOString();
   const appMap = new Map(rows.applications.map((app) => [app.id, app]));
@@ -525,9 +698,10 @@ export async function getDashboardSummary(now = new Date()): Promise<DashboardSu
     ] as const)
       if (occursAt && occursAt >= nowIso && occursAt <= horizon)
         upcoming.push({
-          ...toEventDTO(event),
+          id: event.id,
+          applicationId: event.application_id,
+          title: event.title,
           company: app.company,
-          position: app.position,
           occursAt,
           occurrenceKind,
         });
@@ -543,18 +717,8 @@ export async function getDashboardSummary(now = new Date()): Promise<DashboardSu
       upcoming.push({
         id: `offer-${offer.id}`,
         applicationId: app.id,
-        category: "offer",
-        subtype: null,
         title: "Batas waktu tawaran",
-        scheduledAt: null,
-        deadlineAt: offer.offer_deadline,
-        location: null,
-        url: null,
-        notes: null,
-        status: "scheduled",
-        completedAt: null,
         company: app.company,
-        position: app.position,
         occursAt: offer.offer_deadline,
         occurrenceKind: "offer_deadline",
       });
@@ -562,7 +726,25 @@ export async function getDashboardSummary(now = new Date()): Promise<DashboardSu
   const inactive = active.flatMap((app) => {
     const stage = stageMap.get(app.stage_id);
     if (!stage) return [];
-    const state = card(app, stage, rows.events, rows.histories, now);
+    const relatedEvents = rows.events.filter((event) => event.application_id === app.id);
+    const activityDates = [
+      ...relatedEvents.map(
+        (event) => event.completed_at ?? event.scheduled_at ?? event.deadline_at ?? event.created_at,
+      ),
+      ...rows.histories
+        .filter((history) => history.application_id === app.id)
+        .map((history) => history.occurred_at),
+    ];
+    const state = waitingState(
+      {
+        createdAt: app.created_at,
+        appliedAt: app.applied_at,
+        activityDates,
+        isClosed: stage.is_closed,
+        isArchived: Boolean(app.archived_at),
+      },
+      now,
+    );
     return state.followUpSuggested
       ? [
           {
@@ -602,7 +784,7 @@ export async function getDashboardSummary(now = new Date()): Promise<DashboardSu
 }
 
 export async function getAnalytics(): Promise<AnalyticsSummaryDTO> {
-  const rows = await ownedRows();
+  const rows = await analyticsRows();
   rows.applications = rows.applications.filter((app) => !app.archived_at);
   const applicationIds = new Set(rows.applications.map((app) => app.id));
   rows.events = rows.events.filter((event) => applicationIds.has(event.application_id));
@@ -611,13 +793,13 @@ export async function getAnalytics(): Promise<AnalyticsSummaryDTO> {
   rows.offers = rows.offers.filter((offer) => applicationIds.has(offer.application_id));
   const stageById = new Map(rows.stages.map((stage) => [stage.id, stage]));
   const applicationById = new Map(rows.applications.map((app) => [app.id, app]));
-  const historiesByApplication = new Map<string, ApplicationHistoryRow[]>();
+  const historiesByApplication = new Map<string, typeof rows.histories>();
   for (const history of rows.histories)
     historiesByApplication.set(history.application_id, [
       ...(historiesByApplication.get(history.application_id) ?? []),
       history,
     ]);
-  const outcomesByApplication = new Map<string, ApplicationOutcomeRow[]>();
+  const outcomesByApplication = new Map<string, typeof rows.outcomes>();
   for (const outcome of rows.outcomes)
     outcomesByApplication.set(outcome.application_id, [
       ...(outcomesByApplication.get(outcome.application_id) ?? []),

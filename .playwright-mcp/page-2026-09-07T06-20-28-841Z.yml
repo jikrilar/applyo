@@ -1,0 +1,122 @@
+- generic [active] [ref=f28e1]:
+  - main [ref=f28e207]:
+    - navigation "Navigasi utama" [ref=f28e208]:
+      - link "Beranda Applyo" [ref=f28e209] [cursor=pointer]:
+        - /url: "#top"
+        - text: Applyo
+      - generic [ref=f28e210]:
+        - link "Cara kerja" [ref=f28e211] [cursor=pointer]:
+          - /url: "#how-it-works"
+        - link "Untuk tim" [ref=f28e212] [cursor=pointer]:
+          - /url: "#for-teams"
+        - button "Gunakan mode gelap" [ref=f28e213] [cursor=pointer]
+        - link "Mulai pantau" [ref=f28e216] [cursor=pointer]:
+          - /url: /masuk
+    - generic [ref=f28e217]:
+      - generic [ref=f28e218]:
+        - generic [ref=f28e219]: Dibuat untuk pencari kerja
+        - heading "Kariermu terus maju." [level=1] [ref=f28e225]
+        - paragraph [ref=f28e226]: Pantau setiap lamaran, tenggat, dan langkah berikutnya dalam satu ruang kerja yang ramah.
+        - generic [ref=f28e227]:
+          - link "Mulai pantau" [ref=f28e228] [cursor=pointer]:
+            - /url: /masuk
+          - link "Lihat cara kerja" [ref=f28e231] [cursor=pointer]:
+            - /url: "#how-it-works"
+      - generic "Pratinjau interaktif papan lamaran kerja" [ref=f28e235]:
+        - generic [ref=f28e236]:
+          - generic [ref=f28e237]:
+            - generic [ref=f28e238]: Lamaran saya
+            - text: 3 aktif
+          - button "Pindahkan kartu" [ref=f28e239] [cursor=pointer]
+        - generic [ref=f28e243]:
+          - generic [ref=f28e244]:
+            - generic [ref=f28e245]:
+              - generic [ref=f28e246]: Incaran
+              - generic [ref=f28e247]: "1"
+            - article [ref=f28e249]:
+              - strong [ref=f28e251]: Northstar Studio
+              - paragraph [ref=f28e259]: Desainer Produk
+              - generic [ref=f28e260]: Baru diperbarui
+          - generic [ref=f28e272]:
+            - generic [ref=f28e273]:
+              - generic [ref=f28e274]: Dilamar
+              - generic [ref=f28e275]: "1"
+            - article [ref=f28e277]:
+              - strong [ref=f28e279]: Pine Labs
+              - paragraph [ref=f28e287]: Frontend Engineer
+              - generic [ref=f28e288]: Baru diperbarui
+          - generic [ref=f28e300]:
+            - generic [ref=f28e301]:
+              - generic [ref=f28e302]: Wawancara
+              - generic [ref=f28e303]: "1"
+            - article [ref=f28e305]:
+              - strong [ref=f28e307]: Mori Health
+              - paragraph [ref=f28e315]: Peneliti UX
+              - generic [ref=f28e316]: Wawancara hari Kamis
+    - region "Masalah yang diselesaikan Applyo" [ref=f28e328]:
+      - paragraph [ref=f28e329]: Lebih sedikit keruwetan spreadsheet.
+      - generic [aria-hidden] [ref=f28e330]: +
+      - paragraph [ref=f28e331]: Lebih jelas menentukan langkah berikutnya.
+    - generic [ref=f28e332]:
+      - generic [ref=f28e333]:
+        - heading "Pencarianmu, dalam sekali lihat." [level=2] [ref=f28e334]
+        - paragraph [ref=f28e335]: Applyo mengubah catatan yang tersebar menjadi alur jelas dari lowongan tersimpan hingga hasil akhir.
+      - generic "Alur lamaran kerja" [ref=f28e336]:
+        - generic [ref=f28e337]:
+          - generic [ref=f28e338]: "1"
+          - generic [ref=f28e339]:
+            - heading "Simpan" [level=3] [ref=f28e340]
+            - paragraph [ref=f28e341]: Kumpulkan lowongan yang menjanjikan.
+        - generic [ref=f28e344]:
+          - generic [ref=f28e345]: "2"
+          - generic [ref=f28e346]:
+            - heading "Pantau" [level=3] [ref=f28e347]
+            - paragraph [ref=f28e348]: Majukan setiap lamaran sesuai prosesnya.
+        - generic [ref=f28e351]:
+          - generic [ref=f28e352]: "3"
+          - generic [ref=f28e353]:
+            - heading "Tindak lanjut" [level=3] [ref=f28e354]
+            - paragraph [ref=f28e355]: Ingat tindakan berikutnya.
+        - generic [ref=f28e358]:
+          - generic [ref=f28e359]: "4"
+          - generic [ref=f28e360]:
+            - heading "Tinjau" [level=3] [ref=f28e361]
+            - paragraph [ref=f28e362]: Pahami apa yang berhasil.
+    - generic [ref=f28e363]:
+      - heading "Semua punya tempat." [level=2] [ref=f28e365]
+      - generic [ref=f28e366]:
+        - generic [ref=f28e367]:
+          - heading "Lihat setiap lamaran" [level=3] [ref=f28e373]
+          - paragraph [ref=f28e374]: Satu papan menampilkan lowongan yang kamu simpan, kirim, jadwalkan, dan selesaikan.
+        - generic [ref=f28e375]:
+          - heading "Tahu apa yang perlu diperhatikan" [level=3] [ref=f28e381]
+          - paragraph [ref=f28e382]: Temukan lamaran tanpa kabar dan tindak lanjut mendatang sebelum terlewat.
+        - generic [ref=f28e383]:
+          - heading "Jaga jadwal tetap dekat" [level=3] [ref=f28e387]
+          - paragraph [ref=f28e388]: Wawancara dan asesmen tetap terhubung dengan lamaran yang berkaitan.
+    - generic [ref=f28e389]:
+      - generic [ref=f28e390]:
+        - generic [ref=f28e391]: Tinjauan kandidat
+        - generic [ref=f28e395]: Catatan wawancara
+        - generic [ref=f28e399]: Langkah berikutnya
+      - generic [ref=f28e403]:
+        - heading "Berguna sendiri. Jelas bersama tim." [level=2] [ref=f28e404]
+        - paragraph [ref=f28e405]: Pelatih karier dan tim pendamping dapat memberi arahan terfokus tanpa membuat ulang pencarian kerja di spreadsheet lain.
+        - link "Tanyakan fitur tim" [ref=f28e406] [cursor=pointer]:
+          - /url: mailto:hello@applyo.app
+    - generic [ref=f28e409]:
+      - generic [ref=f28e410]:
+        - heading "Lamaran berikutnya layak punya tempat yang lebih baik." [level=2] [ref=f28e411]
+        - paragraph [ref=f28e412]: Gratis untuk pencari kerja. Satukan seluruh pencarianmu dan selalu tahu langkah berikutnya.
+      - link "Mulai pantau" [ref=f28e413] [cursor=pointer]:
+        - /url: /masuk
+    - generic [ref=f28e416]:
+      - link "Applyo" [ref=f28e417] [cursor=pointer]:
+        - /url: "#top"
+      - paragraph [ref=f28e418]: Kariermu terus maju.
+      - link "hello@applyo.app" [ref=f28e419] [cursor=pointer]:
+        - /url: mailto:hello@applyo.app
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f28e64] [cursor=pointer]
+  - alert [ref=f28e68]

@@ -1,0 +1,174 @@
+- generic [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - complementary [ref=f4e3]:
+      - link "Beranda Applyo" [ref=f4e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f4e5]:
+        - link "Dasbor" [ref=f4e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f4e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f4e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f4e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f4e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f4e33] [cursor=pointer]
+    - generic [ref=f4e37]:
+      - banner [ref=f4e38]:
+        - generic [ref=f4e39]:
+          - button "Gunakan mode gelap" [ref=f4e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f4e44] [cursor=pointer]:
+            - generic [ref=f4e45]: QP
+            - generic [ref=f4e46]:
+              - strong [ref=f4e47]: QA Phase2
+              - generic [ref=f4e48]: qa-phase2@applyo.test
+      - main [ref=f4e51]:
+        - generic [ref=f4e69]:
+          - generic [ref=f4e70]:
+            - generic [ref=f4e71]:
+              - generic [ref=f4e72]: Ruang kerja lamaran
+              - heading "Lamaran saya" [level=1] [ref=f4e73]
+              - paragraph [ref=f4e74]: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation "Tampilan lamaran" [ref=f4e75]:
+              - link "Papan" [ref=f4e76] [cursor=pointer]:
+                - /url: /aplikasi
+              - link "Daftar" [ref=f4e82] [cursor=pointer]:
+                - /url: /aplikasi?view=list
+          - generic [ref=f4e84]:
+            - generic [ref=f4e85]:
+              - generic [ref=f4e89]: Cari lamaran
+              - textbox "Cari lamaran" [ref=f4e90]:
+                - /placeholder: Cari perusahaan atau posisi...
+            - button "Filter" [ref=f4e92] [cursor=pointer]
+            - button "Tambah lamaran" [ref=f4e94]
+          - generic [ref=f4e96]:
+            - generic [ref=f4e97]:
+              - generic [ref=f4e98]:
+                - strong [ref=f4e99]: Incaran
+                - generic [ref=f4e100]: "0"
+              - paragraph [ref=f4e102]: Letakkan lamaran di sini
+            - generic [ref=f4e103]:
+              - generic [ref=f4e104]:
+                - strong [ref=f4e105]: Dilamar
+                - generic [ref=f4e106]: "0"
+              - paragraph [ref=f4e108]: Letakkan lamaran di sini
+            - generic [ref=f4e109]:
+              - generic [ref=f4e110]:
+                - strong [ref=f4e111]: Seleksi Awal
+                - generic [ref=f4e112]: "0"
+              - paragraph [ref=f4e114]: Letakkan lamaran di sini
+            - generic [ref=f4e115]:
+              - generic [ref=f4e116]:
+                - strong [ref=f4e117]: Wawancara
+                - generic [ref=f4e118]: "0"
+              - paragraph [ref=f4e120]: Letakkan lamaran di sini
+            - generic [ref=f4e121]:
+              - generic [ref=f4e122]:
+                - strong [ref=f4e123]: Asesmen
+                - generic [ref=f4e124]: "0"
+              - paragraph [ref=f4e126]: Letakkan lamaran di sini
+            - generic [ref=f4e127]:
+              - generic [ref=f4e128]:
+                - strong [ref=f4e129]: Tawaran
+                - generic [ref=f4e130]: "0"
+              - paragraph [ref=f4e132]: Letakkan lamaran di sini
+          - status [ref=f4e133]
+          - dialog [ref=f4e135]:
+            - generic [ref=f4e137]:
+              - heading "Tambah lamaran" [level=2] [ref=f4e138]
+              - paragraph [ref=f4e139]: Mulai dari informasi utama, lalu lengkapi seperlunya.
+            - generic [ref=f4e140]:
+              - group "Informasi utama" [ref=f4e141]:
+                - generic [ref=f4e143]:
+                  - generic [ref=f4e144]:
+                    - generic [ref=f4e145]: Perusahaan *
+                    - textbox "Perusahaan *" [ref=f4e147]: PT Cari Kerja
+                  - generic [ref=f4e148]:
+                    - generic [ref=f4e149]: Posisi *
+                    - textbox "Posisi *" [ref=f4e151]: Backend Developer
+                  - generic [ref=f4e152]:
+                    - generic [ref=f4e153]: Tahap *
+                    - button "Dilamar" [ref=f4e219] [cursor=pointer]
+                  - generic [ref=f4e163]:
+                    - generic [ref=f4e164]: Lokasi
+                    - textbox "Lokasi" [ref=f4e166]
+                  - generic [ref=f4e167]:
+                    - generic [ref=f4e168]: Pengaturan kerja
+                    - button "Belum ditentukan" [ref=f4e170] [cursor=pointer]
+                  - generic [ref=f4e178]:
+                    - generic [ref=f4e179]: Jenis pekerjaan
+                    - button "Belum ditentukan" [ref=f4e181] [cursor=pointer]
+              - group [ref=f4e189]:
+                - generic "Informasi lowongan" [ref=f4e190] [cursor=pointer]
+                - generic [ref=f4e220]:
+                  - generic [ref=f4e221]:
+                    - generic [ref=f4e222]: Tautan lowongan
+                    - textbox "Tautan lowongan" [ref=f4e224]:
+                      - /placeholder: https://
+                  - generic [ref=f4e225]:
+                    - generic [ref=f4e226]: Sumber
+                    - textbox "Sumber" [ref=f4e228]: LinkedIn
+                  - generic [ref=f4e229]:
+                    - generic [ref=f4e230]: Tanggal melamar
+                    - button "Pilih tanggal" [expanded] [active] [ref=f4e232] [cursor=pointer]
+                  - generic [ref=f4e238]:
+                    - generic [ref=f4e239]: Deskripsi pekerjaan
+                    - textbox "Deskripsi pekerjaan" [ref=f4e241]
+              - group [ref=f4e193]:
+                - generic "Kompensasi" [ref=f4e194] [cursor=pointer]
+              - group [ref=f4e197]:
+                - generic "Catatan pribadi" [ref=f4e198] [cursor=pointer]
+              - generic [ref=f4e201]:
+                - button "Batal" [ref=f4e202] [cursor=pointer]
+                - button "Simpan lamaran" [ref=f4e203]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f4e64] [cursor=pointer]
+  - alert [ref=f4e68]
+  - dialog "Pilih tanggal" [ref=f4e243]:
+    - generic [ref=f4e244]:
+      - button "Bulan sebelumnya" [ref=f4e245] [cursor=pointer]
+      - strong [ref=f4e248]: September 2026
+      - button "Bulan berikutnya" [ref=f4e249] [cursor=pointer]
+    - generic [aria-hidden] [ref=f4e252]:
+      - generic [ref=f4e253]: Sen
+      - generic [ref=f4e254]: Sel
+      - generic [ref=f4e255]: Rab
+      - generic [ref=f4e256]: Kam
+      - generic [ref=f4e257]: Jum
+      - generic [ref=f4e258]: Sab
+      - generic [ref=f4e259]: Min
+    - grid "September 2026" [ref=f4e260]:
+      - gridcell "1" [ref=f4e261] [cursor=pointer]
+      - gridcell "2" [ref=f4e262] [cursor=pointer]
+      - gridcell "3" [ref=f4e263] [cursor=pointer]
+      - gridcell "4" [ref=f4e264] [cursor=pointer]
+      - gridcell "5" [ref=f4e265] [cursor=pointer]
+      - gridcell "6" [ref=f4e266] [cursor=pointer]
+      - gridcell "7" [ref=f4e267] [cursor=pointer]
+      - gridcell "8" [ref=f4e268] [cursor=pointer]
+      - gridcell "9" [ref=f4e269] [cursor=pointer]
+      - gridcell "10" [ref=f4e270] [cursor=pointer]
+      - gridcell "11" [ref=f4e271] [cursor=pointer]
+      - gridcell "12" [ref=f4e272] [cursor=pointer]
+      - gridcell "13" [ref=f4e273] [cursor=pointer]
+      - gridcell "14" [ref=f4e274] [cursor=pointer]
+      - gridcell "15" [ref=f4e275] [cursor=pointer]
+      - gridcell "16" [ref=f4e276] [cursor=pointer]
+      - gridcell "17" [ref=f4e277] [cursor=pointer]
+      - gridcell "18" [ref=f4e278] [cursor=pointer]
+      - gridcell "19" [ref=f4e279] [cursor=pointer]
+      - gridcell "20" [ref=f4e280] [cursor=pointer]
+      - gridcell "21" [ref=f4e281] [cursor=pointer]
+      - gridcell "22" [ref=f4e282] [cursor=pointer]
+      - gridcell "23" [ref=f4e283] [cursor=pointer]
+      - gridcell "24" [ref=f4e284] [cursor=pointer]
+      - gridcell "25" [ref=f4e285] [cursor=pointer]
+      - gridcell "26" [ref=f4e286] [cursor=pointer]
+      - gridcell "27" [ref=f4e287] [cursor=pointer]
+      - gridcell "28" [ref=f4e288] [cursor=pointer]
+      - gridcell "29" [ref=f4e289] [cursor=pointer]
+      - gridcell "30" [ref=f4e290] [cursor=pointer]

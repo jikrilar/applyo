@@ -1,0 +1,437 @@
+- generic [ref=f13e1]:
+  - generic [ref=f13e2]:
+    - complementary [ref=f13e3]:
+      - link "Beranda Applyo" [ref=f13e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f13e5]:
+        - link "Dasbor" [ref=f13e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f13e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f13e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f13e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f13e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f13e33] [cursor=pointer]
+    - generic [ref=f13e37]:
+      - banner [ref=f13e38]:
+        - generic [ref=f13e39]:
+          - button "Gunakan mode gelap" [ref=f13e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f13e44] [cursor=pointer]:
+            - generic [ref=f13e45]: P
+            - generic [ref=f13e46]:
+              - strong [ref=f13e47]: perf-list-payload
+              - generic [ref=f13e48]: perf-list-payload@applyo.test
+      - main [ref=f13e51]:
+        - generic [ref=f13e52]:
+          - generic [ref=f13e53]:
+            - generic [ref=f13e54]:
+              - generic [ref=f13e55]: Ruang kerja lamaran
+              - heading "Lamaran saya" [level=1] [ref=f13e56]
+              - paragraph [ref=f13e57]: Cari dan tinjau seluruh riwayat lamaran.
+            - navigation "Tampilan lamaran" [ref=f13e58]:
+              - link "Papan" [ref=f13e59] [cursor=pointer]:
+                - /url: /aplikasi
+              - link "Daftar" [ref=f13e65] [cursor=pointer]:
+                - /url: /aplikasi?view=list
+          - generic [ref=f13e67]:
+            - generic [ref=f13e68]:
+              - generic [ref=f13e69]:
+                - generic [ref=f13e73]: Cari lamaran
+                - textbox "Cari lamaran" [ref=f13e74]:
+                  - /placeholder: Cari perusahaan atau posisi...
+              - generic [ref=f13e75]:
+                - button "Filter" [expanded] [ref=f13e76] [cursor=pointer]
+                - generic [ref=f13e619]:
+                  - generic [ref=f13e620]:
+                    - strong [ref=f13e621]: Filter lamaran
+                    - button "Tutup filter" [ref=f13e622] [cursor=pointer]
+                  - group "Tahap" [ref=f13e626]:
+                    - generic [ref=f13e628]:
+                      - generic [ref=f13e629] [cursor=pointer]:
+                        - checkbox "Incaran" [ref=f13e630]
+                        - generic [ref=f13e631]: Incaran
+                      - generic [ref=f13e635] [cursor=pointer]:
+                        - checkbox "Dilamar" [checked] [active] [ref=f13e636]
+                        - generic [ref=f13e637]: Dilamar
+                      - generic [ref=f13e641] [cursor=pointer]:
+                        - checkbox "Seleksi Awal" [ref=f13e642]
+                        - generic [ref=f13e643]: Seleksi Awal
+                      - generic [ref=f13e647] [cursor=pointer]:
+                        - checkbox "Wawancara" [ref=f13e648]
+                        - generic [ref=f13e649]: Wawancara
+                      - generic [ref=f13e653] [cursor=pointer]:
+                        - checkbox "Asesmen" [ref=f13e654]
+                        - generic [ref=f13e655]: Asesmen
+                      - generic [ref=f13e659] [cursor=pointer]:
+                        - checkbox "Tawaran" [ref=f13e660]
+                        - generic [ref=f13e661]: Tawaran
+                  - group "Lokasi" [ref=f13e665]:
+                    - generic [ref=f13e667]:
+                      - generic [ref=f13e668] [cursor=pointer]:
+                        - checkbox "Bandung" [ref=f13e669]
+                        - generic [ref=f13e670]: Bandung
+                      - generic [ref=f13e673] [cursor=pointer]:
+                        - checkbox "Jakarta" [ref=f13e674]
+                        - generic [ref=f13e675]: Jakarta
+                      - generic [ref=f13e678] [cursor=pointer]:
+                        - checkbox "Remote" [ref=f13e679]
+                        - generic [ref=f13e680]: Remote
+                  - generic [ref=f13e683]:
+                    - button "Hapus filter" [ref=f13e684] [cursor=pointer]
+                    - button "Terapkan filter" [ref=f13e685]
+              - button "Tambah lamaran" [ref=f13e78]
+            - generic [ref=f13e80]:
+              - strong [ref=f13e81]: 500 lamaran
+              - generic [ref=f13e82]: Menampilkan halaman 1 dari 25
+            - table [ref=f13e84]:
+              - caption [ref=f13e85]: Daftar lamaran
+              - rowgroup [ref=f13e86]:
+                - row [ref=f13e87]:
+                  - columnheader "Perusahaan / posisi" [ref=f13e88]
+                  - columnheader "Tahap" [ref=f13e89]
+                  - columnheader "Sumber" [ref=f13e90]
+                  - columnheader [ref=f13e91]:
+                    - generic [ref=f13e92]:
+                      - text: Dilamar
+                      - button "Urutkan dari terlama dilamar" [ref=f13e93] [cursor=pointer]
+                  - columnheader [ref=f13e96]:
+                    - generic [ref=f13e97]:
+                      - text: Agenda berikutnya
+                      - button "Urutkan agenda dari terdekat" [pressed] [ref=f13e98] [cursor=pointer]
+                  - columnheader "Aktivitas terakhir" [ref=f13e101]
+                  - columnheader "Aksi" [ref=f13e102]
+              - rowgroup [ref=f13e103]:
+                - row [ref=f13e104]:
+                  - cell [ref=f13e105]:
+                    - link "Perf Company 0161 Backend Engineer Remote" [ref=f13e106] [cursor=pointer]:
+                      - /url: /aplikasi/0fa3f7b2-1b50-492c-8856-0c72974e7028
+                      - strong [ref=f13e107]: Perf Company 0161
+                      - generic [ref=f13e108]: Backend Engineer
+                      - generic [ref=f13e109]: Remote
+                  - cell "Tawaran" [ref=f13e113]
+                  - cell "Job board" [ref=f13e115]
+                  - cell "22 Feb 2026" [ref=f13e116]
+                  - cell "27 Sep 2026" [ref=f13e117]
+                  - cell "27 Sep 2026" [ref=f13e118]
+                  - cell [ref=f13e119]:
+                    - generic [ref=f13e120]:
+                      - button "Edit Perf Company 0161" [ref=f13e121] [cursor=pointer]
+                      - button "Hapus Perf Company 0161" [ref=f13e125] [cursor=pointer]
+                - row [ref=f13e129]:
+                  - cell [ref=f13e130]:
+                    - link "Perf Company 0467 Backend Engineer Remote" [ref=f13e131] [cursor=pointer]:
+                      - /url: /aplikasi/1e207a00-1421-492b-8bc7-7e44118237d0
+                      - strong [ref=f13e132]: Perf Company 0467
+                      - generic [ref=f13e133]: Backend Engineer
+                      - generic [ref=f13e134]: Remote
+                  - cell "Tawaran" [ref=f13e138]
+                  - cell "Job board" [ref=f13e140]
+                  - cell "20 Apr 2026" [ref=f13e141]
+                  - cell "27 Sep 2026" [ref=f13e142]
+                  - cell "27 Sep 2026" [ref=f13e143]
+                  - cell [ref=f13e144]:
+                    - generic [ref=f13e145]:
+                      - button "Edit Perf Company 0467" [ref=f13e146] [cursor=pointer]
+                      - button "Hapus Perf Company 0467" [ref=f13e150] [cursor=pointer]
+                - row [ref=f13e154]:
+                  - cell [ref=f13e155]:
+                    - link "Perf Company 0449 Backend Engineer Remote" [ref=f13e156] [cursor=pointer]:
+                      - /url: /aplikasi/264d8f4b-4e2b-447c-ae1a-3796c795245e
+                      - strong [ref=f13e157]: Perf Company 0449
+                      - generic [ref=f13e158]: Backend Engineer
+                      - generic [ref=f13e159]: Remote
+                  - cell "Tawaran" [ref=f13e163]
+                  - cell "Job board" [ref=f13e165]
+                  - cell "2 Feb 2026" [ref=f13e166]
+                  - cell "27 Sep 2026" [ref=f13e167]
+                  - cell "27 Sep 2026" [ref=f13e168]
+                  - cell [ref=f13e169]:
+                    - generic [ref=f13e170]:
+                      - button "Edit Perf Company 0449" [ref=f13e171] [cursor=pointer]
+                      - button "Hapus Perf Company 0449" [ref=f13e175] [cursor=pointer]
+                - row [ref=f13e179]:
+                  - cell [ref=f13e180]:
+                    - link "Perf Company 0377 Backend Engineer Remote" [ref=f13e181] [cursor=pointer]:
+                      - /url: /aplikasi/26f35d76-7786-4f68-a6da-e4f426caf2f9
+                      - strong [ref=f13e182]: Perf Company 0377
+                      - generic [ref=f13e183]: Backend Engineer
+                      - generic [ref=f13e184]: Remote
+                  - cell "Tawaran" [ref=f13e188]
+                  - cell "Job board" [ref=f13e190]
+                  - cell "14 Feb 2026" [ref=f13e191]
+                  - cell "27 Sep 2026" [ref=f13e192]
+                  - cell "27 Sep 2026" [ref=f13e193]
+                  - cell [ref=f13e194]:
+                    - generic [ref=f13e195]:
+                      - button "Edit Perf Company 0377" [ref=f13e196] [cursor=pointer]
+                      - button "Hapus Perf Company 0377" [ref=f13e200] [cursor=pointer]
+                - row [ref=f13e204]:
+                  - cell [ref=f13e205]:
+                    - link "Perf Company 0269 Backend Engineer Remote" [ref=f13e206] [cursor=pointer]:
+                      - /url: /aplikasi/3ef22a62-9fda-45f1-b118-ab8d6fdb253b
+                      - strong [ref=f13e207]: Perf Company 0269
+                      - generic [ref=f13e208]: Backend Engineer
+                      - generic [ref=f13e209]: Remote
+                  - cell "Tawaran" [ref=f13e213]
+                  - cell "Job board" [ref=f13e215]
+                  - cell "18 Jun 2026" [ref=f13e216]
+                  - cell "27 Sep 2026" [ref=f13e217]
+                  - cell "27 Sep 2026" [ref=f13e218]
+                  - cell [ref=f13e219]:
+                    - generic [ref=f13e220]:
+                      - button "Edit Perf Company 0269" [ref=f13e221] [cursor=pointer]
+                      - button "Hapus Perf Company 0269" [ref=f13e225] [cursor=pointer]
+                - row [ref=f13e229]:
+                  - cell [ref=f13e230]:
+                    - link "Perf Company 0071 Backend Engineer Remote" [ref=f13e231] [cursor=pointer]:
+                      - /url: /aplikasi/40ed5725-d37f-4a9c-9ed1-7c94d7c60f84
+                      - strong [ref=f13e232]: Perf Company 0071
+                      - generic [ref=f13e233]: Backend Engineer
+                      - generic [ref=f13e234]: Remote
+                  - cell "Tawaran" [ref=f13e238]
+                  - cell "Job board" [ref=f13e240]
+                  - cell "16 Agu 2026" [ref=f13e241]
+                  - cell "27 Sep 2026" [ref=f13e242]
+                  - cell "27 Sep 2026" [ref=f13e243]
+                  - cell [ref=f13e244]:
+                    - generic [ref=f13e245]:
+                      - button "Edit Perf Company 0071" [ref=f13e246] [cursor=pointer]
+                      - button "Hapus Perf Company 0071" [ref=f13e250] [cursor=pointer]
+                - row [ref=f13e254]:
+                  - cell [ref=f13e255]:
+                    - link "Perf Company 0413 Backend Engineer Remote" [ref=f13e256] [cursor=pointer]:
+                      - /url: /aplikasi/509712a9-51a3-443b-b8da-84867b3ff7e8
+                      - strong [ref=f13e257]: Perf Company 0413
+                      - generic [ref=f13e258]: Backend Engineer
+                      - generic [ref=f13e259]: Remote
+                  - cell "Tawaran" [ref=f13e263]
+                  - cell "Job board" [ref=f13e265]
+                  - cell "22 Jun 2026" [ref=f13e266]
+                  - cell "27 Sep 2026" [ref=f13e267]
+                  - cell "27 Sep 2026" [ref=f13e268]
+                  - cell [ref=f13e269]:
+                    - generic [ref=f13e270]:
+                      - button "Edit Perf Company 0413" [ref=f13e271] [cursor=pointer]
+                      - button "Hapus Perf Company 0413" [ref=f13e275] [cursor=pointer]
+                - row [ref=f13e279]:
+                  - cell [ref=f13e280]:
+                    - link "Perf Company 0053 Backend Engineer Remote" [ref=f13e281] [cursor=pointer]:
+                      - /url: /aplikasi/531ca30e-8826-4b38-a042-77d75e04ac4b
+                      - strong [ref=f13e282]: Perf Company 0053
+                      - generic [ref=f13e283]: Backend Engineer
+                      - generic [ref=f13e284]: Remote
+                  - cell "Tawaran" [ref=f13e288]
+                  - cell "Job board" [ref=f13e290]
+                  - cell "26 Jun 2026" [ref=f13e291]
+                  - cell "27 Sep 2026" [ref=f13e292]
+                  - cell "27 Sep 2026" [ref=f13e293]
+                  - cell [ref=f13e294]:
+                    - generic [ref=f13e295]:
+                      - button "Edit Perf Company 0053" [ref=f13e296] [cursor=pointer]
+                      - button "Hapus Perf Company 0053" [ref=f13e300] [cursor=pointer]
+                - row [ref=f13e304]:
+                  - cell [ref=f13e305]:
+                    - link "Perf Company 0359 Backend Engineer Remote" [ref=f13e306] [cursor=pointer]:
+                      - /url: /aplikasi/5db5c87f-cee1-42ae-aaa9-1242446e05fd
+                      - strong [ref=f13e307]: Perf Company 0359
+                      - generic [ref=f13e308]: Backend Engineer
+                      - generic [ref=f13e309]: Remote
+                  - cell "Tawaran" [ref=f13e313]
+                  - cell "Job board" [ref=f13e315]
+                  - cell "24 Agu 2026" [ref=f13e316]
+                  - cell "27 Sep 2026" [ref=f13e317]
+                  - cell "27 Sep 2026" [ref=f13e318]
+                  - cell [ref=f13e319]:
+                    - generic [ref=f13e320]:
+                      - button "Edit Perf Company 0359" [ref=f13e321] [cursor=pointer]
+                      - button "Hapus Perf Company 0359" [ref=f13e325] [cursor=pointer]
+                - row [ref=f13e329]:
+                  - cell [ref=f13e330]:
+                    - link "Perf Company 0431 Backend Engineer Remote" [ref=f13e331] [cursor=pointer]:
+                      - /url: /aplikasi/65954300-b19e-4c55-99dc-fcc035dda9a6
+                      - strong [ref=f13e332]: Perf Company 0431
+                      - generic [ref=f13e333]: Backend Engineer
+                      - generic [ref=f13e334]: Remote
+                  - cell "Tawaran" [ref=f13e338]
+                  - cell "Job board" [ref=f13e340]
+                  - cell "12 Agu 2026" [ref=f13e341]
+                  - cell "27 Sep 2026" [ref=f13e342]
+                  - cell "27 Sep 2026" [ref=f13e343]
+                  - cell [ref=f13e344]:
+                    - generic [ref=f13e345]:
+                      - button "Edit Perf Company 0431" [ref=f13e346] [cursor=pointer]
+                      - button "Hapus Perf Company 0431" [ref=f13e350] [cursor=pointer]
+                - row [ref=f13e354]:
+                  - cell [ref=f13e355]:
+                    - link "Perf Company 0017 Backend Engineer Remote" [ref=f13e356] [cursor=pointer]:
+                      - /url: /aplikasi/68169393-6a49-4e22-adc6-cbc011b179f9
+                      - strong [ref=f13e357]: Perf Company 0017
+                      - generic [ref=f13e358]: Backend Engineer
+                      - generic [ref=f13e359]: Remote
+                  - cell "Tawaran" [ref=f13e363]
+                  - cell "Job board" [ref=f13e365]
+                  - cell "18 Feb 2026" [ref=f13e366]
+                  - cell "27 Sep 2026" [ref=f13e367]
+                  - cell "27 Sep 2026" [ref=f13e368]
+                  - cell [ref=f13e369]:
+                    - generic [ref=f13e370]:
+                      - button "Edit Perf Company 0017" [ref=f13e371] [cursor=pointer]
+                      - button "Hapus Perf Company 0017" [ref=f13e375] [cursor=pointer]
+                - row [ref=f13e379]:
+                  - cell [ref=f13e380]:
+                    - link "Perf Company 0233 Backend Engineer Remote" [ref=f13e381] [cursor=pointer]:
+                      - /url: /aplikasi/87c0ca23-0bd3-40b0-8a51-fc112dde64a2
+                      - strong [ref=f13e382]: Perf Company 0233
+                      - generic [ref=f13e383]: Backend Engineer
+                      - generic [ref=f13e384]: Remote
+                  - cell "Tawaran" [ref=f13e388]
+                  - cell "Job board" [ref=f13e390]
+                  - cell "10 Feb 2026" [ref=f13e391]
+                  - cell "27 Sep 2026" [ref=f13e392]
+                  - cell "27 Sep 2026" [ref=f13e393]
+                  - cell [ref=f13e394]:
+                    - generic [ref=f13e395]:
+                      - button "Edit Perf Company 0233" [ref=f13e396] [cursor=pointer]
+                      - button "Hapus Perf Company 0233" [ref=f13e400] [cursor=pointer]
+                - row [ref=f13e404]:
+                  - cell [ref=f13e405]:
+                    - link "Perf Company 0305 Backend Engineer Remote" [ref=f13e406] [cursor=pointer]:
+                      - /url: /aplikasi/8e4ca40a-196d-4fb8-a3c2-a07253e0c456
+                      - strong [ref=f13e407]: Perf Company 0305
+                      - generic [ref=f13e408]: Backend Engineer
+                      - generic [ref=f13e409]: Remote
+                  - cell "Tawaran" [ref=f13e413]
+                  - cell "Job board" [ref=f13e415]
+                  - cell "26 Feb 2026" [ref=f13e416]
+                  - cell "27 Sep 2026" [ref=f13e417]
+                  - cell "27 Sep 2026" [ref=f13e418]
+                  - cell [ref=f13e419]:
+                    - generic [ref=f13e420]:
+                      - button "Edit Perf Company 0305" [ref=f13e421] [cursor=pointer]
+                      - button "Hapus Perf Company 0305" [ref=f13e425] [cursor=pointer]
+                - row [ref=f13e429]:
+                  - cell [ref=f13e430]:
+                    - link "Perf Company 0143 Backend Engineer Remote" [ref=f13e431] [cursor=pointer]:
+                      - /url: /aplikasi/8eb87cc2-d1b8-423f-9ff8-e3c018ed65d7
+                      - strong [ref=f13e432]: Perf Company 0143
+                      - generic [ref=f13e433]: Backend Engineer
+                      - generic [ref=f13e434]: Remote
+                  - cell "Tawaran" [ref=f13e438]
+                  - cell "Job board" [ref=f13e440]
+                  - cell "4 Agu 2026" [ref=f13e441]
+                  - cell "27 Sep 2026" [ref=f13e442]
+                  - cell "27 Sep 2026" [ref=f13e443]
+                  - cell [ref=f13e444]:
+                    - generic [ref=f13e445]:
+                      - button "Edit Perf Company 0143" [ref=f13e446] [cursor=pointer]
+                      - button "Hapus Perf Company 0143" [ref=f13e450] [cursor=pointer]
+                - row [ref=f13e454]:
+                  - cell [ref=f13e455]:
+                    - link "Perf Company 0179 Backend Engineer Remote" [ref=f13e456] [cursor=pointer]:
+                      - /url: /aplikasi/98e4f22e-70b6-4be7-9b04-8ce721122870
+                      - strong [ref=f13e457]: Perf Company 0179
+                      - generic [ref=f13e458]: Backend Engineer
+                      - generic [ref=f13e459]: Remote
+                  - cell "Tawaran" [ref=f13e463]
+                  - cell "Job board" [ref=f13e465]
+                  - cell "12 Apr 2026" [ref=f13e466]
+                  - cell "27 Sep 2026" [ref=f13e467]
+                  - cell "27 Sep 2026" [ref=f13e468]
+                  - cell [ref=f13e469]:
+                    - generic [ref=f13e470]:
+                      - button "Edit Perf Company 0179" [ref=f13e471] [cursor=pointer]
+                      - button "Hapus Perf Company 0179" [ref=f13e475] [cursor=pointer]
+                - row [ref=f13e479]:
+                  - cell [ref=f13e480]:
+                    - link "Perf Company 0341 Backend Engineer Remote" [ref=f13e481] [cursor=pointer]:
+                      - /url: /aplikasi/a0dc767a-efeb-447e-abf1-6597c2643e6f
+                      - strong [ref=f13e482]: Perf Company 0341
+                      - generic [ref=f13e483]: Backend Engineer
+                      - generic [ref=f13e484]: Remote
+                  - cell "Tawaran" [ref=f13e488]
+                  - cell "Job board" [ref=f13e490]
+                  - cell "6 Jun 2026" [ref=f13e491]
+                  - cell "27 Sep 2026" [ref=f13e492]
+                  - cell "27 Sep 2026" [ref=f13e493]
+                  - cell [ref=f13e494]:
+                    - generic [ref=f13e495]:
+                      - button "Edit Perf Company 0341" [ref=f13e496] [cursor=pointer]
+                      - button "Hapus Perf Company 0341" [ref=f13e500] [cursor=pointer]
+                - row [ref=f13e504]:
+                  - cell [ref=f13e505]:
+                    - link "Perf Company 0125 Backend Engineer Remote" [ref=f13e506] [cursor=pointer]:
+                      - /url: /aplikasi/a6330c56-4ec9-420e-8155-264aada86105
+                      - strong [ref=f13e507]: Perf Company 0125
+                      - generic [ref=f13e508]: Backend Engineer
+                      - generic [ref=f13e509]: Remote
+                  - cell "Tawaran" [ref=f13e513]
+                  - cell "Job board" [ref=f13e515]
+                  - cell "14 Jun 2026" [ref=f13e516]
+                  - cell "27 Sep 2026" [ref=f13e517]
+                  - cell "27 Sep 2026" [ref=f13e518]
+                  - cell [ref=f13e519]:
+                    - generic [ref=f13e520]:
+                      - button "Edit Perf Company 0125" [ref=f13e521] [cursor=pointer]
+                      - button "Hapus Perf Company 0125" [ref=f13e525] [cursor=pointer]
+                - row [ref=f13e529]:
+                  - cell [ref=f13e530]:
+                    - link "Perf Company 0485 Backend Engineer Remote" [ref=f13e531] [cursor=pointer]:
+                      - /url: /aplikasi/abb25061-039f-47f9-b101-22fe6ed1ee38
+                      - strong [ref=f13e532]: Perf Company 0485
+                      - generic [ref=f13e533]: Backend Engineer
+                      - generic [ref=f13e534]: Remote
+                  - cell "Tawaran" [ref=f13e538]
+                  - cell "Job board" [ref=f13e540]
+                  - cell "10 Jun 2026" [ref=f13e541]
+                  - cell "27 Sep 2026" [ref=f13e542]
+                  - cell "27 Sep 2026" [ref=f13e543]
+                  - cell [ref=f13e544]:
+                    - generic [ref=f13e545]:
+                      - button "Edit Perf Company 0485" [ref=f13e546] [cursor=pointer]
+                      - button "Hapus Perf Company 0485" [ref=f13e550] [cursor=pointer]
+                - row [ref=f13e554]:
+                  - cell [ref=f13e555]:
+                    - link "Perf Company 0107 Backend Engineer Remote" [ref=f13e556] [cursor=pointer]:
+                      - /url: /aplikasi/abfd9b54-1036-4c7f-bb46-04a0c2eb3534
+                      - strong [ref=f13e557]: Perf Company 0107
+                      - generic [ref=f13e558]: Backend Engineer
+                      - generic [ref=f13e559]: Remote
+                  - cell "Tawaran" [ref=f13e563]
+                  - cell "Job board" [ref=f13e565]
+                  - cell "24 Apr 2026" [ref=f13e566]
+                  - cell "27 Sep 2026" [ref=f13e567]
+                  - cell "27 Sep 2026" [ref=f13e568]
+                  - cell [ref=f13e569]:
+                    - generic [ref=f13e570]:
+                      - button "Edit Perf Company 0107" [ref=f13e571] [cursor=pointer]
+                      - button "Hapus Perf Company 0107" [ref=f13e575] [cursor=pointer]
+                - row [ref=f13e579]:
+                  - cell [ref=f13e580]:
+                    - link "Perf Company 0035 Backend Engineer Remote" [ref=f13e581] [cursor=pointer]:
+                      - /url: /aplikasi/bb3b32ee-0877-4781-9e37-c28d18067205
+                      - strong [ref=f13e582]: Perf Company 0035
+                      - generic [ref=f13e583]: Backend Engineer
+                      - generic [ref=f13e584]: Remote
+                  - cell "Tawaran" [ref=f13e588]
+                  - cell "Job board" [ref=f13e590]
+                  - cell "8 Apr 2026" [ref=f13e591]
+                  - cell "27 Sep 2026" [ref=f13e592]
+                  - cell "27 Sep 2026" [ref=f13e593]
+                  - cell [ref=f13e594]:
+                    - generic [ref=f13e595]:
+                      - button "Edit Perf Company 0035" [ref=f13e596] [cursor=pointer]
+                      - button "Hapus Perf Company 0035" [ref=f13e600] [cursor=pointer]
+            - navigation "Paginasi" [ref=f13e604]:
+              - link "Sebelumnya" [disabled]:
+                - /url: /aplikasi?view=list&sort=upcoming_desc&offset=0
+              - generic [ref=f13e605]: Halaman 1 dari 25 · 500 lamaran
+              - link "Berikutnya" [ref=f13e606] [cursor=pointer]:
+                - /url: /aplikasi?view=list&sort=upcoming_desc&offset=20
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f13e614] [cursor=pointer]
+  - alert [ref=f13e618]

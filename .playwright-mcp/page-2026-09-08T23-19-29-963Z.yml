@@ -1,0 +1,151 @@
+- generic [active] [ref=f14e1]:
+  - generic [ref=f14e2]:
+    - complementary [ref=f14e3]:
+      - link "Beranda Applyo" [ref=f14e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f14e5]:
+        - link "Dasbor" [ref=f14e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f14e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f14e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f14e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f14e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f14e33] [cursor=pointer]
+    - generic [ref=f14e37]:
+      - banner [ref=f14e38]:
+        - generic [ref=f14e39]:
+          - button "Gunakan mode gelap" [ref=f14e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f14e44] [cursor=pointer]:
+            - generic [ref=f14e45]: RT
+            - generic [ref=f14e46]:
+              - strong [ref=f14e47]: Reg Test
+              - generic [ref=f14e48]: reg-test@applyo.test
+      - main [ref=f14e51]:
+        - generic [ref=f14e52]:
+          - link "Kembali ke lamaran" [ref=f14e53] [cursor=pointer]:
+            - /url: /aplikasi
+          - generic [ref=f14e56]:
+            - generic [ref=f14e57]:
+              - generic [ref=f14e58]: Diterima
+              - heading "PT Regresi Satu" [level=1] [ref=f14e59]
+              - paragraph [ref=f14e60]: Senior Backend Developer
+            - generic [ref=f14e61]:
+              - button "Edit" [ref=f14e62] [cursor=pointer]
+              - button "Arsipkan" [ref=f14e66] [cursor=pointer]
+              - button "Buka kembali" [ref=f14e70]
+              - button "Hapus" [ref=f14e74] [cursor=pointer]
+          - generic [ref=f14e78]:
+            - main [ref=f14e79]:
+              - generic [ref=f14e80]:
+                - heading "Informasi lowongan" [level=2] [ref=f14e82]
+                - generic [ref=f14e83]:
+                  - generic [ref=f14e84]:
+                    - generic [ref=f14e85]: Lokasi
+                    - strong [ref=f14e86]: Belum diisi
+                  - generic [ref=f14e87]:
+                    - generic [ref=f14e88]: Sistem kerja
+                    - strong [ref=f14e89]: Belum diisi
+                  - generic [ref=f14e90]:
+                    - generic [ref=f14e91]: Jenis pekerjaan
+                    - strong [ref=f14e92]: Belum diisi
+                  - generic [ref=f14e93]:
+                    - generic [ref=f14e94]: Sumber
+                    - strong [ref=f14e95]: Referral
+                  - generic [ref=f14e96]:
+                    - generic [ref=f14e97]: Tanggal melamar
+                    - strong [ref=f14e98]: Belum diisi
+                  - generic [ref=f14e99]:
+                    - generic [ref=f14e100]: Gaji
+                    - strong [ref=f14e101]: Rp 0 - Rp 0
+              - generic [ref=f14e102]:
+                - generic [ref=f14e103]:
+                  - heading "Catatan" [level=2] [ref=f14e104]
+                  - button "Edit catatan" [ref=f14e105] [cursor=pointer]
+                - paragraph [ref=f14e109]: Belum ada catatan.
+              - generic [ref=f14e110]:
+                - heading "Agenda rekrutmen" [level=2] [ref=f14e112]
+                - article [ref=f14e114]:
+                  - generic [ref=f14e115]:
+                    - generic [ref=f14e116]: Wawancara · Selesai
+                    - heading "Reg Interview Edit" [level=3] [ref=f14e117]
+                    - paragraph [ref=f14e118]: 9 Sep 2026, 06.13
+                  - generic [ref=f14e119]:
+                    - button "Edit Reg Interview Edit" [ref=f14e120] [cursor=pointer]
+                    - button "Batalkan selesai" [ref=f14e124] [cursor=pointer]
+                    - button "Hapus Reg Interview Edit" [ref=f14e125] [cursor=pointer]
+              - generic [ref=f14e129]:
+                - heading "Timeline" [level=2] [ref=f14e131]
+                - list [ref=f14e132]:
+                  - listitem [ref=f14e133]:
+                    - generic [ref=f14e135]:
+                      - time [ref=f14e136]: 9 Sep 2026, 06.18
+                      - heading "Lamaran ditutup" [level=3] [ref=f14e137]
+                  - listitem [ref=f14e138]:
+                    - generic [ref=f14e140]:
+                      - time [ref=f14e141]: 9 Sep 2026, 06.18
+                      - heading "Diterima" [level=3] [ref=f14e142]
+                  - listitem [ref=f14e143]:
+                    - generic [ref=f14e145]:
+                      - time [ref=f14e146]: 9 Sep 2026, 06.13
+                      - heading "Reg Interview Edit" [level=3] [ref=f14e147]
+                      - paragraph [ref=f14e148]: Wawancara
+                  - listitem [ref=f14e149]:
+                    - generic [ref=f14e151]:
+                      - time [ref=f14e152]: 9 Sep 2026, 06.00
+                      - heading "Tahap diubah" [level=3] [ref=f14e153]
+                      - paragraph [ref=f14e154]: Asesmen → Tawaran
+                  - listitem [ref=f14e155]:
+                    - generic [ref=f14e157]:
+                      - time [ref=f14e158]: 9 Sep 2026, 05.59
+                      - heading "Tahap diubah" [level=3] [ref=f14e159]
+                      - paragraph [ref=f14e160]: Wawancara → Asesmen
+                  - listitem [ref=f14e161]:
+                    - generic [ref=f14e163]:
+                      - time [ref=f14e164]: 9 Sep 2026, 05.59
+                      - heading "Tahap diubah" [level=3] [ref=f14e165]
+                      - paragraph [ref=f14e166]: Tawaran → Wawancara
+                  - listitem [ref=f14e167]:
+                    - generic [ref=f14e169]:
+                      - time [ref=f14e170]: 9 Sep 2026, 05.58
+                      - heading "Tahap diubah" [level=3] [ref=f14e171]
+                      - paragraph [ref=f14e172]: Seleksi Awal → Tawaran
+                  - listitem [ref=f14e173]:
+                    - generic [ref=f14e175]:
+                      - time [ref=f14e176]: 9 Sep 2026, 05.58
+                      - heading "Tahap diubah" [level=3] [ref=f14e177]
+                      - paragraph [ref=f14e178]: Dilamar → Seleksi Awal
+                  - listitem [ref=f14e179]:
+                    - generic [ref=f14e181]:
+                      - time [ref=f14e182]: 9 Sep 2026, 05.57
+                      - heading "Tahap diubah" [level=3] [ref=f14e183]
+                      - paragraph [ref=f14e184]: Incaran → Dilamar
+                  - listitem [ref=f14e185]:
+                    - generic [ref=f14e187]:
+                      - time [ref=f14e188]: 9 Sep 2026, 05.51
+                      - heading "Lamaran ditambahkan" [level=3] [ref=f14e189]
+            - complementary [ref=f14e190]:
+              - generic [ref=f14e191]:
+                - heading "Ringkasan" [level=2] [ref=f14e193]
+                - generic [ref=f14e194]:
+                  - paragraph [ref=f14e195]: "Dilamar: Belum diisi"
+                  - paragraph [ref=f14e198]: "Aktivitas terakhir: 9 Sep 2026, 06.18"
+                  - paragraph [ref=f14e202]: "Menunggu: 0 hari"
+                  - paragraph [ref=f14e206]: "Tahap: Diterima"
+              - generic [ref=f14e211]:
+                - generic [ref=f14e212]:
+                  - heading "Tawaran" [level=2] [ref=f14e213]
+                  - button "Edit tawaran" [ref=f14e214] [cursor=pointer]
+                - strong [ref=f14e218]: Rp 20.000.000
+                - paragraph [ref=f14e219]: "Mulai: Belum diisi"
+                - paragraph [ref=f14e220]: "Tenggat: Belum diisi"
+                - paragraph [ref=f14e221]: Asuransi
+                - button "Hapus tawaran" [ref=f14e222]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f14e228] [cursor=pointer]
+  - alert [ref=f14e232]

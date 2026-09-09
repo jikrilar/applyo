@@ -1,0 +1,102 @@
+- generic [active] [ref=f58e1]:
+  - generic [ref=f58e2]:
+    - complementary [ref=f58e3]:
+      - link "Beranda Applyo" [ref=f58e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f58e5]:
+        - link "Dasbor" [ref=f58e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f58e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f58e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f58e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f58e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f58e33] [cursor=pointer]
+    - generic [ref=f58e37]:
+      - banner [ref=f58e38]:
+        - generic [ref=f58e39]:
+          - button "Gunakan mode gelap" [ref=f58e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f58e44] [cursor=pointer]:
+            - generic [ref=f58e45]: QP
+            - generic [ref=f58e46]:
+              - strong [ref=f58e47]: QA Phase2
+              - generic [ref=f58e48]: qa-phase2@applyo.test
+      - main [ref=f58e51]:
+        - generic [ref=f58e52]:
+          - link "Kembali ke lamaran" [ref=f58e53] [cursor=pointer]:
+            - /url: /aplikasi
+          - generic [ref=f58e56]:
+            - generic [ref=f58e57]:
+              - generic [ref=f58e58]: Wawancara
+              - heading "PT Cari Kerja" [level=1] [ref=f58e59]
+              - paragraph [ref=f58e60]: Backend Developer
+            - generic [ref=f58e61]:
+              - button "Edit" [ref=f58e62] [cursor=pointer]
+              - button "Arsipkan" [ref=f58e66] [cursor=pointer]
+              - button "Tutup lamaran" [ref=f58e70]
+              - button "Hapus" [ref=f58e71] [cursor=pointer]
+          - generic [ref=f58e75]:
+            - main [ref=f58e76]:
+              - generic [ref=f58e77]:
+                - heading "Informasi lowongan" [level=2] [ref=f58e79]
+                - generic [ref=f58e80]:
+                  - generic [ref=f58e81]:
+                    - generic [ref=f58e82]: Lokasi
+                    - strong [ref=f58e83]: Belum diisi
+                  - generic [ref=f58e84]:
+                    - generic [ref=f58e85]: Sistem kerja
+                    - strong [ref=f58e86]: Belum diisi
+                  - generic [ref=f58e87]:
+                    - generic [ref=f58e88]: Jenis pekerjaan
+                    - strong [ref=f58e89]: Belum diisi
+                  - generic [ref=f58e90]:
+                    - generic [ref=f58e91]: Sumber
+                    - strong [ref=f58e92]: LinkedIn
+                  - generic [ref=f58e93]:
+                    - generic [ref=f58e94]: Tanggal melamar
+                    - strong [ref=f58e95]: 25 Agu 2026
+                  - generic [ref=f58e96]:
+                    - generic [ref=f58e97]: Gaji
+                    - strong [ref=f58e98]: Belum diisi
+              - generic [ref=f58e99]:
+                - generic [ref=f58e100]:
+                  - heading "Catatan" [level=2] [ref=f58e101]
+                  - button "Edit catatan" [ref=f58e102] [cursor=pointer]
+                - paragraph [ref=f58e106]: Belum ada catatan.
+              - generic [ref=f58e107]:
+                - heading "Agenda rekrutmen" [level=2] [ref=f58e109]
+                - paragraph [ref=f58e111]: Belum ada agenda.
+              - generic [ref=f58e112]:
+                - heading "Timeline" [level=2] [ref=f58e114]
+                - list [ref=f58e115]:
+                  - listitem [ref=f58e116]:
+                    - generic [ref=f58e118]:
+                      - time [ref=f58e119]: 9 Sep 2026, 07.47
+                      - heading "Tahap diubah" [level=3] [ref=f58e120]
+                      - paragraph [ref=f58e121]: Dilamar → Wawancara
+                  - listitem [ref=f58e122]:
+                    - generic [ref=f58e124]:
+                      - time [ref=f58e125]: 7 Sep 2026, 09.11
+                      - heading "Lamaran ditambahkan" [level=3] [ref=f58e126]
+            - complementary [ref=f58e127]:
+              - generic [ref=f58e128]:
+                - heading "Ringkasan" [level=2] [ref=f58e130]
+                - generic [ref=f58e131]:
+                  - paragraph [ref=f58e132]: "Dilamar: 25 Agu 2026"
+                  - paragraph [ref=f58e135]: "Aktivitas terakhir: 9 Sep 2026, 07.47"
+                  - paragraph [ref=f58e139]: "Menunggu: 0 hari"
+                  - paragraph [ref=f58e143]: "Tahap: Wawancara"
+                - button "Catat tindak lanjut" [ref=f58e148] [cursor=pointer]
+              - generic [ref=f58e152]:
+                - generic [ref=f58e153]:
+                  - heading "Tawaran" [level=2] [ref=f58e154]
+                  - button "Edit tawaran" [ref=f58e155] [cursor=pointer]
+                - paragraph [ref=f58e159]: Belum ada detail tawaran.
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f58e165] [cursor=pointer]
+  - alert [ref=f58e169]

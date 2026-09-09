@@ -1,0 +1,90 @@
+- generic [ref=f45e1]:
+  - generic [ref=f45e2]:
+    - complementary [ref=f45e3]:
+      - link "Beranda Applyo" [ref=f45e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f45e5]:
+        - link "Dasbor" [ref=f45e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f45e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f45e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f45e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f45e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f45e33] [cursor=pointer]
+    - generic [ref=f45e37]:
+      - banner [ref=f45e38]:
+        - generic [ref=f45e39]:
+          - button "Gunakan mode gelap" [ref=f45e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f45e44] [cursor=pointer]:
+            - generic [ref=f45e45]: UA
+            - generic [ref=f45e46]:
+              - strong [ref=f45e47]: UI Audit
+              - generic [ref=f45e48]: ui-audit@applyo.test
+      - main [ref=f45e51]:
+        - generic [ref=f45e69]:
+          - generic [ref=f45e70]:
+            - generic [ref=f45e71]:
+              - generic [ref=f45e72]: Ruang kerja lamaran
+              - heading "Lamaran saya" [level=1] [ref=f45e73]
+              - paragraph [ref=f45e74]: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation "Tampilan lamaran" [ref=f45e75]:
+              - link "Papan" [ref=f45e76] [cursor=pointer]:
+                - /url: /aplikasi
+              - link "Daftar" [ref=f45e82] [cursor=pointer]:
+                - /url: /aplikasi?view=list
+          - generic [ref=f45e84]:
+            - generic [ref=f45e85]:
+              - generic [ref=f45e89]: Cari lamaran
+              - textbox "Cari lamaran" [ref=f45e90]:
+                - /placeholder: Cari perusahaan atau posisi...
+            - button "Filter 1" [ref=f45e193]:
+              - text: Filter
+              - generic [ref=f45e194]: "1"
+            - button "Tambah lamaran" [active] [ref=f45e94]
+          - paragraph [ref=f45e134]: Drag dinonaktifkan saat pencarian atau filter aktif.
+          - generic [ref=f45e135]:
+            - strong [ref=f45e139]: Tidak ada lamaran yang cocok.
+            - paragraph [ref=f45e140]: Ubah pencarian atau hapus filter aktif.
+          - dialog [ref=f45e196]:
+            - generic [ref=f45e198]:
+              - heading "Tambah lamaran" [level=2] [ref=f45e199]
+              - paragraph [ref=f45e200]: Mulai dari informasi utama, lalu lengkapi seperlunya.
+            - generic [ref=f45e201]:
+              - group "Informasi utama" [ref=f45e202]:
+                - generic [ref=f45e204]:
+                  - generic [ref=f45e205]:
+                    - generic [ref=f45e206]: Perusahaan *
+                    - textbox "Perusahaan *" [ref=f45e208]
+                  - generic [ref=f45e209]:
+                    - generic [ref=f45e210]: Posisi *
+                    - textbox "Posisi *" [ref=f45e212]
+                  - generic [ref=f45e213]:
+                    - generic [ref=f45e214]: Tahap *
+                    - button "Incaran" [ref=f45e216] [cursor=pointer]
+                  - generic [ref=f45e224]:
+                    - generic [ref=f45e225]: Lokasi
+                    - textbox "Lokasi" [ref=f45e227]
+                  - generic [ref=f45e228]:
+                    - generic [ref=f45e229]: Pengaturan kerja
+                    - button "Belum ditentukan" [ref=f45e231] [cursor=pointer]
+                  - generic [ref=f45e239]:
+                    - generic [ref=f45e240]: Jenis pekerjaan
+                    - button "Belum ditentukan" [ref=f45e242] [cursor=pointer]
+              - group [ref=f45e250]:
+                - generic "Informasi lowongan" [ref=f45e251] [cursor=pointer]
+              - group [ref=f45e254]:
+                - generic "Kompensasi" [ref=f45e255] [cursor=pointer]
+              - group [ref=f45e258]:
+                - generic "Catatan pribadi" [ref=f45e259] [cursor=pointer]
+              - generic [ref=f45e262]:
+                - button "Batal" [ref=f45e263] [cursor=pointer]
+                - button "Simpan lamaran" [ref=f45e264]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f45e64] [cursor=pointer]
+  - alert [ref=f45e68]

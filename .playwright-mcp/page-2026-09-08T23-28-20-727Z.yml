@@ -1,0 +1,122 @@
+- generic [ref=f22e1]:
+  - generic [ref=f22e20]:
+    - complementary [ref=f22e21]:
+      - link "Beranda Applyo" [ref=f22e22] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f22e23]:
+        - link "Dasbor" [ref=f22e24] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f22e31] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f22e37] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f22e41] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f22e45] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f22e51] [cursor=pointer]
+    - generic [ref=f22e55]:
+      - banner [ref=f22e56]:
+        - generic [ref=f22e57]:
+          - button "Gunakan mode gelap" [ref=f22e58] [cursor=pointer]
+          - button "Buka menu profil" [ref=f22e62] [cursor=pointer]:
+            - generic [ref=f22e63]: RT
+            - generic [ref=f22e64]:
+              - strong [ref=f22e65]: Reg Test
+              - generic [ref=f22e66]: reg-test@applyo.test
+      - main [ref=f22e69]:
+        - generic [ref=f22e70]:
+          - generic [ref=f22e71]:
+            - generic [ref=f22e72]:
+              - generic [ref=f22e73]: Ruang kerja lamaran
+              - heading "Lamaran saya" [level=1] [ref=f22e74]
+              - paragraph [ref=f22e75]: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation "Tampilan lamaran" [ref=f22e76]:
+              - link "Papan" [ref=f22e77] [cursor=pointer]:
+                - /url: /aplikasi
+              - link "Daftar" [ref=f22e83] [cursor=pointer]:
+                - /url: /aplikasi?view=list
+          - generic [ref=f22e85]:
+            - generic [ref=f22e86]:
+              - generic [ref=f22e90]: Cari lamaran
+              - textbox "Cari lamaran" [ref=f22e91]:
+                - /placeholder: Cari perusahaan atau posisi...
+            - generic [ref=f22e92]:
+              - button "Filter" [expanded] [active] [ref=f22e93] [cursor=pointer]
+              - generic [ref=f22e224]:
+                - generic [ref=f22e225]:
+                  - strong [ref=f22e226]: Filter lamaran
+                  - button "Tutup filter" [ref=f22e227] [cursor=pointer]
+                - group "Tahap" [ref=f22e231]:
+                  - generic [ref=f22e233]:
+                    - generic [ref=f22e234] [cursor=pointer]:
+                      - checkbox "Incaran" [ref=f22e235]
+                      - generic [ref=f22e236]: Incaran
+                    - generic [ref=f22e240] [cursor=pointer]:
+                      - checkbox "Dilamar" [ref=f22e241]
+                      - generic [ref=f22e242]: Dilamar
+                    - generic [ref=f22e246] [cursor=pointer]:
+                      - checkbox "Seleksi Awal" [ref=f22e247]
+                      - generic [ref=f22e248]: Seleksi Awal
+                    - generic [ref=f22e252] [cursor=pointer]:
+                      - checkbox "Wawancara" [ref=f22e253]
+                      - generic [ref=f22e254]: Wawancara
+                    - generic [ref=f22e258] [cursor=pointer]:
+                      - checkbox "Asesmen" [ref=f22e259]
+                      - generic [ref=f22e260]: Asesmen
+                    - generic [ref=f22e264] [cursor=pointer]:
+                      - checkbox "Tawaran" [ref=f22e265]
+                      - generic [ref=f22e266]: Tawaran
+                - group "Lokasi" [ref=f22e270]:
+                  - paragraph [ref=f22e272]: Belum ada lokasi yang tercatat.
+                - generic [ref=f22e273]:
+                  - button "Hapus filter" [ref=f22e274] [cursor=pointer]
+                  - button "Terapkan filter" [ref=f22e275]
+            - button "Tambah lamaran" [ref=f22e95]
+          - paragraph [ref=f22e160]: Drag dinonaktifkan saat pencarian atau filter aktif.
+          - generic [ref=f22e161]:
+            - generic [ref=f22e162]:
+              - generic [ref=f22e163]:
+                - strong [ref=f22e164]: Incaran
+                - generic [ref=f22e165]: "1"
+              - article [ref=f22e167] [cursor=pointer]:
+                - generic [ref=f22e168]:
+                  - strong [ref=f22e169]: PT Regresi Satu
+                  - generic [ref=f22e170]:
+                    - button "Pindahkan kartu PT Regresi Satu" [ref=f22e171]
+                    - button "Tindakan untuk PT Regresi Satu" [ref=f22e180]
+                - link "Senior Backend Developer" [ref=f22e185]:
+                  - /url: /aplikasi/a8b5ec16-0ac0-4923-ab8f-88b9763ff387
+                - generic [ref=f22e186]: Lokasi belum diisi
+                - generic [ref=f22e190]: Baru diperbarui
+            - generic [ref=f22e193]:
+              - generic [ref=f22e194]:
+                - strong [ref=f22e195]: Dilamar
+                - generic [ref=f22e196]: "0"
+              - paragraph [ref=f22e198]: Letakkan lamaran di sini
+            - generic [ref=f22e199]:
+              - generic [ref=f22e200]:
+                - strong [ref=f22e201]: Seleksi Awal
+                - generic [ref=f22e202]: "0"
+              - paragraph [ref=f22e204]: Letakkan lamaran di sini
+            - generic [ref=f22e205]:
+              - generic [ref=f22e206]:
+                - strong [ref=f22e207]: Wawancara
+                - generic [ref=f22e208]: "0"
+              - paragraph [ref=f22e210]: Letakkan lamaran di sini
+            - generic [ref=f22e211]:
+              - generic [ref=f22e212]:
+                - strong [ref=f22e213]: Asesmen
+                - generic [ref=f22e214]: "0"
+              - paragraph [ref=f22e216]: Letakkan lamaran di sini
+            - generic [ref=f22e217]:
+              - generic [ref=f22e218]:
+                - strong [ref=f22e219]: Tawaran
+                - generic [ref=f22e220]: "0"
+              - paragraph [ref=f22e222]: Letakkan lamaran di sini
+          - status [ref=f22e223]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f22e15] [cursor=pointer]
+  - alert [ref=f22e19]

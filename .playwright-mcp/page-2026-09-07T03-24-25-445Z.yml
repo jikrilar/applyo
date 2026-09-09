@@ -1,0 +1,251 @@
+- generic [ref=f5e1]:
+  - generic [ref=f5e2]:
+    - complementary [ref=f5e3]:
+      - link "Beranda Applyo" [ref=f5e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f5e5]:
+        - link "Dasbor" [ref=f5e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f5e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f5e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f5e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f5e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f5e33] [cursor=pointer]
+    - generic [ref=f5e37]:
+      - banner [ref=f5e38]:
+        - generic [ref=f5e39]:
+          - button "Gunakan mode gelap" [ref=f5e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f5e44] [cursor=pointer]:
+            - generic [ref=f5e45]: QP
+            - generic [ref=f5e46]:
+              - strong [ref=f5e47]: QA Phase2
+              - generic [ref=f5e48]: qa-phase2@applyo.test
+      - main [ref=f5e51]:
+        - generic [ref=f5e65]:
+          - link "Kembali ke lamaran" [ref=f5e66] [cursor=pointer]:
+            - /url: /aplikasi
+          - generic [ref=f5e69]:
+            - generic [ref=f5e70]:
+              - generic [ref=f5e71]: Seleksi Awal
+              - heading "PT Maju Mundur" [level=1] [ref=f5e72]
+              - paragraph [ref=f5e73]: QA Engineer
+            - generic [ref=f5e74]:
+              - button "Edit" [ref=f5e75] [cursor=pointer]
+              - button "Arsipkan" [ref=f5e79] [cursor=pointer]
+              - button "Tutup lamaran" [ref=f5e83]
+              - button "Hapus" [ref=f5e84] [cursor=pointer]
+          - generic [ref=f5e88]:
+            - main [ref=f5e89]:
+              - generic [ref=f5e90]:
+                - heading "Informasi lowongan" [level=2] [ref=f5e92]
+                - generic [ref=f5e93]:
+                  - generic [ref=f5e94]:
+                    - generic [ref=f5e95]: Lokasi
+                    - strong [ref=f5e96]: Belum diisi
+                  - generic [ref=f5e97]:
+                    - generic [ref=f5e98]: Sistem kerja
+                    - strong [ref=f5e99]: Belum diisi
+                  - generic [ref=f5e100]:
+                    - generic [ref=f5e101]: Jenis pekerjaan
+                    - strong [ref=f5e102]: Belum diisi
+                  - generic [ref=f5e103]:
+                    - generic [ref=f5e104]: Sumber
+                    - strong [ref=f5e105]: Jobstreet
+                  - generic [ref=f5e106]:
+                    - generic [ref=f5e107]: Tanggal melamar
+                    - strong [ref=f5e108]: 5 Sep 2026
+                  - generic [ref=f5e109]:
+                    - generic [ref=f5e110]: Gaji
+                    - strong [ref=f5e111]: Belum diisi
+              - generic [ref=f5e112]:
+                - generic [ref=f5e113]:
+                  - heading "Catatan" [level=2] [ref=f5e114]
+                  - button "Edit catatan" [ref=f5e115] [cursor=pointer]
+                - paragraph [ref=f5e119]: Belum ada catatan.
+              - generic [ref=f5e120]:
+                - heading "Agenda rekrutmen" [level=2] [ref=f5e122]
+                - generic [ref=f5e123]:
+                  - article [ref=f5e124]:
+                    - generic [ref=f5e125]:
+                      - generic [ref=f5e126]: Asesmen · Terjadwal
+                      - heading "Studi Kasus" [level=3] [ref=f5e127]
+                      - paragraph [ref=f5e128]: 9 Sep 2026, 09.00
+                    - generic [ref=f5e129]:
+                      - button "Edit Studi Kasus" [ref=f5e130] [cursor=pointer]
+                      - button "Tandai selesai" [ref=f5e134] [cursor=pointer]
+                      - button "Hapus Studi Kasus" [ref=f5e135] [cursor=pointer]
+                  - article [ref=f5e139]:
+                    - generic [ref=f5e140]:
+                      - generic [ref=f5e141]: Wawancara · Terjadwal
+                      - heading "Repro Interview Edit1" [level=3] [ref=f5e142]
+                      - paragraph [ref=f5e143]: 11 Sep 2026, 02.00
+                    - generic [ref=f5e144]:
+                      - button "Edit Repro Interview Edit1" [ref=f5e145] [cursor=pointer]
+                      - button "Tandai selesai" [ref=f5e149] [cursor=pointer]
+                      - button "Hapus Repro Interview Edit1" [ref=f5e150] [cursor=pointer]
+                  - article [ref=f5e154]:
+                    - generic [ref=f5e155]:
+                      - generic [ref=f5e156]: Wawancara · Terjadwal
+                      - heading "Verif Interview Edit" [level=3] [ref=f5e282]
+                      - paragraph [ref=f5e158]: 12 Sep 2026, 09.00
+                    - generic [ref=f5e159]:
+                      - button "Edit Verif Interview Edit" [ref=f5e283] [cursor=pointer]
+                      - button "Tandai selesai" [ref=f5e164] [cursor=pointer]
+                      - button "Hapus Verif Interview Edit" [ref=f5e284] [cursor=pointer]
+              - generic [ref=f5e169]:
+                - heading "Timeline" [level=2] [ref=f5e171]
+                - list [ref=f5e172]:
+                  - listitem [ref=f5e173]:
+                    - generic [ref=f5e175]:
+                      - time [ref=f5e176]: 12 Sep 2026, 09.00
+                      - heading "Verif Interview Edit" [level=3] [ref=f5e285]
+                      - paragraph [ref=f5e178]: Wawancara
+                  - listitem [ref=f5e179]:
+                    - generic [ref=f5e181]:
+                      - time [ref=f5e182]: 11 Sep 2026, 02.00
+                      - heading "Repro Interview Edit1" [level=3] [ref=f5e183]
+                      - paragraph [ref=f5e184]: Wawancara
+                  - listitem [ref=f5e185]:
+                    - generic [ref=f5e187]:
+                      - time [ref=f5e188]: 9 Sep 2026, 09.00
+                      - heading "Studi Kasus" [level=3] [ref=f5e189]
+                      - paragraph [ref=f5e190]: Asesmen
+                  - listitem [ref=f5e191]:
+                    - generic [ref=f5e193]:
+                      - time [ref=f5e194]: 7 Sep 2026, 09.15
+                      - heading "Lamaran ditambahkan" [level=3] [ref=f5e195]
+            - complementary [ref=f5e196]:
+              - generic [ref=f5e197]:
+                - heading "Ringkasan" [level=2] [ref=f5e199]
+                - generic [ref=f5e200]:
+                  - paragraph [ref=f5e201]: "Dilamar: 5 Sep 2026"
+                  - paragraph [ref=f5e204]: "Aktivitas terakhir: 12 Sep 2026, 09.00"
+                  - paragraph [ref=f5e208]: "Menunggu: 0 hari"
+                  - paragraph [ref=f5e212]: "Tahap: Seleksi Awal"
+                  - paragraph [ref=f5e217]: "Berikutnya: Studi Kasus"
+                - button "Catat tindak lanjut" [ref=f5e220] [cursor=pointer]
+              - generic [ref=f5e224]:
+                - generic [ref=f5e225]:
+                  - heading "Tawaran" [level=2] [ref=f5e226]
+                  - button "Edit tawaran" [ref=f5e227] [cursor=pointer]
+                - paragraph [ref=f5e231]: Belum ada detail tawaran.
+          - dialog "Edit agenda" [ref=f5e287]:
+            - generic [ref=f5e288]:
+              - heading "Edit agenda" [level=2] [ref=f5e289]
+              - button "Tutup dialog" [ref=f5e290] [cursor=pointer]
+            - generic [ref=f5e294]:
+              - generic [ref=f5e295]:
+                - generic [ref=f5e296]: Judul
+                - textbox "Judul" [ref=f5e298]: Verif Interview Edit
+              - generic [ref=f5e299]:
+                - generic [ref=f5e300]: Waktu terjadwal
+                - button "12 Sep 2026, 09.00" [expanded] [ref=f5e302] [cursor=pointer]
+              - generic [ref=f5e308]:
+                - generic [ref=f5e309]: Tenggat
+                - button "Pilih tenggat" [ref=f5e311] [cursor=pointer]
+              - generic [ref=f5e317]:
+                - generic [ref=f5e318]: Lokasi
+                - textbox "Lokasi" [ref=f5e320]
+              - generic [ref=f5e321]:
+                - generic [ref=f5e322]: URL
+                - textbox "URL" [ref=f5e324]
+              - generic [ref=f5e325]:
+                - generic [ref=f5e326]: Catatan
+                - textbox "Catatan" [ref=f5e328]
+              - generic [ref=f5e329]:
+                - button "Batal" [ref=f5e330] [cursor=pointer]
+                - button "Simpan" [ref=f5e331]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f5e60] [cursor=pointer]
+  - alert [ref=f5e64]
+  - dialog "Pilih waktu terjadwal" [ref=f5e337]:
+    - generic [ref=f5e338]:
+      - button "Bulan sebelumnya" [ref=f5e339] [cursor=pointer]
+      - strong [ref=f5e342]: September 2026
+      - button "Bulan berikutnya" [ref=f5e343] [cursor=pointer]
+    - generic [aria-hidden] [ref=f5e346]:
+      - generic [ref=f5e347]: Sen
+      - generic [ref=f5e348]: Sel
+      - generic [ref=f5e349]: Rab
+      - generic [ref=f5e350]: Kam
+      - generic [ref=f5e351]: Jum
+      - generic [ref=f5e352]: Sab
+      - generic [ref=f5e353]: Min
+    - grid "September 2026" [ref=f5e354]:
+      - gridcell "1" [ref=f5e355] [cursor=pointer]
+      - gridcell "2" [ref=f5e356] [cursor=pointer]
+      - gridcell "3" [ref=f5e357] [cursor=pointer]
+      - gridcell "4" [ref=f5e358] [cursor=pointer]
+      - gridcell "5" [ref=f5e359] [cursor=pointer]
+      - gridcell "6" [ref=f5e360] [cursor=pointer]
+      - gridcell "7" [ref=f5e361] [cursor=pointer]
+      - gridcell "8" [ref=f5e362] [cursor=pointer]
+      - gridcell "9" [ref=f5e363] [cursor=pointer]
+      - gridcell "10" [ref=f5e364] [cursor=pointer]
+      - gridcell "11" [ref=f5e365] [cursor=pointer]
+      - gridcell "12" [selected] [ref=f5e366] [cursor=pointer]
+      - gridcell "13" [ref=f5e367] [cursor=pointer]
+      - gridcell "14" [ref=f5e368] [cursor=pointer]
+      - gridcell "15" [ref=f5e369] [cursor=pointer]
+      - gridcell "16" [ref=f5e370] [cursor=pointer]
+      - gridcell "17" [ref=f5e371] [cursor=pointer]
+      - gridcell "18" [ref=f5e372] [cursor=pointer]
+      - gridcell "19" [ref=f5e373] [cursor=pointer]
+      - gridcell "20" [ref=f5e374] [cursor=pointer]
+      - gridcell "21" [ref=f5e375] [cursor=pointer]
+      - gridcell "22" [ref=f5e376] [cursor=pointer]
+      - gridcell "23" [ref=f5e377] [cursor=pointer]
+      - gridcell "24" [ref=f5e378] [cursor=pointer]
+      - gridcell "25" [ref=f5e379] [cursor=pointer]
+      - gridcell "26" [ref=f5e380] [cursor=pointer]
+      - gridcell "27" [ref=f5e381] [cursor=pointer]
+      - gridcell "28" [ref=f5e382] [cursor=pointer]
+      - gridcell "29" [ref=f5e383] [cursor=pointer]
+      - gridcell "30" [ref=f5e384] [cursor=pointer]
+    - generic [ref=f5e385]:
+      - generic [ref=f5e386]: Waktu
+      - generic [ref=f5e387]:
+        - generic [ref=f5e388]:
+          - generic [ref=f5e389]: Jam
+          - generic [ref=f5e390]:
+            - button [expanded] [active] [ref=f5e391] [cursor=pointer]:
+              - strong [ref=f5e395]: "09"
+            - listbox "Pilih jam" [ref=f5e412]:
+              - option "00" [ref=f5e413] [cursor=pointer]
+              - option "01" [ref=f5e414] [cursor=pointer]
+              - option "02" [ref=f5e415] [cursor=pointer]
+              - option "03" [ref=f5e416] [cursor=pointer]
+              - option "04" [ref=f5e417] [cursor=pointer]
+              - option "05" [ref=f5e418] [cursor=pointer]
+              - option "06" [ref=f5e419] [cursor=pointer]
+              - option "07" [ref=f5e420] [cursor=pointer]
+              - option "08" [ref=f5e421] [cursor=pointer]
+              - option "09" [selected] [ref=f5e422] [cursor=pointer]
+              - option "10" [ref=f5e425] [cursor=pointer]
+              - option "11" [ref=f5e426] [cursor=pointer]
+              - option "12" [ref=f5e427] [cursor=pointer]
+              - option "13" [ref=f5e428] [cursor=pointer]
+              - option "14" [ref=f5e429] [cursor=pointer]
+              - option "15" [ref=f5e430] [cursor=pointer]
+              - option "16" [ref=f5e431] [cursor=pointer]
+              - option "17" [ref=f5e432] [cursor=pointer]
+              - option "18" [ref=f5e433] [cursor=pointer]
+              - option "19" [ref=f5e434] [cursor=pointer]
+              - option "20" [ref=f5e435] [cursor=pointer]
+              - option "21" [ref=f5e436] [cursor=pointer]
+              - option "22" [ref=f5e437] [cursor=pointer]
+              - option "23" [ref=f5e438] [cursor=pointer]
+        - generic [aria-hidden] [ref=f5e398]: ":"
+        - generic [ref=f5e399]:
+          - generic [ref=f5e400]: Menit
+          - button [ref=f5e402] [cursor=pointer]:
+            - strong [ref=f5e406]: "00"
+    - generic [ref=f5e409]:
+      - button "Hapus tanggal" [ref=f5e410] [cursor=pointer]
+      - button "Gunakan tanggal" [ref=f5e411]

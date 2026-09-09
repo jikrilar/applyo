@@ -1,0 +1,146 @@
+- generic [ref=f9e1]:
+  - generic [ref=f9e20]:
+    - complementary [ref=f9e21]:
+      - link "Beranda Applyo" [ref=f9e22] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f9e23]:
+        - link "Dasbor" [ref=f9e24] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f9e31] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f9e37] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f9e41] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f9e45] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f9e51] [cursor=pointer]
+    - generic [ref=f9e55]:
+      - banner [ref=f9e56]:
+        - generic [ref=f9e57]:
+          - button "Gunakan mode gelap" [ref=f9e58] [cursor=pointer]
+          - button "Buka menu profil" [ref=f9e62] [cursor=pointer]:
+            - generic [ref=f9e63]: QP
+            - generic [ref=f9e64]:
+              - strong [ref=f9e65]: QA Phase2
+              - generic [ref=f9e66]: qa-phase2@applyo.test
+      - main [ref=f9e69]:
+        - generic [ref=f9e70]:
+          - generic [ref=f9e71]:
+            - generic [ref=f9e72]:
+              - generic [ref=f9e73]: Ruang kerja lamaran
+              - heading "Lamaran saya" [level=1] [ref=f9e74]
+              - paragraph [ref=f9e75]: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation "Tampilan lamaran" [ref=f9e76]:
+              - link "Papan" [ref=f9e77] [cursor=pointer]:
+                - /url: /aplikasi
+              - link "Daftar" [ref=f9e83] [cursor=pointer]:
+                - /url: /aplikasi?view=list
+          - generic [ref=f9e85]:
+            - generic [ref=f9e86]:
+              - generic [ref=f9e90]: Cari lamaran
+              - textbox "Cari lamaran" [ref=f9e91]:
+                - /placeholder: Cari perusahaan atau posisi...
+            - button "Filter" [ref=f9e93] [cursor=pointer]
+            - button "Tambah lamaran" [ref=f9e95]
+          - generic [ref=f9e97]:
+            - generic [ref=f9e98]:
+              - generic [ref=f9e99]:
+                - strong [ref=f9e100]: Incaran
+                - generic [ref=f9e101]: "1"
+              - article [ref=f9e205] [cursor=pointer]:
+                - generic [ref=f9e206]:
+                  - strong [ref=f9e207]: PT Maju Bersama
+                  - generic [ref=f9e208]:
+                    - button "Pindahkan kartu PT Maju Bersama" [ref=f9e209]
+                    - button "Tindakan untuk PT Maju Bersama" [ref=f9e218]
+                - link "QA Engineer" [ref=f9e223]:
+                  - /url: /aplikasi/f0fc2bc4-7417-4b44-9909-ce6e560790ac
+                - generic [ref=f9e224]: Lokasi belum diisi
+                - generic [ref=f9e228]: Baru diperbarui
+            - generic [ref=f9e104]:
+              - generic [ref=f9e105]:
+                - strong [ref=f9e106]: Dilamar
+                - generic [ref=f9e107]: "0"
+              - paragraph [ref=f9e109]: Letakkan lamaran di sini
+            - generic [ref=f9e110]:
+              - generic [ref=f9e111]:
+                - strong [ref=f9e112]: Seleksi Awal
+                - generic [ref=f9e113]: "0"
+              - paragraph [ref=f9e115]: Letakkan lamaran di sini
+            - generic [ref=f9e116]:
+              - generic [ref=f9e117]:
+                - strong [ref=f9e118]: Wawancara
+                - generic [ref=f9e119]: "0"
+              - paragraph [ref=f9e121]: Letakkan lamaran di sini
+            - generic [ref=f9e122]:
+              - generic [ref=f9e123]:
+                - strong [ref=f9e124]: Asesmen
+                - generic [ref=f9e125]: "0"
+              - paragraph [ref=f9e127]: Letakkan lamaran di sini
+            - generic [ref=f9e128]:
+              - generic [ref=f9e129]:
+                - strong [ref=f9e130]: Tawaran
+                - generic [ref=f9e131]: "0"
+              - paragraph [ref=f9e133]: Letakkan lamaran di sini
+          - status [ref=f9e134]
+          - dialog [ref=f9e232]:
+            - generic [ref=f9e234]:
+              - heading "Tambah lamaran" [level=2] [ref=f9e235]
+              - paragraph [ref=f9e236]: Mulai dari informasi utama, lalu lengkapi seperlunya.
+            - generic [ref=f9e237]:
+              - group "Informasi utama" [ref=f9e238]:
+                - generic [ref=f9e240]:
+                  - generic [ref=f9e241]:
+                    - generic [ref=f9e242]: Perusahaan *
+                    - textbox "Perusahaan *" [ref=f9e244]
+                  - generic [ref=f9e245]:
+                    - generic [ref=f9e246]: Posisi *
+                    - textbox "Posisi *" [ref=f9e248]
+                  - generic [ref=f9e249]:
+                    - generic [ref=f9e250]: Tahap *
+                    - button "Incaran" [ref=f9e252] [cursor=pointer]
+                  - generic [ref=f9e260]:
+                    - generic [ref=f9e261]: Lokasi
+                    - textbox "Lokasi" [ref=f9e263]
+                  - generic [ref=f9e264]:
+                    - generic [ref=f9e265]: Pengaturan kerja
+                    - button "Belum ditentukan" [ref=f9e267] [cursor=pointer]
+                  - generic [ref=f9e275]:
+                    - generic [ref=f9e276]: Jenis pekerjaan
+                    - button "Belum ditentukan" [ref=f9e278] [cursor=pointer]
+              - group [ref=f9e286]:
+                - generic "Informasi lowongan" [ref=f9e287] [cursor=pointer]
+                - generic [ref=f9e301]:
+                  - generic [ref=f9e302]:
+                    - generic [ref=f9e303]: Tautan lowongan
+                    - textbox "Tautan lowongan" [ref=f9e305]:
+                      - /placeholder: https://
+                  - generic [ref=f9e306]:
+                    - generic [ref=f9e307]: Sumber
+                    - textbox "Sumber" [ref=f9e309]
+                  - generic [ref=f9e310]:
+                    - generic [ref=f9e311]: Tanggal melamar
+                    - button "Pilih tanggal" [ref=f9e313] [cursor=pointer]
+                  - generic [ref=f9e319]:
+                    - generic [ref=f9e320]: Deskripsi pekerjaan
+                    - textbox "Deskripsi pekerjaan" [ref=f9e322]
+              - group [ref=f9e290]:
+                - generic "Kompensasi" [active] [ref=f9e291] [cursor=pointer]
+                - generic [ref=f9e323]:
+                  - generic [ref=f9e324]:
+                    - generic [ref=f9e325]: Gaji minimum
+                    - spinbutton "Gaji minimum" [ref=f9e327]
+                  - generic [ref=f9e328]:
+                    - generic [ref=f9e329]: Gaji maksimum
+                    - spinbutton "Gaji maksimum" [ref=f9e331]
+              - group [ref=f9e294]:
+                - generic "Catatan pribadi" [ref=f9e295] [cursor=pointer]
+              - generic [ref=f9e298]:
+                - button "Batal" [ref=f9e299] [cursor=pointer]
+                - button "Simpan lamaran" [ref=f9e300]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f9e15] [cursor=pointer]
+  - alert [ref=f9e19]

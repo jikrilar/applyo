@@ -1533,8 +1533,8 @@ footer > a:last-child {
 }
 .workspace-card-title .drag-handle,
 .workspace-card-title .card-menu-trigger {
-  width: 28px;
-  height: 28px;
+  width: 44px;
+  height: 44px;
   display: grid;
   place-items: center;
   padding: 2px;
@@ -3039,6 +3039,17 @@ button.date-picker-day:disabled {
   }
   .source-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .workspace-toolbar {
+    grid-template-columns: 1fr auto;
+  }
+  .workspace-search {
+    grid-column: 1 / -1;
+  }
+  .workspace-toolbar .button {
+    justify-self: stretch;
+    min-height: 46px;
+    padding-inline: 13px;
   }
 }
 

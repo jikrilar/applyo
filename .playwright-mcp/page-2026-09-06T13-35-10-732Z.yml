@@ -1,0 +1,121 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation "Navigasi utama" [ref=e3]:
+      - link "Beranda Applyo" [ref=e4] [cursor=pointer]:
+        - /url: "#top"
+        - text: Applyo
+      - generic [ref=e5]:
+        - link "Cara kerja" [ref=e6] [cursor=pointer]:
+          - /url: "#how-it-works"
+        - link "Untuk tim" [ref=e7] [cursor=pointer]:
+          - /url: "#for-teams"
+        - button "Gunakan mode gelap" [ref=e8] [cursor=pointer]
+        - link "Mulai pantau" [ref=e11] [cursor=pointer]:
+          - /url: /masuk
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]: Dibuat untuk pencari kerja
+        - heading "Kariermu terus maju." [level=1] [ref=e20]
+        - paragraph [ref=e21]: Pantau setiap lamaran, tenggat, dan langkah berikutnya dalam satu ruang kerja yang ramah.
+        - generic [ref=e22]:
+          - link "Mulai pantau" [ref=e23] [cursor=pointer]:
+            - /url: /masuk
+          - link "Lihat cara kerja" [ref=e26] [cursor=pointer]:
+            - /url: "#how-it-works"
+      - generic "Pratinjau interaktif papan lamaran kerja" [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]: Lamaran saya
+            - text: 3 aktif
+          - button "Pindahkan kartu" [ref=e34] [cursor=pointer]
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - generic [ref=e41]: Incaran
+              - generic [ref=e42]: "1"
+            - article [ref=e44]:
+              - strong [ref=e46]: Northstar Studio
+              - paragraph [ref=e54]: Desainer Produk
+              - generic [ref=e55]: Baru diperbarui
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - generic [ref=e63]: Dilamar
+              - generic [ref=e64]: "1"
+            - article [ref=e66]:
+              - strong [ref=e68]: Pine Labs
+              - paragraph [ref=e76]: Frontend Engineer
+              - generic [ref=e77]: Baru diperbarui
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - generic [ref=e86]: Wawancara
+              - generic [ref=e87]: "1"
+            - article [ref=e89]:
+              - strong [ref=e91]: Mori Health
+              - paragraph [ref=e99]: Peneliti UX
+              - generic [ref=e100]: Wawancara hari Kamis
+    - region "Masalah yang diselesaikan Applyo" [ref=e107]:
+      - paragraph [ref=e108]: Lebih sedikit keruwetan spreadsheet.
+      - generic [aria-hidden] [ref=e109]: +
+      - paragraph [ref=e110]: Lebih jelas menentukan langkah berikutnya.
+    - generic [ref=e111]:
+      - generic [ref=e112]:
+        - heading "Pencarianmu, dalam sekali lihat." [level=2] [ref=e113]
+        - paragraph [ref=e114]: Applyo mengubah catatan yang tersebar menjadi alur jelas dari lowongan tersimpan hingga hasil akhir.
+      - generic "Alur lamaran kerja" [ref=e115]:
+        - generic [ref=e116]:
+          - generic [ref=e117]: "1"
+          - generic [ref=e118]:
+            - heading "Simpan" [level=3] [ref=e119]
+            - paragraph [ref=e120]: Kumpulkan lowongan yang menjanjikan.
+        - generic [ref=e123]:
+          - generic [ref=e124]: "2"
+          - generic [ref=e125]:
+            - heading "Pantau" [level=3] [ref=e126]
+            - paragraph [ref=e127]: Majukan setiap lamaran sesuai prosesnya.
+        - generic [ref=e130]:
+          - generic [ref=e131]: "3"
+          - generic [ref=e132]:
+            - heading "Tindak lanjut" [level=3] [ref=e133]
+            - paragraph [ref=e134]: Ingat tindakan berikutnya.
+        - generic [ref=e137]:
+          - generic [ref=e138]: "4"
+          - generic [ref=e139]:
+            - heading "Tinjau" [level=3] [ref=e140]
+            - paragraph [ref=e141]: Pahami apa yang berhasil.
+    - generic [ref=e142]:
+      - heading "Semua punya tempat." [level=2] [ref=e144]
+      - generic [ref=e145]:
+        - generic [ref=e146]:
+          - heading "Lihat setiap lamaran" [level=3] [ref=e152]
+          - paragraph [ref=e153]: Satu papan menampilkan lowongan yang kamu simpan, kirim, jadwalkan, dan selesaikan.
+        - generic [ref=e154]:
+          - heading "Tahu apa yang perlu diperhatikan" [level=3] [ref=e160]
+          - paragraph [ref=e161]: Temukan lamaran tanpa kabar dan tindak lanjut mendatang sebelum terlewat.
+        - generic [ref=e162]:
+          - heading "Jaga jadwal tetap dekat" [level=3] [ref=e166]
+          - paragraph [ref=e167]: Wawancara dan asesmen tetap terhubung dengan lamaran yang berkaitan.
+    - generic [ref=e168]:
+      - generic [ref=e169]:
+        - generic [ref=e170]: Tinjauan kandidat
+        - generic [ref=e174]: Catatan wawancara
+        - generic [ref=e178]: Langkah berikutnya
+      - generic [ref=e182]:
+        - heading "Berguna sendiri. Jelas bersama tim." [level=2] [ref=e183]
+        - paragraph [ref=e184]: Pelatih karier dan tim pendamping dapat memberi arahan terfokus tanpa membuat ulang pencarian kerja di spreadsheet lain.
+        - link "Tanyakan fitur tim" [ref=e185] [cursor=pointer]:
+          - /url: mailto:hello@applyo.app
+    - generic [ref=e188]:
+      - generic [ref=e189]:
+        - heading "Lamaran berikutnya layak punya tempat yang lebih baik." [level=2] [ref=e190]
+        - paragraph [ref=e191]: Gratis untuk pencari kerja. Satukan seluruh pencarianmu dan selalu tahu langkah berikutnya.
+      - link "Mulai pantau" [ref=e192] [cursor=pointer]:
+        - /url: /masuk
+    - generic [ref=e195]:
+      - link "Applyo" [ref=e196] [cursor=pointer]:
+        - /url: "#top"
+      - paragraph [ref=e197]: Kariermu terus maju.
+      - link "hello@applyo.app" [ref=e198] [cursor=pointer]:
+        - /url: mailto:hello@applyo.app
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=e204] [cursor=pointer]

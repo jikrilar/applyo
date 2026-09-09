@@ -1,0 +1,151 @@
+- generic:
+  - generic:
+    - complementary [aria-hidden]:
+      - link:
+        - /url: /
+        - text: Applyo
+      - navigation:
+        - link:
+          - /url: /dashboard
+          - generic: Dasbor
+        - link:
+          - /url: /aplikasi
+          - generic: Lamaran
+        - link:
+          - /url: /kalender
+          - generic: Kalender
+        - link:
+          - /url: /analitik
+          - generic: Analitik
+        - link:
+          - /url: /pengaturan
+          - generic: Pengaturan
+      - generic:
+        - button: Keluar
+    - generic:
+      - banner [aria-hidden]:
+        - generic:
+          - button
+          - generic:
+            - button:
+              - generic: QP
+              - generic:
+                - strong: QA Phase2
+                - generic: qa-phase2@applyo.test
+      - main:
+        - generic:
+          - generic [aria-hidden]:
+            - generic:
+              - generic: Ruang kerja lamaran
+              - heading [level=1]: Lamaran saya
+              - paragraph: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation:
+              - link:
+                - /url: /aplikasi
+                - text: Papan
+              - link:
+                - /url: /aplikasi?view=list
+                - text: Daftar
+          - generic [aria-hidden]:
+            - generic:
+              - generic: Cari lamaran
+              - textbox:
+                - /placeholder: Cari perusahaan atau posisi...
+            - generic:
+              - button: Filter
+            - button: Tambah lamaran
+          - generic [aria-hidden]:
+            - generic:
+              - generic:
+                - strong: Incaran
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Dilamar
+                - generic: "1"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Maju Bersama
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/f0fc2bc4-7417-4b44-9909-ce6e560790ac
+                    - text: QA Engineer
+                  - generic: Lokasi belum diisi
+                  - generic: Baru diperbarui
+            - generic:
+              - generic:
+                - strong: Seleksi Awal
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Wawancara
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Asesmen
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Tawaran
+                - generic: "1"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Sinar Abadi
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/effdb375-b145-4ffc-800e-24ba62175098
+                    - text: Senior Frontend Developer
+                  - generic: Jakarta
+                  - generic: 10 Sep 2026
+          - status
+  - button "Open Next.js Dev Tools" [ref=f24e64] [cursor=pointer]
+  - alert
+  - dialog [ref=f24e197]:
+    - heading "Tambah agenda" [level=2] [ref=f24e198]
+    - paragraph [ref=f24e199]: PT Sinar Abadi. Formulir ini dapat dilewati dan dilengkapi nanti.
+    - generic [ref=f24e200]:
+      - generic [ref=f24e201]:
+        - generic [ref=f24e202]: Jenis agenda
+        - button "Wawancara" [active] [ref=f24e204] [cursor=pointer]
+      - generic [ref=f24e209]:
+        - generic [ref=f24e210]: Jenis wawancara
+        - combobox "Jenis wawancara" [ref=f24e212]:
+          - option "Wawancara HR"
+          - option "Wawancara user"
+          - option "Wawancara teknis" [selected]
+          - option "Wawancara akhir"
+          - option "Wawancara lainnya"
+      - generic [ref=f24e213]:
+        - generic [ref=f24e214]: Judul
+        - textbox "Judul" [ref=f24e216]
+      - generic [ref=f24e217]:
+        - generic [ref=f24e218]: Tanggal dan waktu
+        - button "Pilih tanggal dan waktu" [ref=f24e220] [cursor=pointer]
+        - generic [ref=f24e226]: Waktu mengikuti zona waktu pada Pengaturan.
+      - generic [ref=f24e227]:
+        - generic [ref=f24e228]: Lokasi atau tautan
+        - textbox "Lokasi atau tautan" [ref=f24e230]:
+          - /placeholder: Alamat atau https://...
+      - generic [ref=f24e231]:
+        - generic [ref=f24e232]: Catatan (opsional)
+        - textbox "Catatan (opsional)" [ref=f24e234]
+      - generic [ref=f24e235]:
+        - button "Batal" [ref=f24e236] [cursor=pointer]
+        - button "Simpan agenda" [disabled] [ref=f24e237]
+    - button "Tutup dialog" [ref=f24e238] [cursor=pointer]

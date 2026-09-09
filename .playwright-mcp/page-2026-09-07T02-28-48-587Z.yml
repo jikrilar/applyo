@@ -1,0 +1,100 @@
+- generic [ref=f8e1]:
+  - generic [ref=f8e2]:
+    - complementary [ref=f8e3]:
+      - link "Beranda Applyo" [ref=f8e4] [cursor=pointer]:
+        - /url: /
+        - text: Applyo
+      - navigation "Navigasi aplikasi" [ref=f8e5]:
+        - link "Dasbor" [ref=f8e6] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Lamaran" [ref=f8e13] [cursor=pointer]:
+          - /url: /aplikasi
+        - link "Kalender" [ref=f8e19] [cursor=pointer]:
+          - /url: /kalender
+        - link "Analitik" [ref=f8e23] [cursor=pointer]:
+          - /url: /analitik
+        - link "Pengaturan" [ref=f8e27] [cursor=pointer]:
+          - /url: /pengaturan
+      - button "Keluar" [ref=f8e33] [cursor=pointer]
+    - generic [ref=f8e37]:
+      - banner [ref=f8e38]:
+        - generic [ref=f8e39]:
+          - button "Gunakan mode gelap" [ref=f8e40] [cursor=pointer]
+          - button "Buka menu profil" [ref=f8e44] [cursor=pointer]:
+            - generic [ref=f8e45]: QP
+            - generic [ref=f8e46]:
+              - strong [ref=f8e47]: QA Phase2
+              - generic [ref=f8e48]: qa-phase2@applyo.test
+      - main [ref=f8e51]:
+        - generic [ref=f8e69]:
+          - generic [ref=f8e71]:
+            - generic [ref=f8e72]: Agenda rekrutmen
+            - heading "Kalender" [level=1] [ref=f8e73]
+            - paragraph [ref=f8e74]: Wawancara, asesmen, dan tenggat dalam satu tampilan.
+          - generic [ref=f8e75]:
+            - generic [ref=f8e76]:
+              - link "Bulan sebelumnya" [ref=f8e77] [cursor=pointer]:
+                - /url: /kalender?month=2026-09
+              - strong [ref=f8e80]: Oktober 2026
+              - link "Bulan berikutnya" [active] [ref=f8e81] [cursor=pointer]:
+                - /url: /kalender?month=2026-11
+            - generic [ref=f8e84]:
+              - button "Bulan" [ref=f8e85] [cursor=pointer]
+              - button "Agenda" [ref=f8e86] [cursor=pointer]
+          - generic [ref=f8e87]:
+            - generic [ref=f8e88]:
+              - generic [ref=f8e89]: Sen
+              - generic [ref=f8e90]: Sel
+              - generic [ref=f8e91]: Rab
+              - generic [ref=f8e92]: Kam
+              - generic [ref=f8e93]: Jum
+              - generic [ref=f8e94]: Sab
+              - generic [ref=f8e95]: Min
+            - generic [ref=f8e96]:
+              - generic [ref=f8e97]: "28"
+              - generic [ref=f8e99]: "29"
+              - generic [ref=f8e101]: "30"
+              - generic [ref=f8e103]: "1"
+              - generic [ref=f8e105]: "2"
+              - generic [ref=f8e107]: "3"
+              - generic [ref=f8e109]: "4"
+              - generic [ref=f8e111]: "5"
+              - generic [ref=f8e113]: "6"
+              - generic [ref=f8e118]: "7"
+              - generic [ref=f8e123]: "8"
+              - generic [ref=f8e125]: "9"
+              - generic [ref=f8e127]: "10"
+              - generic [ref=f8e132]: "11"
+              - generic [ref=f8e134]: "12"
+              - generic [ref=f8e136]: "13"
+              - generic [ref=f8e141]: "14"
+              - generic [ref=f8e143]: "15"
+              - generic [ref=f8e145]: "16"
+              - generic [ref=f8e147]: "17"
+              - generic [ref=f8e149]: "18"
+              - generic [ref=f8e151]: "19"
+              - generic [ref=f8e153]: "20"
+              - generic [ref=f8e155]: "21"
+              - generic [ref=f8e157]: "22"
+              - generic [ref=f8e159]: "23"
+              - generic [ref=f8e161]: "24"
+              - generic [ref=f8e163]: "25"
+              - generic [ref=f8e165]: "26"
+              - generic [ref=f8e167]: "27"
+              - generic [ref=f8e169]: "28"
+              - generic [ref=f8e171]: "29"
+              - generic [ref=f8e173]: "30"
+              - generic [ref=f8e175]: "31"
+              - generic [ref=f8e177]: "1"
+              - generic [ref=f8e179]: "2"
+              - generic [ref=f8e181]: "3"
+              - generic [ref=f8e183]: "4"
+              - generic [ref=f8e185]: "5"
+              - generic [ref=f8e187]: "6"
+              - generic [ref=f8e189]: "7"
+              - generic [ref=f8e191]: "8"
+            - strong [ref=f8e196]: Belum ada agenda bulan ini.
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f8e64] [cursor=pointer]
+  - alert [ref=f8e68]

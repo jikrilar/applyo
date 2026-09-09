@@ -1,0 +1,135 @@
+- generic:
+  - generic:
+    - generic:
+      - banner [aria-hidden]:
+        - generic:
+          - link:
+            - /url: /
+            - text: Applyo
+        - generic:
+          - button
+          - generic:
+            - button:
+              - generic: UA
+      - main:
+        - generic:
+          - generic [aria-hidden]:
+            - generic:
+              - generic: Ruang kerja lamaran
+              - heading [level=1]: Lamaran saya
+              - paragraph: Pindahkan setiap kartu saat proses rekrutmen berkembang.
+            - navigation:
+              - link:
+                - /url: /aplikasi
+                - text: Papan
+              - link:
+                - /url: /aplikasi?view=list
+                - text: Daftar
+          - generic [aria-hidden]:
+            - generic:
+              - generic: Cari lamaran
+              - textbox:
+                - /placeholder: Cari perusahaan atau posisi...
+            - generic:
+              - button: Filter
+            - button: Tambah lamaran
+          - generic [aria-hidden]:
+            - generic:
+              - generic:
+                - strong: Incaran
+                - generic: "1"
+              - generic:
+                - article:
+                  - generic:
+                    - strong: PT Nusantara Teknologi Maju Bersama Sejahtera Abadi Sentosa
+                    - generic:
+                      - button
+                      - generic:
+                        - button
+                  - link:
+                    - /url: /aplikasi/64f69eda-3758-4c88-81eb-c932d3778a65
+                    - text: Senior Frontend Developer Spesialis Antarmuka Pengguna dan Pengalaman Digital
+                  - generic: Lokasi belum diisi
+                  - generic: 12 Sep 2026
+            - generic:
+              - generic:
+                - strong: Dilamar
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Seleksi Awal
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Wawancara
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Asesmen
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+            - generic:
+              - generic:
+                - strong: Tawaran
+                - generic: "0"
+              - generic:
+                - paragraph: Letakkan lamaran di sini
+          - status
+      - navigation [aria-hidden]:
+        - link:
+          - /url: /dashboard
+          - generic: Dasbor
+        - link:
+          - /url: /aplikasi
+          - generic: Lamaran
+        - link:
+          - /url: /kalender
+          - generic: Kalender
+        - link:
+          - /url: /analitik
+          - generic: Analitik
+        - link:
+          - /url: /pengaturan
+          - generic: Pengaturan
+  - button "Open Next.js Dev Tools" [ref=f36e15] [cursor=pointer]
+  - alert
+  - dialog [ref=f36e202]:
+    - heading "Tambah agenda" [level=2] [ref=f36e203]
+    - paragraph [ref=f36e204]: PT Nusantara Teknologi Maju Bersama Sejahtera Abadi Sentosa. Formulir ini dapat dilewati dan dilengkapi nanti.
+    - generic [ref=f36e205]:
+      - generic [ref=f36e206]:
+        - generic [ref=f36e207]: Jenis agenda
+        - button "Wawancara" [active] [ref=f36e209] [cursor=pointer]
+      - generic [ref=f36e214]:
+        - generic [ref=f36e215]: Jenis wawancara
+        - combobox "Jenis wawancara" [ref=f36e217]:
+          - option "Wawancara HR" [selected]
+          - option "Wawancara user"
+          - option "Wawancara teknis"
+          - option "Wawancara akhir"
+          - option "Wawancara lainnya"
+      - generic [ref=f36e218]:
+        - generic [ref=f36e219]: Judul
+        - textbox "Judul" [ref=f36e221]
+      - generic [ref=f36e222]:
+        - generic [ref=f36e223]: Tanggal dan waktu
+        - button "Pilih tanggal dan waktu" [ref=f36e225] [cursor=pointer]
+        - generic [ref=f36e231]: Waktu mengikuti zona waktu pada Pengaturan.
+      - generic [ref=f36e232]:
+        - generic [ref=f36e233]: Lokasi atau tautan
+        - textbox "Lokasi atau tautan" [ref=f36e235]:
+          - /placeholder: Alamat atau https://...
+      - generic [ref=f36e236]:
+        - generic [ref=f36e237]: Catatan (opsional)
+        - textbox "Catatan (opsional)" [ref=f36e239]
+      - generic [ref=f36e240]:
+        - button "Batal" [ref=f36e241] [cursor=pointer]
+        - button "Simpan agenda" [disabled] [ref=f36e242]
+    - button "Tutup dialog" [ref=f36e243] [cursor=pointer]

@@ -1,0 +1,12 @@
+- generic [active] [ref=f26e1]:
+  - main "Memuat Applyo" [ref=f26e2]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f26e15] [cursor=pointer]:
+    - generic [ref=f26e18]:
+      - text: Compiling
+      - generic [ref=f26e19]:
+        - generic [ref=f26e20]: .
+        - generic [ref=f26e21]: .
+        - generic [ref=f26e22]: .
+  - alert [ref=f26e23]

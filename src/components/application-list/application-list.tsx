@@ -21,6 +21,7 @@ import {
   type ApplicationFilterSelection,
 } from "@/components/application-toolbar";
 import { ApplicationForm } from "@/components/application-detail/application-form";
+import { useDialogA11y } from "@/components/shared/use-dialog-a11y";
 import {
   deleteApplicationAction,
   getApplicationForEditAction,
@@ -97,6 +98,9 @@ export function ApplicationList({
   const [deleting, setDeleting] = useState<ApplicationListItemDTO | null>(null);
   const [message, setMessage] = useState("");
   const [pending, startTransition] = useTransition();
+  const createDialogRef = useDialogA11y<HTMLElement>(dialogOpen, () => setDialogOpen(false));
+  const editDialogRef = useDialogA11y<HTMLElement>(editing !== null, () => setEditing(null));
+  const deleteDialogRef = useDialogA11y<HTMLElement>(deleting !== null, () => setDeleting(null));
   const sort = values(params.sort)[0] ?? "applied_desc";
   const appliedActive = sort.startsWith("applied_");
   const appliedAscending = sort === "applied_asc";
@@ -369,6 +373,7 @@ export function ApplicationList({
       {dialogOpen && (
         <div className="dialog-backdrop">
           <section
+            ref={createDialogRef}
             className="application-dialog application-form-dialog"
             role="dialog"
             aria-modal="true"
@@ -391,6 +396,7 @@ export function ApplicationList({
       {editing && (
         <div className="dialog-backdrop">
           <section
+            ref={editDialogRef}
             className="application-dialog application-form-dialog"
             role="dialog"
             aria-modal="true"
@@ -416,6 +422,7 @@ export function ApplicationList({
       {deleting && (
         <div className="dialog-backdrop" onMouseDown={() => setDeleting(null)}>
           <section
+            ref={deleteDialogRef}
             className="delete-dialog"
             role="alertdialog"
             aria-modal="true"
